@@ -3,6 +3,8 @@ VERSION:2.0
 PRODID:-//Psychosocial Research Axis//Rounds Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+X-WR-CALNAME:Rounds Calendar
+X-WR-CALDESC:Psychosocial Research Axis — Psychosocial, Academic, Cultural, and Clinical Rounds
 TZID:America/Toronto
 
 BEGIN:VEVENT
@@ -12,7 +14,7 @@ DTSTART:20260115T133000
 DTEND:20260115T150000
 SUMMARY:Psychosocial Research Rounds — Youth’s Conceptualization of Mental Health
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal · Zoom: https://us06web.zoom.us/j/88488947071
-DESCRIPTION:Speaker: Yifan Wang, MSc.\nSession chaired by Vincent Paquin, MD.\nIn person and online.\nZoom ID: 884 8894 7071 · Code: 984533\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-15-psychosocial-announcement.html
+DESCRIPTION:Speaker: Yifan Wang, MSc.\nSession chaired by Vincent Paquin, MD.\nIn person and online.\nZoom ID: 884 8894 7071 · Code: 984533
 URL:https://psychosocial-research-axis.github.io/rounds/emails/2026-01-15-psychosocial-announcement.html
 BEGIN:VALARM
 TRIGGER:-PT15M
@@ -28,7 +30,7 @@ DTSTART:20260122T133000
 DTEND:20260122T150000
 SUMMARY:Psychosocial Research Rounds — Preventing HPV
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal · Zoom: https://us06web.zoom.us/j/88488947071
-DESCRIPTION:Speaker: Zeev Rosberger, PhD.\nSession chaired by David Dunkley, PhD.\nIn person and online.\nZoom ID: 884 8894 7071 · Code: 984533\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-22-psychosocial-announcement.html
+DESCRIPTION:Speaker: Zeev Rosberger, PhD.\nSession chaired by David Dunkley, PhD.\nIn person and online.\nZoom ID: 884 8894 7071 · Code: 984533
 URL:https://psychosocial-research-axis.github.io/rounds/emails/2026-01-22-psychosocial-announcement.html
 BEGIN:VALARM
 TRIGGER:-PT15M
@@ -44,7 +46,7 @@ DTSTART:20260129T133000
 DTEND:20260129T150000
 SUMMARY:Cultural Psychiatry Rounds — Cultural Variations in Psychosis
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
-DESCRIPTION:Speaker: G. Eric Jarvis, MD.\nSession chaired by Laurence J. Kirmayer, MD.\nIn person only.\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-29-cultural-announcement.html
+DESCRIPTION:Speaker: G. Eric Jarvis, MD.\nSession chaired by Laurence J. Kirmayer, MD.\nIn person only.
 URL:https://psychosocial-research-axis.github.io/rounds/emails/2026-01-29-cultural-announcement.html
 BEGIN:VALARM
 TRIGGER:-PT15M
