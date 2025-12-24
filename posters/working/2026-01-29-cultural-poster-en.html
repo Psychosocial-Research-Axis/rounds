@@ -191,7 +191,16 @@ h1{
   body{
     background:#fff;
   }
-
+@media screen{
+  .poster{
+    width:210mm;
+    height:297mm;
+    max-width:100vw;
+    max-height:100vh;
+    transform-origin:top center;
+    transform:scale(min(1, 100vw / 210mm, 100vh / 297mm));
+  }
+}
   .poster{
     box-shadow:none;
     margin:0;
