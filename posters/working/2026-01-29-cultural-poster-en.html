@@ -8,13 +8,13 @@
 <meta name="description" content="Cultural Psychiatry Rounds — poster">
 
 <style>
-  /* PAGE SIZE */
-  @page {
-    size: A4;
-    margin: 0;
+  @page { size: A4; margin: 0; }
+
+  *{
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
   }
 
-  /* SCREEN */
   body{
     margin:0;
     background:#f4f6f8;
@@ -29,10 +29,13 @@
     background:#f7f5f2;
   }
 
+  .hero a{ display:block; }
+
   .hero img{
     width:100%;
     height:auto;
     display:block;
+    margin-bottom:6px;
   }
 
   .art-credit{
@@ -43,14 +46,18 @@
   }
 
   .content{
-    padding:32px 40px 44px 40px;
+    padding:28px 40px 40px 40px;
+  }
+
+  :root{
+    --accent:#7b1e24;
   }
 
   .series{
-    letter-spacing:0.12em;
+    letter-spacing:0.14em;
     text-transform:uppercase;
     font-size:12px;
-    color:#7a2e2e;
+    color:var(--accent);
     margin-bottom:10px;
   }
 
@@ -58,50 +65,62 @@
     font-family:Georgia, "Times New Roman", serif;
     font-size:38px;
     line-height:1.15;
-    margin:0 0 18px 0;
+    margin:0 0 14px 0;
   }
 
   .speaker{
     font-size:18px;
-    margin-bottom:22px;
+    margin-bottom:18px;
   }
 
   .details{
-    border-top:1px solid #d6d2cc;
-    border-bottom:1px solid #d6d2cc;
-    padding:18px 0;
-    margin-bottom:22px;
+    border-top:1px solid #c9c4bd;
+    border-bottom:1px solid #c9c4bd;
+    padding:16px 0;
+    margin-bottom:18px;
   }
 
   .details div{
-    margin:6px 0;
+    margin:4px 0;
     font-size:16px;
   }
 
   .location{
     font-size:15px;
+    margin-bottom:16px;
+  }
+
+  .online{
+    font-size:15px;
     margin-bottom:18px;
   }
 
-  .tag{
-    display:inline-block;
-    background:#7a2e2e;
-    color:#fff;
-    padding:6px 12px;
-    font-size:13px;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
+  .online a{
+    color:var(--accent);
+    text-decoration:underline;
+    word-break:break-word;
   }
 
-  /* PRINT */
+  .tags{ margin-top:2px; }
+
+  .tag{
+    display:inline-block;
+    padding:6px 12px;
+    font-size:13px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    margin-right:8px;
+    margin-top:8px;
+    border-radius:999px;
+  }
+
+  .tag.inperson{ background:var(--accent); color:#fff; }
+  .tag.online{ background:#111827; color:#fff; }
+
   @media print {
-    body{
-      background:#fff;
-    }
-    .poster{
-      box-shadow:none;
-      margin:0;
-    }
+    body{ background:#fff; }
+    .poster{ box-shadow:none; margin:0; }
+    .hero a{ pointer-events:none; }
   }
 </style>
 </head>
@@ -109,11 +128,13 @@
 <body>
   <div class="poster">
     <div class="hero">
-      <img src="https://i0.wp.com/culturacolectiva.com/wp-content/uploads/images/SQA3VSXZZBDPHFTYUUWJYM2A2Y.jpg?ssl=1" alt="">
+      <a href="https://psychosocial-research-axis.github.io/rounds/emails/2026-01-29-psychosocial-announcement.html">
+        <img src="https://psychosocial-research-axis.github.io/rounds/images/2026-01-29-cultural-hero.jpg" alt="">
+      </a>
     </div>
 
     <div class="art-credit">
-      August Natterer, <em>Hexenkopf (Witch’s Head)</em>, 1915
+      <em>August Natterer, <i>Hexenkopf (Witch's Head)</i>, 1915</em>
     </div>
 
     <div class="content">
@@ -125,16 +146,27 @@
 
       <div class="details">
         <div><strong>Date:</strong> January 29, 2026</div>
-        <div><strong>Time:</strong> 1:30 – 3:00 PM</div>
+        <div><strong>Time:</strong> 1:30 – 3:00 PM (ET)</div>
       </div>
 
       <div class="location">
+        <strong>In person:</strong><br>
         ICFP Amphitheatre<br>
         4333 Côte-Ste-Catherine Rd.<br>
         Montreal
       </div>
 
-      <div class="tag">In-person only</div>
+      <div class="online">
+        <strong>Online:</strong>
+        <a href="https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1">Zoom</a><br>
+        Meeting ID: 884 8894 7071 &nbsp;·&nbsp; Passcode: 984533
+      </div>
+
+      <div class="tags">
+        <span class="tag inperson">In-person</span>
+        <a href="https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1">
+                 <span class="tag online">Online</span></a>
+      </div>
     </div>
   </div>
 </body>
