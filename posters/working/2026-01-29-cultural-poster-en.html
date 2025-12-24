@@ -201,7 +201,26 @@ h1{
     transform:scale(min(1, 100vw / 210mm, 100vh / 297mm));
   }
 }
+
+   @media screen{
+  body{
+    margin:0;
+    display:grid;
+    place-items:center;
+    background:#333;
+  }
+
   .poster{
+    width:90vmin;
+    height:calc(90vmin * 1.414);
+    max-height:95vh;
+    max-width:calc(95vh / 1.414);
+    aspect-ratio:210 / 297;
+    box-shadow:0 0 30px rgba(0,0,0,.4);
+  }
+}
+   
+   .poster{
     box-shadow:none;
     margin:0;
   }
