@@ -33,6 +33,18 @@ body{
   background:var(--bg);
   display:flex;
   flex-direction:column;
+  position:relative;
+}
+
+.logo{
+  position:absolute;
+  top:24px;
+  right:32px;
+}
+.logo img{
+  height:34px;
+  opacity:.9;
+  filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));
 }
 
 /* HERO */
@@ -90,6 +102,10 @@ h1{
   padding:6px 10px;
   border-radius:999px;
   margin-bottom:22px;
+}
+
+.disclaimer.spacer{
+  visibility:hidden;
 }
     
 /* DETAILS BLOCK */
@@ -169,6 +185,11 @@ h1{
 <body>
 <div class="poster">
 
+<!-- LOGO -->
+<div class="logo">
+  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Jewish General Hospital">
+</div>
+
   <!-- HERO IMAGE -->
   <div class="hero">
     <img src="https://psychosocial-research-axis.github.io/rounds/images/2026-01-15-psychosocial-hero.jpg" alt="">
@@ -185,6 +206,8 @@ h1{
     <h1>Youth’s Conceptualization of Mental Health and Diagnosis</h1>
 
     <div class="speaker">Yifan Wang, MSc</div>
+
+<div class="disclaimer spacer"></div>
 
     <div class="details">
       <div class="date">January 15, 2026</div>
