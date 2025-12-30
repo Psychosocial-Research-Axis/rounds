@@ -44,6 +44,7 @@
             position: relative;
         }
 
+        /* LOGO */
         .logo {
             position: absolute;
             top: 24px;
@@ -98,11 +99,17 @@
             margin-bottom: 12px;
         }
 
-        /* DISCLAIMER */
+        /* RHYTHM SLOT (language disclaimer lives here) */
+        .rhythm {
+            min-height: 28px;
+            /* exact disclaimer height */
+            margin-bottom: 22px;
+        }
+
+        /* DISCLAIMER (optional content) */
         .disclaimer {
             display: inline-block;
             font-size: 12px;
-            font-style: normal;
             letter-spacing: .08em;
             text-transform: uppercase;
             color: #475569;
@@ -110,17 +117,13 @@
             border: 1px solid #E4DEFB;
             padding: 6px 10px;
             border-radius: 999px;
-        }
-
-        .rhythm {
-            margin-bottom:22px;
+            margin: 0;
         }
 
         /* DETAILS BLOCK */
         .details {
             border-left: 4px solid var(--accent);
             padding-left: 18px;
-            margin-top: 0;
             margin-bottom: 22px;
         }
 
@@ -158,13 +161,12 @@
         .divider {
             height: 1px;
             background: var(--soft);
-            opacity: 1;
             margin: 28px 0 22px 0;
         }
 
-        /* FOOT TAGS (MINIMAL) */
+        /* FOOT TAGS */
         .tags {
-            margin-top: 12px;
+            margin-top: 12px
         }
 
         .tag {
@@ -178,7 +180,6 @@
             text-transform: uppercase;
             border-radius: 999px;
             margin-right: 10px;
-            box-sizing: border-box;
             white-space: nowrap;
         }
 
