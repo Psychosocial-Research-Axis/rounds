@@ -17,7 +17,7 @@
         }
 
         :root {
-            --accent: #B832D1;
+            --accent: #A21CAF;
             --link: #4338CA;
             --soft: #E2D9F7;
             --ink: #020617;
@@ -62,6 +62,13 @@
             overflow: hidden;
             position: relative;
 
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .06);
         }
 
         .hero img {
@@ -244,6 +251,7 @@
             <div class="speaker">G. Eric Jarvis, MD</div>
 
             <div class="rhythm">
+                <div class="disclaimer" style="visibility:hidden">placeholder</div>
             </div>
 
             <div class="details">
