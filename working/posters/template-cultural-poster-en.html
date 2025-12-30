@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cultural Psychiatry Rounds – Poster</title>
-
     <style>
         @page {
             size: A4;
@@ -44,6 +43,7 @@
             position: relative;
         }
 
+        /* LOGO */
         .logo {
             position: absolute;
             top: 24px;
@@ -98,11 +98,17 @@
             margin-bottom: 12px;
         }
 
-        /* DISCLAIMER */
+        /* RHYTHM SLOT (language disclaimer lives here) */
+        .rhythm {
+            min-height: 28px;
+            /* exact disclaimer height */
+            margin-bottom: 22px;
+        }
+
+        /* DISCLAIMER (optional content) */
         .disclaimer {
             display: inline-block;
             font-size: 12px;
-            font-style: normal;
             letter-spacing: .08em;
             text-transform: uppercase;
             color: #475569;
@@ -110,11 +116,7 @@
             border: 1px solid #E4DEFB;
             padding: 6px 10px;
             border-radius: 999px;
-            margin-bottom: 22px;
-        }
-
-        .disclaimer.spacer {
-            visibility: hidden;
+            margin: 0;
         }
 
         /* DETAILS BLOCK */
@@ -158,13 +160,12 @@
         .divider {
             height: 1px;
             background: var(--soft);
-            opacity: 1;
             margin: 28px 0 22px 0;
         }
 
-        /* FOOT TAGS (MINIMAL) */
+        /* FOOT TAGS */
         .tags {
-            margin-top: 12px;
+            margin-top: 12px
         }
 
         .tag {
@@ -178,7 +179,6 @@
             text-transform: uppercase;
             border-radius: 999px;
             margin-right: 10px;
-            box-sizing: border-box;
             white-space: nowrap;
         }
 
@@ -198,7 +198,6 @@
             }
         }
     </style>
-
 </head>
 
 <body>
@@ -215,6 +214,7 @@
         </div>
         <div class="art-credit">
             <em>August Natterer, <i>Hexenkopf (The Witch's Head)</i>, 1915</em>
+
         </div>
 
         <!-- CONTENT -->
@@ -222,11 +222,14 @@
 
             <div class="series">Cultural Psychiatry Rounds</div>
 
-            <h1>Cultural Variations in Psychosis</h1>
+            <h1>Cultural Variations in Psychosis
+            </h1>
+
 
             <div class="speaker">G. Eric Jarvis, MD</div>
 
-            <div class="disclaimer spacer"></div>
+            <div class="rhythm">
+            </div>
 
             <div class="details">
                 <div class="date">January 29, 2026</div>
