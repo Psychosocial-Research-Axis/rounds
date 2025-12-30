@@ -1,240 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Psychosocial Research Rounds – Poster</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psychosocial Research Rounds – Poster</title>
 
-<style>
-@page{size:A4;margin:0}
-*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    <style>
+        @page {
+            size: A4;
+            margin: 0
+        }
 
-:root{
-  --accent:#5B21B6;
-  --link:#4338CA;
-  --soft:#E2D9F7;
-  --ink:#020617;
-  --muted:#475569;
-  --bg:#f7f5f2;
-}
+        * {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact
+        }
 
-body{
-  margin:0;
-  background:#fff;
-  font-family:Helvetica,Arial,sans-serif;
-  color:var(--ink);
-}
+        :root {
+            --accent: #5B21B6;
+            --link: #4338CA;
+            --soft: #E2D9F7;
+            --ink: #020617;
+            --muted: #475569;
+            --bg: #f7f5f2;
+        }
 
-.poster{
-  width:210mm;
-  height:297mm;
-  overflow:hidden;
-  margin:0 auto;
-  background:var(--bg);
-  display:flex;
-  flex-direction:column;
-  position:relative;
-}
+        body {
+            margin: 0;
+            background: #fff;
+            font-family: Helvetica, Arial, sans-serif;
+            color: var(--ink);
+        }
 
-.logo{
-  position:absolute;
-  top:24px;
-  right:32px;
-}
-.logo img{
-  height:34px;
-  opacity:.9;
-  filter:drop-shadow(0 1px 2px rgba(0,0,0,.25));
-}
+        .poster {
+            width: 210mm;
+            height: 297mm;
+            overflow: hidden;
+            margin: 0 auto;
+            background: var(--bg);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
 
-/* HERO */
-.hero img{
-  width:100%;
-  display:block;
-}
+        .logo {
+            position: absolute;
+            top: 24px;
+            right: 32px;
+        }
 
-.art-credit{
-  font-size:11px;
-  color:#555;
-  font-style:italic;
-  padding:6px 36px 0 36px;
-}
+        .logo img {
+            height: 34px;
+            opacity: .9;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .25));
+        }
 
-/* CONTENT */
-.content{
-  padding:32px 44px 40px 44px;
-}
+        /* HERO */
+        .hero img {
+            width: 100%;
+            display: block;
+        }
 
-/* SERIES */
-.series{
-  font-size:11px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin-bottom:14px;
-}
+        .art-credit {
+            font-size: 11px;
+            color: #555;
+            font-style: italic;
+            padding: 6px 36px 0 36px;
+        }
 
-/* TITLE */
-h1{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:34px;
-  color:var(--ink);
-  line-height:1.12;
-  margin:0 0 14px 0;
-}
+        /* CONTENT */
+        .content {
+            padding: 32px 44px 40px 44px;
+        }
 
-/* SPEAKER */
-.speaker{
-  font-size:20px;
-  margin-bottom:12px;
-}
+        /* SERIES */
+        .series {
+            font-size: 11px;
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 14px;
+        }
 
-/* DISCLAIMER */
-.disclaimer{
-  display:inline-block;
-  font-size:12px;
-  font-style:normal;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:#475569;
-  background:#F5F3FF;
-  border:1px solid #E4DEFB;
-  padding:6px 10px;
-  border-radius:999px;
-  margin-bottom:22px;
-}
+        /* TITLE */
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 34px;
+            color: var(--ink);
+            line-height: 1.12;
+            margin: 0 0 14px 0;
+        }
 
-.disclaimer.spacer{
-  visibility:hidden;
-}
-    
-/* DETAILS BLOCK */
-.details{
-  border-left:4px solid var(--accent);
-  padding-left:18px;
-  margin-bottom:22px;
-}
+        /* SPEAKER */
+        .speaker {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
 
-.details .date{
-  font-family:Georgia,serif;
-  font-size:20px;
-  font-weight:700;
-}
+        /* DISCLAIMER */
+        .disclaimer {
+            display: inline-block;
+            font-size: 12px;
+            font-style: normal;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: #475569;
+            background: #F5F3FF;
+            border: 1px solid #E4DEFB;
+            padding: 6px 10px;
+            border-radius: 999px;
+            margin-bottom: 22px;
+        }
 
-.details .time{
-  font-family:Georgia,serif;
-  font-size:18px;
-  margin-top:2px;
-}
+        .disclaimer.spacer {
+            visibility: hidden;
+        }
 
-.details .tz{
-  color:var(--muted);
-  font-size:15px;
-}
+        /* DETAILS BLOCK */
+        .details {
+            border-left: 4px solid var(--accent);
+            padding-left: 18px;
+            margin-bottom: 22px;
+        }
 
-/* LOCATION */
-.location,
-.online{
-  font-size:16px;
-  line-height:1.55;
-  margin-bottom:16px;
-}
+        .details .date {
+            font-family: Georgia, serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
 
-.online a{
-  color:var(--link);
-  text-decoration:underline;
-}
+        .details .time {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            margin-top: 2px;
+        }
 
-/* DIVIDER */
-.divider{
-  height:1px;
-  background:var(--soft);
-  opacity:1;
-  margin:28px 0 22px 0;
-}
+        .details .tz {
+            color: var(--muted);
+            font-size: 15px;
+        }
 
-/* FOOT TAGS (MINIMAL) */
-.tags{
-  margin-top:12px;
-}
+        /* LOCATION */
+        .location,
+        .online {
+            font-size: 16px;
+            line-height: 1.55;
+            margin-bottom: 16px;
+        }
 
-.tag{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  height:28px;
-  padding:0 14px;
-  font-size:11px;
-  letter-spacing:.12em;
-  text-transform:uppercase;
-  border-radius:999px;
-  margin-right:10px;
-  box-sizing:border-box;
-  white-space:nowrap;
-}
-.tag.inperson{background:var(--accent);color:#fff}
-.tag.online{background:#111827;color:#fff}
+        .online a {
+            color: var(--link);
+            text-decoration: underline;
+        }
 
-@media print{
-  body{background:#fff}
-}
-</style>
+        /* DIVIDER */
+        .divider {
+            height: 1px;
+            background: var(--soft);
+            opacity: 1;
+            margin: 28px 0 22px 0;
+        }
+
+        /* FOOT TAGS (MINIMAL) */
+        .tags {
+            margin-top: 12px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 28px;
+            padding: 0 14px;
+            font-size: 11px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            border-radius: 999px;
+            margin-right: 10px;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+
+        .tag.inperson {
+            background: var(--accent);
+            color: #fff
+        }
+
+        .tag.online {
+            background: #111827;
+            color: #fff
+        }
+
+        @media print {
+            body {
+                background: #fff
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-<div class="poster">
+    <div class="poster">
 
-<!-- LOGO -->
-<div class="logo">
-  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Jewish General Hospital">
-</div>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Jewish General Hospital">
+        </div>
 
-  <!-- HERO IMAGE -->
-  <div class="hero">
-    <img src="https://psychosocial-research-axis.github.io/rounds/images/2026-01-15-psychosocial-hero.jpg" alt="">
-  </div>
-  <div class="art-credit">
-    <em>David Hockney, <i>Portrait of an Artist (Pool with Two Figures)</i>, 1972</em>
-  </div>
+        <!-- HERO IMAGE -->
+        <div class="hero">
+            <img src="https://psychosocial-research-axis.github.io/rounds/images/2026-01-15-psychosocial-hero.jpg" alt="">
+        </div>
+        <div class="art-credit">
+            <em>David Hockney, <i>Portrait of an Artist (Pool with Two Figures)</i>, 1972</em>
+        </div>
 
-  <!-- CONTENT -->
-  <div class="content">
+        <!-- CONTENT -->
+        <div class="content">
 
-    <div class="series">Psychosocial Research Rounds</div>
+            <div class="series">Psychosocial Research Rounds</div>
 
-    <h1>Youth’s Conceptualization of Mental Health and Diagnosis</h1>
+            <h1>Youth’s Conceptualization of Mental Health and Diagnosis</h1>
 
-    <div class="speaker">Yifan Wang, MSc</div>
+            <div class="speaker">Yifan Wang, MSc</div>
 
-<div class="disclaimer spacer"></div>
+            <div class="disclaimer spacer"></div>
 
-    <div class="details">
-      <div class="date">January 15, 2026</div>
-      <div class="time">1:30–2:30 PM <span class="tz">(ET · Montreal)</span></div>
+            <div class="details">
+                <div class="date">January 15, 2026</div>
+                <div class="time">1:30–2:30 PM <span class="tz">(ET · Montreal)</span></div>
+            </div>
+
+            <div class="location">
+                <strong>In person</strong><br>
+                ICFP Amphitheatre<br>
+                4333 Côte-Ste-Catherine Rd., Montreal
+            </div>
+
+            <div class="online">
+                <strong>Online</strong><br>
+                <a href="https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1">
+                    Zoom · ID 884 8894 7071 · Code 984533
+                </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="tags">
+                <span class="tag inperson">In person</span>
+                <span class="tag online">Online</span>
+            </div>
+
+        </div>
     </div>
-
-    <div class="location">
-      <strong>In person</strong><br>
-      ICFP Amphitheatre<br>
-      4333 Côte-Ste-Catherine Rd., Montreal
-    </div>
-
-    <div class="online">
-      <strong>Online</strong><br>
-      <a href="https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1">
-        Zoom · ID 884 8894 7071 · Code 984533
-      </a>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="tags">
-      <span class="tag inperson">In person</span>
-      <span class="tag online">Online</span>
-    </div>
-
-  </div>
-</div>
 </body>
+
 </html>
