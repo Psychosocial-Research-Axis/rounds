@@ -10,7 +10,9 @@
 *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
 :root{
-  --accent:#6D28D9;
+  --accent:#5B21B6;
+  --link:#4338CA;
+  --soft:#E2D9F7;
   --ink:#020617;
   --muted:#475569;
   --bg:#f7f5f2;
@@ -64,6 +66,7 @@ body{
 h1{
   font-family:Georgia,"Times New Roman",serif;
   font-size:34px;
+  color:var(--ink);
   line-height:1.12;
   margin:0 0 14px 0;
 }
@@ -81,9 +84,9 @@ h1{
   font-style:normal;
   letter-spacing:.08em;
   text-transform:uppercase;
-  color:#334155;
-  background:#EDE9FE;
-  border:1px solid #DDD6FE;
+  color:#475569;
+  background:#F5F3FF;
+  border:1px solid #E4DEFB;
   padding:6px 10px;
   border-radius:999px;
   margin-bottom:22px;
@@ -122,15 +125,15 @@ h1{
 }
 
 .online a{
-  color:var(--accent);
+  color:var(--link);
   text-decoration:underline;
 }
 
 /* DIVIDER */
 .divider{
   height:1px;
-  background:var(--accent);
-  opacity:.25;
+  background:var(--soft);
+  opacity:1;
   margin:28px 0 22px 0;
 }
 
