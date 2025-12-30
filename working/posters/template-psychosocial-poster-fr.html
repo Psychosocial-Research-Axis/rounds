@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Séminaires de recherche psychosociale – Affiche</title>
 
-    <style>
+       <style>
         @page {
             size: A4;
             margin: 0
@@ -63,6 +63,13 @@
             overflow: hidden;
             position: relative;
 
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, .06);
         }
 
         .hero img {
