@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psychosocial Research Rounds – Poster</title>
+    
     <style>
         @page {
             size: A4;
@@ -57,8 +58,18 @@
         }
 
         /* HERO */
+        .hero {
+            max-height: 145mm;
+            overflow: hidden;
+            position: relative;
+
+        }
+
         .hero img {
             width: 100%;
+            max-height: 145mm;
+            object-fit: cover;
+            object-position: center 40%;
             display: block;
         }
 
@@ -67,6 +78,9 @@
             color: #555;
             font-style: italic;
             padding: 6px 36px 0 36px;
+            min-height: 32px;
+            max-width: 75%;
+
         }
 
         /* CONTENT */
@@ -89,6 +103,8 @@
             font-size: 34px;
             color: var(--ink);
             line-height: 1.12;
+            max-height: 2.6em;
+            overflow: hidden;
             margin: 0 0 14px 0;
         }
 
