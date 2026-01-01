@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Psychosocial Research Axis//Rounds Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Rounds Calendar
+X-WR-CALNAME:Rounds
 X-WR-CALDESC:Psychosocial Research Axis - Psychosocial, Academic, Cultural, and Clinical Rounds
 BEGIN:VTIMEZONE
 TZID:America/Toronto
