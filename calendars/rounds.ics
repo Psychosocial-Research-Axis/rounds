@@ -4,53 +4,38 @@ PRODID:-//Psychosocial Research Axis//Rounds Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Rounds Calendar
-X-WR-CALDESC:Psychosocial Research Axis — Psychosocial, Academic, Cultural, and Clinical Rounds
+X-WR-CALDESC:Psychosocial Research Axis - Psychosocial, Academic, Cultural, and Clinical Rounds
 
 BEGIN:VEVENT
 UID:20260115-clinical-rounds@psychosocial-research-axis
 DTSTAMP:20251231T190000Z
 DTSTART:20260115T170000Z
 DTEND:20260115T180000Z
-SUMMARY:Clinical Grand Rounds — Coercion in Outpatient Community Mental Health Services
+SUMMARY:Clinical Grand Rounds - Coercion in Outpatient Community Mental Health Services
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal
 DESCRIPTION:Speaker: Arash Nakhost, MD and the Adult Psychosis Program Staff.\nSession chaired by Nasr Farooqi, MD.\nIn person only\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-15-clinical-announcement.html
-URL:
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:This session begins in 15 minutes
-END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260115-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20251231T180000Z
+DTSTAMP:20251231T190000Z
 DTSTART:20260115T183000Z
 DTEND:20260115T193000Z
-SUMMARY:Psychosocial Research Rounds — Youth’s Conceptualization of Mental Health
+SUMMARY:Psychosocial Research Rounds - Youth’s Conceptualization of Mental Health
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
 DESCRIPTION:Speaker: Yifan Wang, MSc.\nSession chaired by Vincent Paquin, MD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-15-psychosocial-announcement.html
 URL:https://us06web.zoom.us/j/88488947071
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:This session begins in 15 minutes
-END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260122-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20251231T180000Z
+DTSTAMP:20251231T190000Z
 DTSTART:20260122T183000Z
 DTEND:20260122T200000Z
-SUMMARY:Psychosocial Research Rounds — Eliminating Cervical Cancer: What Drives Women's HPV Screening
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal · Zoom: https://us06web.zoom.us/j/88488947071
+SUMMARY:Psychosocial Research Rounds - Eliminating Cervical Cancer: What Drives Women's HPV Screening
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
 DESCRIPTION:Speaker: Zeev Rosberger, PhD.\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:This session begins in 15 minutes
-END:VALARM
+URL:https://us06web.zoom.us/j/88488947071
 END:VEVENT
 
 BEGIN:VEVENT
@@ -58,45 +43,170 @@ UID:20260129-cultural-rounds@psychosocial-research-axis
 DTSTAMP:20251231T180000Z
 DTSTART:20260129T183000Z
 DTEND:20260129T200000Z
-SUMMARY:Cultural Psychiatry Rounds — Cultural Variations in Psychosis
+SUMMARY:Cultural Psychiatry Rounds - Cultural Variations in Psychosis
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
 DESCRIPTION:Speaker: G. Eric Jarvis, MD.\nSession chaired by Laurence J. Kirmayer, MD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-29-cultural-announcement.html
 URL:https://us06web.zoom.us/j/88488947071
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:This session begins in 15 minutes
-END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260205-academic-rounds@psychosocial-research-axis
-DTSTAMP:20251231T180000Z
+DTSTAMP:20251231T190000Z
 DTSTART:20260205T183000Z
 DTEND:20260205T200000Z
 SUMMARY:Academic Grand Rounds
-LOCATION:Online: https://us06web.zoom.us/j/88488947071
+LOCATION:Online
 DESCRIPTION:Speaker: Jianzhong Yang, MD.\nSession chaired by Vincent Laliberté, MD.\nOnline only.\nZoom ID: 884 8894 7071 · Code: 984533\n
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:This session begins in 15 minutes
-END:VALARM
+URL:https://us06web.zoom.us/j/88488947071
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260219-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20251231T180000Z
+DTSTAMP:20251231T190000Z
 DTSTART:20260219T183000Z
 DTEND:20260219T200000Z
-SUMMARY:Psychosocial Research Rounds — The Role of Ketamine in Palliative Care
-LOCATION:Online: https://us06web.zoom.us/j/88488947071
-DESCRIPTION:Speaker: Houman Farzing, MD.\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:This session begins in 15 minutes
-END:VALARM
+SUMMARY:Psychosocial Research Rounds - The Role of Ketamine in Palliative Care
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: Houman Farzin, MD.\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260312-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260312T170000Z
+DTEND:20260312T180000Z
+SUMMARY:Clinical Grand Rounds - Child Psychiatry
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: TBA.\nSession chaired by Nasr Farooqi, MD.\nIn person only\n
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260319-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T180000Z
+DTSTART:20260319T183000Z
+DTEND:20260319T200000Z
+SUMMARY:Psychosocial Research Rounds - Cancer Trajectory
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: Carmen G. Loiselle, PhD\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260409-academic-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260409T183000Z
+DTEND:20260409T200000Z
+SUMMARY:Academic Grand Rounds - Neurological Development in Patients with Congenital Heart Disease
+LOCATION:Online
+DESCRIPTION:Speaker: Kei Kobayashi, MD.\nSession chaired by Vincent Laliberté, MD.\nOnline only.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260416-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260416T183000Z
+DTEND:20260416T193000Z
+SUMMARY:Psychosocial Research Rounds - Family Resilience, and Defrosting Ageism through Shared Creative Moments of Perplexity
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speakers: Geneviève Laporte, PhD, and Martina Padovani, MSc.\nSession chaired by Vincent Paquin, MD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260416-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260416T170000Z
+DTEND:20260416T180000Z
+SUMMARY:Clinical Grand Rounds - Psycho-oncology and Neuropsychology
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: TBA.\nSession chaired by Nasr Farooqi, MD.\nIn person only\n
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260423-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T180000Z
+DTSTART:20260423T183000Z
+DTEND:20260423T200000Z
+SUMMARY:Psychosocial Research Rounds - Pain in Critically Ill Adults
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: Céline Gélinas, PhD\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260507-academic-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260507T183000Z
+DTEND:20260507T200000Z
+SUMMARY:Academic Grand Rounds - Mitochondrial Psychobiology: Linking Mitochondria, Stress, Energy, and Aging
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: Martin Picard, PhD.\nSession chaired by Vincent Laliberté, MD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260514-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260514T170000Z
+DTEND:20260514T180000Z
+SUMMARY:Clinical Grand Rounds - Personality Disorders
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: TBA.\nSession chaired by Nasr Farooqi, MD.\nIn person only\n
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260514-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260514T183000Z
+DTEND:20260514T193000Z
+SUMMARY:Psychosocial Research Rounds - Family Mental Health during Perinatal Period, and Exploring the Role of Experiential Avoidance Facets in the Link Between Self-Critical Perfectionism and Anxiety and Depression
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speakers: Adrianne Tan, BSc, and Anya Williamson, BSc.\nSession chaired by Vincent Paquin, MD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260521-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T180000Z
+DTSTART:20260521T183000Z
+DTEND:20260521T200000Z
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: Dorrie Rizzo, PhD\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260604-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260604T170000Z
+DTEND:20260604T200000Z
+SUMMARY:Student Research Day
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Conference chaired by Vincent Paquin, MD.\nIn person only.\n
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260618-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260618T170000Z
+DTEND:20260618T180000Z
+SUMMARY:Clinical Grand Rounds - Mood and Anxiety
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker: TBA.\nSession chaired by Nasr Farooqi, MD.\nIn person only\n
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260618-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T190000Z
+DTSTART:20260618T183000Z
+DTEND:20260618T193000Z
+SUMMARY:Psychosocial Research Rounds - Use of AI Agents to Address Loneliness: A Sentiment and Qualitative Analysis of Shared Experiences, Attitudes, and Beliefs on Reddit
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speakers: Ahmed Al-Asmar, MD.\nSession chaired by Vincent Paquin, MD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
+URL:https://us06web.zoom.us/j/88488947071
 END:VEVENT
 
 END:VCALENDAR
