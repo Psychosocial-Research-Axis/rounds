@@ -8,7 +8,7 @@ X-WR-CALDESC:Psychosocial Research Axis — Psychosocial, Academic, Cultural, an
 
 BEGIN:VEVENT
 UID:20260115-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20251231T160000Z
+DTSTAMP:20251231T180000Z
 DTSTART:20260115T183000Z
 DTEND:20260115T200000Z
 SUMMARY:Clinical Grand Rounds — Coercion in Outpatient Community Mental Health Services
@@ -24,7 +24,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260115-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20251230T160000Z
+DTSTAMP:20251231T180000Z
 DTSTART:20260115T183000Z
 DTEND:20260115T193000Z
 SUMMARY:Psychosocial Research Rounds — Youth’s Conceptualization of Mental Health
@@ -40,7 +40,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260122-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20251231T160000Z
+DTSTAMP:20251231T180000Z
 DTSTART:20260122T183000Z
 DTEND:20260122T200000Z
 SUMMARY:Psychosocial Research Rounds — Eliminating Cervical Cancer: What Drives Women's HPV Screening
@@ -55,7 +55,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260129-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20251231T160000Z
+DTSTAMP:20251231T180000Z
 DTSTART:20260129T183000Z
 DTEND:20260129T200000Z
 SUMMARY:Cultural Psychiatry Rounds — Cultural Variations in Psychosis
@@ -71,12 +71,27 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260205-academic-rounds@psychosocial-research-axis
-DTSTAMP:20251231T160000Z
+DTSTAMP:20251231T180000Z
 DTSTART:20260205T183000Z
 DTEND:20260205T200000Z
 SUMMARY:Academic Grand Rounds
 LOCATION:Online: https://us06web.zoom.us/j/88488947071
 DESCRIPTION:Speaker: Jianzhong Yang, MD.\nSession chaired by Vincent Laliberté, MD.\nOnline only.\nZoom ID: 884 8894 7071 · Code: 984533\n
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:This session begins in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20260219-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20251231T180000Z
+DTSTART:20260219T183000Z
+DTEND:20260219T200000Z
+SUMMARY:Psychosocial Research Rounds — The Role of Ketamine in Palliative Care
+LOCATION:Online: https://us06web.zoom.us/j/88488947071
+DESCRIPTION:Speaker: Houman Farzing, MD.\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 · Code: 984533\n
 BEGIN:VALARM
 TRIGGER:-PT15M
 ACTION:DISPLAY
