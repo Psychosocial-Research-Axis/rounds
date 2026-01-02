@@ -7,15 +7,15 @@
 
 <link rel="alternate" hreflang="en" href="/en">
 <link rel="alternate" hreflang="fr" href="/fr">
+<link rel="alternate" hreflang="x-default" href="/en">
 
 <style>
 :root{
-  /* EDITORIAL, COOL (NO BEIGE) */
-  --bg:#F1F5F9;          /* slate-100 */
+  --bg:#F1F5F9;
   --card:#FFFFFF;
   --ink:#020617;
   --muted:#475569;
-  --soft:#CBD5E1;        /* slate-300 */
+  --soft:#CBD5E1;
   --accent:#5B21B6;
   --accent-soft:#F3E8FF;
 }
@@ -43,7 +43,7 @@ html,body{
     0 24px 60px rgba(2,6,23,.08);
 }
 
-/* LANGUAGE TOGGLE */
+/* LANGUAGE */
 
 .lang-toggle{
   position:absolute;
@@ -53,17 +53,17 @@ html,body{
   gap:6px;
 }
 
-.lang-toggle button{
+.lang-toggle a{
   font-size:12px;
   border:1px solid var(--soft);
   background:#fff;
   color:var(--muted);
   padding:5px 10px;
   border-radius:999px;
-  cursor:pointer;
+  text-decoration:none;
 }
 
-.lang-toggle button.active{
+.lang-toggle a.active{
   color:var(--accent);
   border-color:var(--accent);
   background:var(--accent-soft);
@@ -86,16 +86,8 @@ h1{
   margin:0 0 36px;
 }
 
-p{
-  font-size:15px;
-  line-height:1.7;
-  margin:0 0 16px;
-}
-
-small{
-  font-size:12px;
-  color:var(--muted);
-}
+p{font-size:15px;line-height:1.7;margin:0 0 16px}
+small{font-size:12px;color:var(--muted)}
 
 .calendar-wrap{
   display:flex;
@@ -139,42 +131,10 @@ hr{
   margin:0 0 10px;
 }
 
-.section p{margin:0}
-
 .footer-note{
   margin-top:40px;
   padding-top:20px;
   border-top:1px dashed var(--soft);
-}
-
-/* FOOTER */
-
-.site-footer{
-  margin-top:52px;
-  padding-top:18px;
-  border-top:1px solid var(--soft);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:10px;
-  text-align:center;
-}
-
-.site-footer img{
-  height:22px;
-  width:auto;
-  opacity:.8;
-}
-
-.site-footer small{
-  font-size:11px;
-  color:var(--muted);
-}
-
-/* ACCESSIBILITY */
-
-@media (prefers-reduced-motion: reduce){
-  *{animation:none!important;transition:none!important}
 }
 
 html[lang="fr"]{
@@ -189,9 +149,9 @@ html[lang="fr"]{
 <div class="wrapper">
 <div class="card">
 
-<nav class="lang-toggle" role="navigation" aria-label="Language">
-  <button id="btn-en">🇨🇦 EN</button>
-  <button id="btn-fr">🇨🇦 FR</button>
+<nav class="lang-toggle" aria-label="Language">
+  <a href="/en" id="link-en">🇨🇦 EN</a>
+  <a href="/fr" id="link-fr">🇨🇦 FR</a>
 </nav>
 
 <section data-lang="en">
@@ -210,32 +170,16 @@ html[lang="fr"]{
   </p>
 </section>
 
-<section data-lang="en">
-  <div class="calendar-wrap">
-    <add-to-calendar-button
-      name="Rounds"
-      timeZone="America/Toronto"
-      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
-      subscribe
-      options="'Apple','Google','Yahoo','Microsoft365'"
-      customLabels='{"ms365":"Office 365 / Outlook"}'>
-    </add-to-calendar-button>
-  </div>
-</section>
-
-<section data-lang="fr" hidden>
-  <div class="calendar-wrap">
-    <add-to-calendar-button
-      name="Rounds"
-      timeZone="America/Toronto"
-      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
-      subscribe
-      options="'Apple','Google','Yahoo','Microsoft365'"
-      customLabels='{"ms365":"Office 365 / Outlook"}'
-      language="fr">
-    </add-to-calendar-button>
-  </div>
-</section>
+<div class="calendar-wrap">
+  <add-to-calendar-button
+    name="Rounds"
+    timeZone="America/Toronto"
+    icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
+    subscribe
+    options="'Apple','Google','Yahoo','Microsoft365'"
+    customLabels='{"ms365":"Office 365 / Outlook"}'>
+  </add-to-calendar-button>
+</div>
 
 <section data-lang="en">
   <p><small>If the button doesn’t open your calendar, use the link below.</small></p>
@@ -252,76 +196,60 @@ html[lang="fr"]{
 <hr>
 
 <section data-lang="en">
-<div class="instructions">
-  <div class="section"><h2>Apple</h2><p>Paste the link into your browser and confirm the subscription.</p></div>
-  <div class="section"><h2>Outlook</h2><p>Calendar → Add calendar → Subscribe from web.</p></div>
-  <div class="section"><h2>Google</h2><p>Settings → Add calendar → From URL.</p></div>
-  <div class="section"><h2>Android / Yahoo</h2><p>Subscribe by URL or calendar link.</p></div>
-</div>
+  <div class="instructions">
+    <div class="section"><h2>Apple</h2><p>Paste the link into your browser and confirm the subscription.</p></div>
+    <div class="section"><h2>Outlook</h2><p>Calendar → Add calendar → Subscribe from web.</p></div>
+    <div class="section"><h2>Google</h2><p>Settings → Add calendar → From URL.</p></div>
+    <div class="section"><h2>Android / Yahoo</h2><p>Subscribe by URL or calendar link.</p></div>
+  </div>
 </section>
 
 <section data-lang="fr" hidden>
-<div class="instructions">
-  <div class="section"><h2>Apple</h2><p>Collez le lien dans votre navigateur et confirmez l’abonnement.</p></div>
-  <div class="section"><h2>Outlook</h2><p>Calendrier → Ajouter → S’abonner à partir du Web.</p></div>
-  <div class="section"><h2>Google</h2><p>Paramètres → Ajouter → À partir de l’URL.</p></div>
-  <div class="section"><h2>Android / Yahoo</h2><p>S’abonner par URL ou lien de calendrier.</p></div>
-</div>
+  <div class="instructions">
+    <div class="section"><h2>Apple</h2><p>Collez le lien dans votre navigateur et confirmez l’abonnement.</p></div>
+    <div class="section"><h2>Outlook</h2><p>Calendrier → Ajouter → S’abonner à partir du Web.</p></div>
+    <div class="section"><h2>Google</h2><p>Paramètres → Ajouter → À partir de l’URL.</p></div>
+    <div class="section"><h2>Android / Yahoo</h2><p>S’abonner par URL ou lien de calendrier.</p></div>
+  </div>
 </section>
 
 <section data-lang="en">
-<div class="footer-note">
-  <small>Imported calendars do not update automatically.</small>
-</div>
+  <div class="footer-note">
+    <small>Imported calendars do not update automatically.</small>
+  </div>
 </section>
 
 <section data-lang="fr" hidden>
-<div class="footer-note">
-  <small>Les calendriers importés ne se mettent pas à jour automatiquement.</small>
-</div>
-</section>
-
-<section data-lang="en">
-<footer class="site-footer">
-  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Psychosocial Research Axis">
-  <small>Psychosocial Research Axis · JGH</small>
-</footer>
-</section>
-
-<section data-lang="fr" hidden>
-<footer class="site-footer">
-  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Axe de recherche psychosociale">
-  <small>Axe de recherche psychosociale · JGH</small>
-</footer>
+  <div class="footer-note">
+    <small>Les calendriers importés ne se mettent pas à jour automatiquement.</small>
+  </div>
 </section>
 
 </div>
 </div>
 
 <script>
-const sections=document.querySelectorAll('[data-lang]');
-const btnEn=document.getElementById('btn-en');
-const btnFr=document.getElementById('btn-fr');
+const sections = document.querySelectorAll('[data-lang]');
+const linkEn = document.getElementById('link-en');
+const linkFr = document.getElementById('link-fr');
 
-function setLang(lang,push=true){
-  sections.forEach(s=>s.hidden=s.dataset.lang!==lang);
-  btnEn.classList.toggle('active',lang==='en');
-  btnFr.classList.toggle('active',lang==='fr');
-  btnEn.setAttribute('aria-pressed',lang==='en');
-  btnFr.setAttribute('aria-pressed',lang==='fr');
-  document.documentElement.lang=lang;
-  if(push) history.pushState({},'',`/${lang}`);
+function setLang(lang, push=true){
+  sections.forEach(s => s.hidden = s.dataset.lang !== lang);
+  linkEn.classList.toggle('active', lang === 'en');
+  linkFr.classList.toggle('active', lang === 'fr');
+  document.documentElement.lang = lang;
+  if (push) history.pushState({}, '', '/' + lang);
 }
 
-btnEn.onclick=()=>setLang('en');
-btnFr.onclick=()=>setLang('fr');
+[linkEn, linkFr].forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    setLang(link === linkFr ? 'fr' : 'en');
+  });
+});
 
-if(!location.pathname.startsWith('/en')&&!location.pathname.startsWith('/fr')){
-  history.replaceState({},'', '/en');
-}
-
-const pathLang=location.pathname.startsWith('/fr')?'fr':'en';
-setLang(pathLang,false);
+const initialLang = location.pathname.startsWith('/fr') ? 'fr' : 'en';
+setLang(initialLang, false);
 </script>
 
 </body>
