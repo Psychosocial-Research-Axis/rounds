@@ -10,13 +10,14 @@
 
 <style>
 :root{
-  --bg:#F7F5F2;
+  /* EDITORIAL, COOL (NO BEIGE) */
+  --bg:#F1F5F9;          /* slate-100 */
   --card:#FFFFFF;
   --ink:#020617;
   --muted:#475569;
-  --soft:#E5E7EB;
+  --soft:#CBD5E1;        /* slate-300 */
   --accent:#5B21B6;
-  --accent-soft:#EDE9FE;
+  --accent-soft:#F3E8FF;
 }
 
 html,body{
@@ -27,41 +28,43 @@ html,body{
 }
 
 .wrapper{
-  max-width:1080px;
+  max-width:940px;
   margin:0 auto;
-  padding:clamp(40px,6vw,96px) 20px;
+  padding:clamp(36px,6vw,84px) 18px;
 }
 
 .card{
   position:relative;
   background:var(--card);
-  padding:clamp(36px,5vw,84px);
-  border-radius:20px;
-  box-shadow:0 14px 48px rgba(0,0,0,.055);
+  padding:clamp(32px,4.5vw,72px);
+  border-radius:18px;
+  box-shadow:
+    0 1px 0 rgba(2,6,23,.05),
+    0 24px 60px rgba(2,6,23,.08);
 }
 
 /* LANGUAGE TOGGLE */
 
 .lang-toggle{
   position:absolute;
-  top:22px;
-  right:26px;
+  top:18px;
+  right:20px;
   display:flex;
-  gap:8px;
+  gap:6px;
 }
 
 .lang-toggle button{
-  font-size:13px;
+  font-size:12px;
   border:1px solid var(--soft);
   background:#fff;
   color:var(--muted);
-  padding:6px 10px;
+  padding:5px 10px;
   border-radius:999px;
   cursor:pointer;
 }
 
 .lang-toggle button.active{
-  color:var(--ink);
+  color:var(--accent);
   border-color:var(--accent);
   background:var(--accent-soft);
 }
@@ -70,35 +73,43 @@ html,body{
 
 h1{
   font-family:Georgia,Times,serif;
-  font-size:clamp(32px,3.4vw,42px);
-  line-height:1.22;
+  font-size:clamp(28px,3.2vw,36px);
+  line-height:1.2;
   margin:0 0 16px;
 }
 
 .lede{
-  font-size:19px;
+  font-size:17px;
   line-height:1.75;
   color:var(--muted);
-  max-width:64ch;
-  margin:0 0 40px;
+  max-width:62ch;
+  margin:0 0 36px;
 }
 
-p{font-size:16px;line-height:1.7;margin:0 0 16px}
-small{font-size:13px;color:var(--muted)}
+p{
+  font-size:15px;
+  line-height:1.7;
+  margin:0 0 16px;
+}
+
+small{
+  font-size:12px;
+  color:var(--muted);
+}
 
 .calendar-wrap{
   display:flex;
   justify-content:center;
-  margin:40px 0 18px;
+  margin:36px 0 18px;
 }
 
 .code{
   margin-top:14px;
-  background:var(--accent-soft);
-  padding:16px 20px;
+  background:#F8FAFC;
+  padding:16px 18px;
   border-radius:14px;
   font-family:ui-monospace,Menlo,monospace;
-  font-size:14px;
+  font-size:13px;
   border:1px solid var(--soft);
   word-break:break-all;
 }
@@ -106,13 +117,13 @@ small{font-size:13px;color:var(--muted)}
 hr{
   border:none;
   border-top:1px solid var(--soft);
-  margin:56px 0;
+  margin:52px 0;
 }
 
 .instructions{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:32px;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:28px;
 }
 
 .section{
@@ -121,8 +132,8 @@ hr{
 }
 
 .section h2{
-  font-size:12px;
-  letter-spacing:.14em;
+  font-size:11px;
+  letter-spacing:.16em;
   text-transform:uppercase;
   color:var(--accent);
   margin:0 0 10px;
@@ -131,15 +142,15 @@ hr{
 .section p{margin:0}
 
 .footer-note{
-  margin-top:44px;
-  padding-top:22px;
+  margin-top:40px;
+  padding-top:20px;
   border-top:1px dashed var(--soft);
 }
 
 /* FOOTER */
 
 .site-footer{
-  margin-top:56px;
+  margin-top:52px;
   padding-top:18px;
   border-top:1px solid var(--soft);
   display:flex;
@@ -150,13 +161,13 @@ hr{
 }
 
 .site-footer img{
-  height:26px;
+  height:22px;
   width:auto;
-  opacity:.75;
+  opacity:.8;
 }
 
 .site-footer small{
-  font-size:12px;
+  font-size:11px;
   color:var(--muted);
 }
 
@@ -273,14 +284,14 @@ html[lang="fr"]{
 <section data-lang="en">
 <footer class="site-footer">
   <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Psychosocial Research Axis">
-  <small>Psychosocial Research Axis · Montreal</small>
+  <small>Psychosocial Research Axis · JGH</small>
 </footer>
 </section>
 
 <section data-lang="fr" hidden>
 <footer class="site-footer">
   <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Axe de recherche psychosociale">
-  <small>Axe de recherche psychosociale · Montréal</small>
+  <small>Axe de recherche psychosociale · JGH</small>
 </footer>
 </section>
 
