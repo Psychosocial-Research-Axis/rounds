@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+
+<script>
+(function () {
+  const lang = location.pathname.startsWith('/fr') ? 'fr' : 'en';
+  location.replace('/' + lang);
+})();
+</script>
