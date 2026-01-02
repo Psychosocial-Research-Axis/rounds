@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Rounds Calendar</title>
 
-<link rel="alternate" hreflang="en" href="/en">
-<link rel="alternate" hreflang="fr" href="/fr">
-<link rel="alternate" hreflang="x-default" href="/en">
+<link rel="alternate" hreflang="en" href="/rounds/en">
+<link rel="alternate" hreflang="fr" href="/rounds/fr">
+<link rel="alternate" hreflang="x-default" href="/rounds/en">
 
 <style>
 :root{
@@ -137,6 +137,30 @@ hr{
   border-top:1px dashed var(--soft);
 }
 
+/* SITE FOOTER */
+
+.site-footer{
+  margin-top:52px;
+  padding-top:18px;
+  border-top:1px solid var(--soft);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  text-align:center;
+}
+
+.site-footer img{
+  height:22px;
+  width:auto;
+  opacity:.85;
+}
+
+.site-footer small{
+  font-size:11px;
+  color:var(--muted);
+}
+
 html[lang="fr"]{
   font-feature-settings:"kern","liga","clig";
 }
@@ -150,10 +174,11 @@ html[lang="fr"]{
 <div class="card">
 
 <nav class="lang-toggle" aria-label="Language">
-  <a href="/en" id="link-en">🇨🇦 EN</a>
-  <a href="/fr" id="link-fr">🇨🇦 FR</a>
+  <a href="#en" id="link-en">🇨🇦 EN</a>
+  <a href="#fr" id="link-fr">🇨🇦 FR</a>
 </nav>
 
+<!-- EN -->
 <section data-lang="en">
   <h1>Subscribe to the Rounds Calendar</h1>
   <p class="lede">
@@ -162,6 +187,7 @@ html[lang="fr"]{
   </p>
 </section>
 
+<!-- FR -->
 <section data-lang="fr" hidden>
   <h1>S’abonner au calendrier des Rounds</h1>
   <p class="lede">
@@ -170,16 +196,33 @@ html[lang="fr"]{
   </p>
 </section>
 
-<div class="calendar-wrap">
-  <add-to-calendar-button
-    name="Rounds"
-    timeZone="America/Toronto"
-    icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
-    subscribe
-    options="'Apple','Google','Yahoo','Microsoft365'"
-    customLabels='{"ms365":"Office 365 / Outlook"}'>
-  </add-to-calendar-button>
-</div>
+<!-- BUTTONS -->
+<section data-lang="en">
+  <div class="calendar-wrap">
+    <add-to-calendar-button
+      name="Rounds"
+      timeZone="America/Toronto"
+      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
+      subscribe
+      options="'Apple','Google','Yahoo','Microsoft365'"
+      customLabels='{"ms365":"Office 365 / Outlook"}'>
+    </add-to-calendar-button>
+  </div>
+</section>
+
+<section data-lang="fr" hidden>
+  <div class="calendar-wrap">
+    <add-to-calendar-button
+      name="Rounds"
+      timeZone="America/Toronto"
+      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
+      subscribe
+      options="'Apple','Google','Yahoo','Microsoft365'"
+      customLabels='{"ms365":"Office 365 / Outlook"}'
+      language="fr">
+    </add-to-calendar-button>
+  </div>
+</section>
 
 <section data-lang="en">
   <p><small>If the button doesn’t open your calendar, use the link below.</small></p>
@@ -195,24 +238,26 @@ html[lang="fr"]{
 
 <hr>
 
+<!-- INSTRUCTIONS -->
 <section data-lang="en">
-  <div class="instructions">
-    <div class="section"><h2>Apple</h2><p>Paste the link into your browser and confirm the subscription.</p></div>
-    <div class="section"><h2>Outlook</h2><p>Calendar → Add calendar → Subscribe from web.</p></div>
-    <div class="section"><h2>Google</h2><p>Settings → Add calendar → From URL.</p></div>
-    <div class="section"><h2>Android / Yahoo</h2><p>Subscribe by URL or calendar link.</p></div>
-  </div>
+<div class="instructions">
+  <div class="section"><h2>Apple</h2><p>Paste the link into your browser and confirm the subscription.</p></div>
+  <div class="section"><h2>Outlook</h2><p>Calendar → Add calendar → Subscribe from web.</p></div>
+  <div class="section"><h2>Google</h2><p>Settings → Add calendar → From URL.</p></div>
+  <div class="section"><h2>Android / Yahoo</h2><p>Subscribe by URL or calendar link.</p></div>
+</div>
 </section>
 
 <section data-lang="fr" hidden>
-  <div class="instructions">
-    <div class="section"><h2>Apple</h2><p>Collez le lien dans votre navigateur et confirmez l’abonnement.</p></div>
-    <div class="section"><h2>Outlook</h2><p>Calendrier → Ajouter → S’abonner à partir du Web.</p></div>
-    <div class="section"><h2>Google</h2><p>Paramètres → Ajouter → À partir de l’URL.</p></div>
-    <div class="section"><h2>Android / Yahoo</h2><p>S’abonner par URL ou lien de calendrier.</p></div>
-  </div>
+<div class="instructions">
+  <div class="section"><h2>Apple</h2><p>Collez le lien dans votre navigateur et confirmez l’abonnement.</p></div>
+  <div class="section"><h2>Outlook</h2><p>Calendrier → Ajouter → S’abonner à partir du Web.</p></div>
+  <div class="section"><h2>Google</h2><p>Paramètres → Ajouter → À partir de l’URL.</p></div>
+  <div class="section"><h2>Android / Yahoo</h2><p>S’abonner par URL ou lien de calendrier.</p></div>
+</div>
 </section>
 
+<!-- FOOTER NOTES -->
 <section data-lang="en">
   <div class="footer-note">
     <small>Imported calendars do not update automatically.</small>
@@ -225,32 +270,42 @@ html[lang="fr"]{
   </div>
 </section>
 
+<!-- SITE FOOTERS -->
+<section data-lang="en">
+<footer class="site-footer">
+  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Psychosocial Research Axis">
+  <small>Psychosocial Research Axis · Jewish General Hospital</small>
+</footer>
+</section>
+
+<section data-lang="fr" hidden>
+<footer class="site-footer">
+  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Axe de recherche psychosociale">
+  <small>Axe de recherche psychosociale · Hôpital général juif</small>
+</footer>
+</section>
+
 </div>
 </div>
 
 <script>
-const sections = document.querySelectorAll('[data-lang]');
-const linkEn = document.getElementById('link-en');
-const linkFr = document.getElementById('link-fr');
+const sections=document.querySelectorAll('[data-lang]');
+const en=document.getElementById('link-en');
+const fr=document.getElementById('link-fr');
 
 function setLang(lang){
-  sections.forEach(s => s.hidden = s.dataset.lang !== lang);
-  linkEn.classList.toggle('active', lang === 'en');
-  linkFr.classList.toggle('active', lang === 'fr');
-  document.documentElement.lang = lang;
+  sections.forEach(s=>s.hidden=s.dataset.lang!==lang);
+  en.classList.toggle('active',lang==='en');
+  fr.classList.toggle('active',lang==='fr');
+  document.documentElement.lang=lang;
 }
 
-[linkEn, linkFr].forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const lang = link === linkFr ? 'fr' : 'en';
-    history.replaceState({}, '', '#' + lang);
-    setLang(lang);
-  });
-});
+function init(){
+  setLang(location.hash==='#fr'?'fr':'en');
+}
 
-const hashLang = location.hash === '#fr' ? 'fr' : 'en';
-setLang(hashLang);
+window.addEventListener('hashchange',init);
+init();
 </script>
 
 </body>
