@@ -233,23 +233,24 @@ const sections = document.querySelectorAll('[data-lang]');
 const linkEn = document.getElementById('link-en');
 const linkFr = document.getElementById('link-fr');
 
-function setLang(lang, push=true){
+function setLang(lang){
   sections.forEach(s => s.hidden = s.dataset.lang !== lang);
   linkEn.classList.toggle('active', lang === 'en');
   linkFr.classList.toggle('active', lang === 'fr');
   document.documentElement.lang = lang;
-  if (push) history.pushState({}, '', '/' + lang);
 }
 
 [linkEn, linkFr].forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
-    setLang(link === linkFr ? 'fr' : 'en');
+    const lang = link === linkFr ? 'fr' : 'en';
+    history.replaceState({}, '', '#' + lang);
+    setLang(lang);
   });
 });
 
-const initialLang = location.pathname.startsWith('/fr') ? 'fr' : 'en';
-setLang(initialLang, false);
+const hashLang = location.hash === '#fr' ? 'fr' : 'en';
+setLang(hashLang);
 </script>
 
 </body>
