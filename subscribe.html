@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Subscribe to the Rounds Calendar</title>
+<title>Rounds Calendar</title>
+
+<link rel="alternate" hreflang="en" href="/en">
+<link rel="alternate" hreflang="fr" href="/fr">
 
 <style>
 :root{
@@ -12,12 +15,9 @@
   --ink:#020617;
   --muted:#475569;
   --soft:#E5E7EB;
-
   --accent:#5B21B6;
   --accent-soft:#EDE9FE;
 }
-
-/* BASE */
 
 html,body{
   margin:0;
@@ -35,9 +35,9 @@ html,body{
 .card{
   position:relative;
   background:var(--card);
-  padding:clamp(40px,5vw,84px);
+  padding:clamp(36px,5vw,84px);
   border-radius:20px;
-  box-shadow:0 18px 56px rgba(0,0,0,.06);
+  box-shadow:0 14px 48px rgba(0,0,0,.055);
 }
 
 /* LANGUAGE TOGGLE */
@@ -47,88 +47,67 @@ html,body{
   top:22px;
   right:26px;
   display:flex;
-  gap:10px;
+  gap:8px;
 }
 
-.lang-toggle a{
+.lang-toggle button{
   font-size:13px;
-  text-decoration:none;
+  border:1px solid var(--soft);
+  background:#fff;
   color:var(--muted);
-  display:flex;
-  align-items:center;
-  gap:6px;
   padding:6px 10px;
   border-radius:999px;
-  border:1px solid var(--soft);
+  cursor:pointer;
 }
 
-.lang-toggle a.active{
+.lang-toggle button.active{
   color:var(--ink);
   border-color:var(--accent);
   background:var(--accent-soft);
 }
 
-/* TYPOGRAPHY */
+/* TYPE */
 
 h1{
   font-family:Georgia,Times,serif;
   font-size:clamp(32px,3.4vw,42px);
-  line-height:1.25;
-  margin:0 0 18px;
+  line-height:1.22;
+  margin:0 0 16px;
 }
 
 .lede{
-  font-size:18px;
+  font-size:19px;
   line-height:1.75;
   color:var(--muted);
   max-width:64ch;
   margin:0 0 40px;
 }
 
-p{
-  font-size:15px;
-  line-height:1.65;
-  margin:0 0 16px;
-}
-
-small{
-  font-size:13px;
-  line-height:1.5;
-  color:var(--muted);
-}
-
-/* CALENDAR */
+p{font-size:16px;line-height:1.7;margin:0 0 16px}
+small{font-size:13px;color:var(--muted)}
 
 .calendar-wrap{
   display:flex;
   justify-content:center;
-  margin:40px 0 22px;
+  margin:40px 0 18px;
 }
-
-/* LINK BLOCK */
 
 .code{
   margin-top:14px;
   background:var(--accent-soft);
   padding:16px 20px;
   border-radius:14px;
-  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-family:ui-monospace,Menlo,monospace;
   font-size:14px;
-  line-height:1.5;
-  color:var(--ink);
-  word-break:break-all;
   border:1px solid var(--soft);
+  word-break:break-all;
 }
-
-/* SEPARATORS */
 
 hr{
   border:none;
   border-top:1px solid var(--soft);
-  margin:60px 0;
+  margin:56px 0;
 }
-
-/* INSTRUCTIONS */
 
 .instructions{
   display:grid;
@@ -143,25 +122,52 @@ hr{
 
 .section h2{
   font-size:12px;
-  letter-spacing:.16em;
+  letter-spacing:.14em;
   text-transform:uppercase;
   color:var(--accent);
   margin:0 0 10px;
 }
 
-.section p{
-  font-size:15px;
-  line-height:1.6;
-  color:var(--muted);
-  margin:0;
-}
-
-/* FOOTER */
+.section p{margin:0}
 
 .footer-note{
   margin-top:44px;
   padding-top:22px;
   border-top:1px dashed var(--soft);
+}
+
+/* FOOTER */
+
+.site-footer{
+  margin-top:56px;
+  padding-top:18px;
+  border-top:1px solid var(--soft);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  text-align:center;
+}
+
+.site-footer img{
+  height:26px;
+  width:auto;
+  opacity:.75;
+}
+
+.site-footer small{
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+}
+
+html[lang="fr"]{
+  font-feature-settings:"kern","liga","clig";
 }
 </style>
 
@@ -170,71 +176,142 @@ hr{
 
 <body>
 <div class="wrapper">
-  <div class="card">
+<div class="card">
 
-    <!-- LANGUAGE SWITCH -->
-    <nav class="lang-toggle">
-      <a href="#" class="active" lang="en" aria-label="English">
-        🇨🇦 EN
-      </a>
-      <a href="#" lang="fr" aria-label="Français">
-        🇫🇷 FR
-      </a>
-    </nav>
+<nav class="lang-toggle" role="navigation" aria-label="Language">
+  <button id="btn-en">🇨🇦 EN</button>
+  <button id="btn-fr">🇨🇦 FR</button>
+</nav>
 
-    <h1>Subscribe to the Rounds Calendar</h1>
+<section data-lang="en">
+  <h1>Subscribe to the Rounds Calendar</h1>
+  <p class="lede">
+    Upcoming Psychosocial, Academic, Cultural, and Clinical Rounds.
+    Subscribing keeps sessions automatically updated across devices.
+  </p>
+</section>
 
-    <p class="lede">
-      Upcoming Psychosocial, Academic, Cultural, and Clinical Rounds.
-      Subscribing keeps sessions automatically updated across devices.
-    </p>
+<section data-lang="fr" hidden>
+  <h1>S’abonner au calendrier des Rounds</h1>
+  <p class="lede">
+    Séminaires psychosociaux, académiques, culturels et cliniques à venir.
+    L’abonnement assure la mise à jour automatique des séances sur tous vos appareils.
+  </p>
+</section>
 
-    <div class="calendar-wrap">
-      <add-to-calendar-button
-        name="Rounds"
-        timeZone="America/Toronto"
-        icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
-        subscribe
-        options="'Apple','Google','Yahoo','Microsoft365'"
-        customLabels='{"ms365":"Office 365 / Outlook"}'>
-      </add-to-calendar-button>
-    </div>
-
-    <p><small>If the button doesn’t open your calendar, use the link below.</small></p>
-
-    <div class="code">
-      webcal://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics
-    </div>
-
-    <hr>
-
-    <div class="instructions">
-      <div class="section">
-        <h2>Apple Calendar</h2>
-        <p>Paste the link into your browser and confirm the subscription.</p>
-      </div>
-
-      <div class="section">
-        <h2>Outlook</h2>
-        <p>Calendar → Add calendar → Subscribe from web → paste the link.</p>
-      </div>
-
-      <div class="section">
-        <h2>Google Calendar</h2>
-        <p>Settings → Add calendar → From URL → paste the link.</p>
-      </div>
-
-      <div class="section">
-        <h2>Android / Yahoo</h2>
-        <p>Use “Subscribe by URL” or “Add calendar by link.”</p>
-      </div>
-    </div>
-
-    <div class="footer-note">
-      <small>Imported calendars do not update automatically.</small>
-    </div>
-
+<section data-lang="en">
+  <div class="calendar-wrap">
+    <add-to-calendar-button
+      name="Rounds"
+      timeZone="America/Toronto"
+      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
+      subscribe
+      options="'Apple','Google','Yahoo','Microsoft365'"
+      customLabels='{"ms365":"Office 365 / Outlook"}'>
+    </add-to-calendar-button>
   </div>
+</section>
+
+<section data-lang="fr" hidden>
+  <div class="calendar-wrap">
+    <add-to-calendar-button
+      name="Rounds"
+      timeZone="America/Toronto"
+      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
+      subscribe
+      options="'Apple','Google','Yahoo','Microsoft365'"
+      customLabels='{"ms365":"Office 365 / Outlook"}'
+      language="fr">
+    </add-to-calendar-button>
+  </div>
+</section>
+
+<section data-lang="en">
+  <p><small>If the button doesn’t open your calendar, use the link below.</small></p>
+</section>
+
+<section data-lang="fr" hidden>
+  <p><small>Si le bouton ne s’ouvre pas, utilisez le lien ci-dessous.</small></p>
+</section>
+
+<div class="code">
+  webcal://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics
 </div>
+
+<hr>
+
+<section data-lang="en">
+<div class="instructions">
+  <div class="section"><h2>Apple</h2><p>Paste the link into your browser and confirm the subscription.</p></div>
+  <div class="section"><h2>Outlook</h2><p>Calendar → Add calendar → Subscribe from web.</p></div>
+  <div class="section"><h2>Google</h2><p>Settings → Add calendar → From URL.</p></div>
+  <div class="section"><h2>Android / Yahoo</h2><p>Subscribe by URL or calendar link.</p></div>
+</div>
+</section>
+
+<section data-lang="fr" hidden>
+<div class="instructions">
+  <div class="section"><h2>Apple</h2><p>Collez le lien dans votre navigateur et confirmez l’abonnement.</p></div>
+  <div class="section"><h2>Outlook</h2><p>Calendrier → Ajouter → S’abonner à partir du Web.</p></div>
+  <div class="section"><h2>Google</h2><p>Paramètres → Ajouter → À partir de l’URL.</p></div>
+  <div class="section"><h2>Android / Yahoo</h2><p>S’abonner par URL ou lien de calendrier.</p></div>
+</div>
+</section>
+
+<section data-lang="en">
+<div class="footer-note">
+  <small>Imported calendars do not update automatically.</small>
+</div>
+</section>
+
+<section data-lang="fr" hidden>
+<div class="footer-note">
+  <small>Les calendriers importés ne se mettent pas à jour automatiquement.</small>
+</div>
+</section>
+
+<section data-lang="en">
+<footer class="site-footer">
+  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Psychosocial Research Axis">
+  <small>Psychosocial Research Axis · Montreal</small>
+</footer>
+</section>
+
+<section data-lang="fr" hidden>
+<footer class="site-footer">
+  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Axe de recherche psychosociale">
+  <small>Axe de recherche psychosociale · Montréal</small>
+</footer>
+</section>
+
+</div>
+</div>
+
+<script>
+const sections=document.querySelectorAll('[data-lang]');
+const btnEn=document.getElementById('btn-en');
+const btnFr=document.getElementById('btn-fr');
+
+function setLang(lang,push=true){
+  sections.forEach(s=>s.hidden=s.dataset.lang!==lang);
+  btnEn.classList.toggle('active',lang==='en');
+  btnFr.classList.toggle('active',lang==='fr');
+  btnEn.setAttribute('aria-pressed',lang==='en');
+  btnFr.setAttribute('aria-pressed',lang==='fr');
+  document.documentElement.lang=lang;
+  if(push) history.pushState({},'',`/${lang}`);
+}
+
+btnEn.onclick=()=>setLang('en');
+btnFr.onclick=()=>setLang('fr');
+
+if(!location.pathname.startsWith('/en')&&!location.pathname.startsWith('/fr')){
+  history.replaceState({},'', '/en');
+}
+
+const pathLang=location.pathname.startsWith('/fr')?'fr':'en';
+setLang(pathLang,false);
+</script>
+
 </body>
 </html>
