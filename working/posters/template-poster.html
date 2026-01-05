@@ -159,6 +159,7 @@
             .online {
                 font-size: 16px;
                 line-height: 1.55;
+                margin-top: 12px;
                 margin-bottom: 16px;
             }
             .online a {
@@ -204,6 +205,121 @@
     </head>
     <body class="en">
         <div class="poster">
+            <!--
+FIND-AND-REPLACE GUIDE — DO NOT DELETE
+REPLACE EVERY TOKEN BELOW (EXACT MATCH)
+
+================================
+A) CORE
+================================
+DATE ISO: DATE-ISO
+SERIES SHORTNAME: SERIES-SHORTNAME
+SERIES COLOR: SERIES-COLOR
+SERIES EN: SERIES-EN
+SERIES FR: SERIES-FR
+
+=====================
+B) TITLES
+=====================
+TITLE EN: TITLE-EN
+TITLE FR: TITLE-FR
+
+=====================
+C) DATE & TIME
+=====================
+MONTH EN: MONTH-EN
+MONTH FR: MONTH-FR
+DD(number): DAY
+YR(number): YEAR
+STARTTIME EN: STARTTIME-EN
+ENDTIME EN: ENDTIME-EN
+STARTTIME FR: STARTTIME-FR
+ENDTIME FR: ENDTIME-FR
+TIMEZONE EN: TIMEZONE-EN
+TIMEZONE FR: TIMEZONE-FR
+
+=====================
+D) SPEAKER
+=====================
+SPEAKER NAME: SPEAKER-NAME
+SPEAKER2 NAME EN: SPEAKER2-NAME-EN
+SPEAKER2 NAME FR: SPEAKER2-NAME-FR
+
+=====================
+E) LOCATION
+=====================
+ROOM EN: ROOM-EN
+ROOM FR: ROOM-FR
+ADDRESS EN: ADDRESS-EN
+ADDRESS FR: ADDRESS-FR
+
+=====================
+F) TAGS
+=====================
+INPERSONTAG EN: INPERSONTAG-EN
+INPERSONTAG FR: INPERSONTAG-FR
+ONLINETAG EN: ONLINETAG-EN
+ONLINETAG FR: ONLINETAG-FR
+ZOOM LINK: ZOOM-LINK
+ZOOM ID: ZOOM-ID
+ZOOM CODE: ZOOM-CODE
+
+=====================
+G) ARTWORK
+=====================
+ARTIST NAME: ARTIST-NAME
+TITLE ART EN: TITLE-ART-EN
+TITLE ART FR: TITLE-ART-FR
+YR ART: YR-ART
+
+================================
+H) SERIES REFERENCE (READ ONLY)
+================================
+SHORTNAMES
+academic
+psychosocial
+cultural
+clinical
+
+COLORS
+#1D4ED8 academic
+#5B21B6 psychosocial
+#BE185D cultural
+#065F46 clinical
+
+SERIES NAMES
+Academic Grand Rounds
+Psychosocial Research Rounds
+Cultural Psychiatry Rounds
+Clinical Grand Rounds
+
+Séminaires académiques
+Séminaires de recherche psychosociale
+Séminaires de psychiatrie culturelle
+Séminaires cliniques
+
+================================
+I) TAGS REFERENCE (READ ONLY)
+================================
+IF HYBRID, USE BOTH TAGS:
+INPERSONTAG EN: In person
+INPERSONTAG FR: En personne
+ONLINETAG EN: Online
+ONLINETAG FR: En ligne
+
+IF IN-PERSON ONLY, USE THIS TAG:
+INPERSONTAG EN: In person only
+INPERSONTAG FR: En personne seulement
+ONLINETAG EN: (leave blank)
+ONLINETAG FR: (leave blank)
+
+IF ONLINE ONLY, USE THIS TAG:
+INPERSONTAG EN: (leave blank)
+INPERSONTAG FR: (leave blank)
+ONLINETAG EN: Online only
+ONLINETAG FR: En ligne seulement
+
+-->
             <!-- ====== ENGLISH ====== -->
             <div class="en-only">
                 <!-- LOGO -->
@@ -234,14 +350,12 @@
                         <div class="time">STARTTIME-EN - ENDTIME-EN <span class="tz">(TIMEZONE-EN)</span></div>
                     </div>
                     <div class="location">
-                        <strong>INPERSON-EN</strong><br />
                         ROOM-EN<br />
                         ADDRESS-EN
                     </div>
                     <div class="online">
-                        <strong>ONLINE-EN</strong><br />
                         <a href="ZOOM-LINK">Zoom</a>
-                        · ID ZOOM-ID · Code ZOOM-CODE
+                        <span style="color: #64748b"> · ID ZOOM-ID · Code ZOOM-CODE</span>
                     </div>
                     <div class="divider"></div>
                     <div class="tags">
@@ -282,14 +396,12 @@
                         <div class="time">STARTTIME-FR - ENDTIME-FR <span class="tz">(TIMEZONE-FR)</span></div>
                     </div>
                     <div class="location">
-                        <strong>INPERSON-FR</strong><br />
                         ROOM-FR<br />
                         ADDRESS-FR
                     </div>
                     <div class="online">
-                        <strong>ONLINE-FR</strong><br />
                         <a href="ZOOM-LINK">Zoom</a>
-                        · ID ZOOM-ID · Code ZOOM-CODE
+                        <span style="color: #64748b"> · ID ZOOM-ID · Code ZOOM-CODE</span>
                     </div>
                     <div class="divider"></div>
                     <div class="tags">
