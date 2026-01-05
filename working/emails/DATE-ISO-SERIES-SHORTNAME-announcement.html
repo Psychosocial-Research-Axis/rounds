@@ -117,12 +117,12 @@ ADDRESS EN: ADDRESS-EN
 ADDRESS FR: ADDRESS-FR
 
 =====================
-F) FORMAT (If hybrid leave blank.)
+F) TAGS
 =====================
-IN PERSON ONLY EN: INPERSONONLY-EN
-IN PERSON ONLY FR: INPERSONONLY-FR
-ONLINE ONLY EN: ONLINEONLY-EN
-ONLINE ONLY FR: ONLINEONLY-FR
+INPERSONTAG EN: INPERSONTAG-EN
+INPERSONTAG FR: INPERSONTAG-FR
+ONLINETAG EN: ONLINETAG-EN
+ONLINETAG FR: ONLINETAG-FR
 ZOOM LINK: ZOOM-LINK
 ZOOM ID: ZOOM-ID
 ZOOM CODE: ZOOM-CODE
@@ -185,17 +185,26 @@ Vincent Paquin, MD psychosocial
 Laurence J. Kirmayer, MD cultural
 Nasr Farooqi, MD clinical
 
-
 ================================
-J) FORMAT REFERENCE (READ ONLY)
+J) TAGS REFERENCE (READ ONLY)
 ================================
-If hybrid leave blank.
+IF HYBRID, USE BOTH TAGS:
+INPERSONTAG EN: In person
+INPERSONTAG FR: En personne
+ONLINETAG EN: Online
+ONLINETAG FR: En ligne
 
-In person only
-En personne seulement
+IF IN-PERSON ONLY, USE THIS TAG:
+INPERSONTAG EN: In person only
+INPERSONTAG FR: En personne seulement
+ONLINETAG EN: (leave blank)
+ONLINETAG FR: (leave blank)
 
-Online only
-En ligne seulement
+IF ONLINE ONLY, USE THIS TAG:
+INPERSONTAG EN: (leave blank)
+INPERSONTAG FR: (leave blank)
+ONLINETAG EN: Online only
+ONLINETAG FR: En ligne seulement
 -->
         <!-- Preview text -->
         <div
@@ -306,7 +315,6 @@ En ligne seulement
                                         letter-spacing: 0.14em;
                                         color: #ff2f92;
                                         color: SERIES-COLOR;
-                                        text-transform: uppercase;
                                         margin-bottom: 14px;
                                     "
                                 >
@@ -716,7 +724,6 @@ En ligne seulement
                                         letter-spacing: 0.14em;
                                         color: #ff2f92;
                                         color: SERIES-COLOR;
-                                        text-transform: uppercase;
                                         margin-bottom: 14px;
                                     "
                                 >
@@ -771,34 +778,50 @@ En ligne seulement
 
                         <!-- Disclaimer -->
                         <tr>
-                            <td class="px" style="padding: 0 44px 28px">
-                                <table
-                                    role="presentation"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    border="0"
-                                    style="border-collapse: separate"
-                                >
-                                    <tr>
-                                        <td bgcolor="#F5F3FF" style="border: 1px solid #e4defb; border-radius: 999px">
-                                            <span
-                                                style="
-                                                    display: inline-block;
-                                                    font-size: 12px;
-                                                    font-family: Helvetica, Arial, sans-serif;
-                                                    letter-spacing: 0.08em;
-                                                    text-transform: uppercase;
-                                                    color: #475569;
-                                                    padding: 6px 10px;
-                                                    white-space: normal;
-                                                "
-                                            >
-                                                Présentation en anglais
-                                            </span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
+                        <td class="px" style="padding:0 44px 28px;">
+                        <!--[if mso]>
+                        <v:roundrect
+                        xmlns:v="urn:schemas-microsoft-com:vml"
+                        arcsize="50%"
+                        strokecolor="#E4DEFB"
+                        fillcolor="#F5F3FF"
+                        style="height:28px;v-text-anchor:middle;"
+                        >
+                        <v:textbox inset="12px,6px,12px,6px">
+                        <div
+                        style="
+                        font-family: Helvetica, Arial, sans-serif;
+                        font-size: 12px;
+                        letter-spacing: 0.08em;
+                        color: #475569;
+                        white-space: nowrap;
+                        "
+                        >
+                        PRÉSENTATION&nbsp;EN&nbsp;ANGLAIS
+                        </div>
+                        </v:textbox>
+                        </v:roundrect>
+                        <![endif]-->
+
+                        <!--[if !mso]><!-- -->
+                        <span
+                        style="
+                        display: inline-block;
+                        background: #F5F3FF;
+                        border: 1px solid #E4DEFB;
+                        border-radius: 999px;
+                        padding: 6px 12px;
+                        font-family: Helvetica, Arial, sans-serif;
+                        font-size: 12px;
+                        letter-spacing: 0.08em;
+                        color: #475569;
+                        white-space: nowrap;
+                        "
+                        >
+                        PRÉSENTATION&nbsp;EN&nbsp;ANGLAIS
+                        </span>
+                        <!--<![endif]-->
+                        </td>
                         </tr>
 
                         <!-- Date and Time -->
