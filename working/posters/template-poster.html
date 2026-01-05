@@ -13,12 +13,12 @@
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
-            /* 
+            /*
             ACCENTS:
             #1D4ED8 academic
             #5B21B6 psychosocial
             #BE185D cultural
-            #065F46 clinical 
+            #065F46 clinical
             */
             :root {
                 --accent: SERIES-COLOR;
@@ -34,6 +34,17 @@
                 font-family: Helvetica, Arial, sans-serif;
                 color: var(--ink);
             }
+            /* LANGUAGE VISIBILITY */
+            .en-only,
+            .fr-only {
+                display: none;
+            }
+            body.en .en-only {
+                display: block;
+            }
+            body.fr .fr-only {
+                display: block;
+            }
             .poster {
                 width: 210mm;
                 height: 297mm;
@@ -43,25 +54,6 @@
                 display: flex;
                 flex-direction: column;
                 position: relative;
-            }
-            .container {
-                padding: 40px;
-            }
-            /* LANGUAGE VISIBILITY */
-            .en-only {
-                display: block;
-            }
-            .fr-only {
-                display: block;
-            }
-            /* PRINT SWITCH */
-            @media print {
-                body.en .fr-only {
-                    display: none;
-                }
-                body.fr .en-only {
-                    display: none;
-                }
             }
             /* LOGO */
             .logo {
@@ -107,7 +99,6 @@
             .content {
                 padding: 32px 44px 40px 44px;
             }
-            /* SERIES */
             .series {
                 font-size: 11px;
                 letter-spacing: 0.16em;
@@ -115,7 +106,6 @@
                 color: var(--accent);
                 margin-bottom: 14px;
             }
-            /* TITLE */
             h1 {
                 font-family: Georgia, "Times New Roman", serif;
                 font-size: 34px;
@@ -125,18 +115,14 @@
                 overflow: hidden;
                 margin: 0 0 14px 0;
             }
-            /* SPEAKER */
             .speaker {
                 font-size: 20px;
                 margin-bottom: 12px;
             }
-            /* RHYTHM SLOT (language disclaimer lives here) */
             .rhythm {
                 min-height: 28px;
-                /* exact disclaimer height */
                 margin-bottom: 22px;
             }
-            /* DISCLAIMER (for French) */
             .disclaimer {
                 display: inline-block;
                 font-size: 12px;
@@ -149,7 +135,6 @@
                 border-radius: 999px;
                 margin: 0;
             }
-            /* DETAILS BLOCK */
             .details {
                 border-left: 4px solid var(--accent);
                 padding-left: 18px;
@@ -180,7 +165,6 @@
                 color: var(--link);
                 text-decoration: underline;
             }
-            /* DIVIDER */
             .divider {
                 height: 1px;
                 background: var(--soft);
@@ -218,49 +202,100 @@
             }
         </style>
     </head>
-    <body>
+    <body class="en">
         <div class="poster">
-            <!-- LOGO -->
-            <div class="logo">
-                <img
-                    src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
-                    alt="Jewish General Hospital"
-                />
-            </div>
-            <!-- HERO IMAGE -->
-            <div class="hero">
-                <img
-                    src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
-                    alt=""
-                />
-            </div>
-            <div class="art-credit">
-                <em>ARTIST-NAME, TITLE-ART-EN, YR-ART</em>
-            </div>
-            <!-- CONTENT -->
-            <div class="content">
-                <div class="series">SERIES-EN</div>
-                <h1>TITLE-EN</h1>
-                <div class="speaker">SPEAKER-NAME</div>
-                <div class="rhythm"></div>
-                <div class="details">
-                    <div class="date">MONTH-EN DAY, YEAR</div>
-                    <div class="time">STARTTIME-EN - ENDTIME-EN <span class="tz">(TIMEZONE-EN)</span></div>
+            <!-- ====== ENGLISH ====== -->
+            <div class="en-only">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img
+                        src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
+                        alt="Jewish General Hospital"
+                    />
                 </div>
-                <div class="location">
-                    <strong>INPERSON-EN</strong><br />
-                    ROOM-EN<br />
-                    ADDRESS-EN
+                <!-- HERO IMAGE -->
+                <div class="hero">
+                    <img
+                        src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
+                        alt=""
+                    />
                 </div>
-                <div class="online">
-                    <strong>ONLINE-EN</strong><br />
-                    <a href="ZOOM-LINK">Zoom</a>
-                    · ID ZOOM-ID · Code ZOOM-CODE
+                <div class="art-credit">
+                    <em>ARTIST-NAME, TITLE-ART-EN, YR-ART</em>
                 </div>
-                <div class="divider"></div>
-                <div class="tags">
-                    <span class="tag inperson">INPERSONTAG-EN</span>
-                    <span class="tag online">ONLINETAG-EN</span>
+                <!-- CONTENT -->
+                <div class="content">
+                    <div class="series">SERIES-EN</div>
+                    <h1>TITLE-EN</h1>
+                    <div class="speaker">SPEAKER-NAME</div>
+                    <div class="rhythm"></div>
+                    <div class="details">
+                        <div class="date">MONTH-EN DAY, YEAR</div>
+                        <div class="time">STARTTIME-EN - ENDTIME-EN <span class="tz">(TIMEZONE-EN)</span></div>
+                    </div>
+                    <div class="location">
+                        <strong>INPERSON-EN</strong><br />
+                        ROOM-EN<br />
+                        ADDRESS-EN
+                    </div>
+                    <div class="online">
+                        <strong>ONLINE-EN</strong><br />
+                        <a href="ZOOM-LINK">Zoom</a>
+                        · ID ZOOM-ID · Code ZOOM-CODE
+                    </div>
+                    <div class="divider"></div>
+                    <div class="tags">
+                        <span class="tag inperson">INPERSONTAG-EN</span>
+                        <span class="tag online">ONLINETAG-EN</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ====== FRENCH ====== -->
+            <div class="fr-only">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img
+                        src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
+                        alt="Hopital général juif"
+                    />
+                </div>
+                <!-- HERO IMAGE -->
+                <div class="hero">
+                    <img
+                        src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="art-credit">
+                    <em>ARTIST-NAME, TITLE-ART-FR, YR-ART</em>
+                </div>
+                <!-- CONTENT -->
+                <div class="content">
+                    <div class="series">SERIES-FR</div>
+                    <h1>TITLE-FR</h1>
+                    <div class="speaker">SPEAKER-NAME</div>
+                    <div class="rhythm">
+                        <div class="disclaimer">Présentation en anglais</div>
+                    </div>
+                    <div class="details">
+                        <div class="date">MONTH-FR DAY, YEAR</div>
+                        <div class="time">STARTTIME-FR - ENDTIME-FR <span class="tz">(TIMEZONE-FR)</span></div>
+                    </div>
+                    <div class="location">
+                        <strong>INPERSON-FR</strong><br />
+                        ROOM-FR<br />
+                        ADDRESS-FR
+                    </div>
+                    <div class="online">
+                        <strong>ONLINE-FR</strong><br />
+                        <a href="ZOOM-LINK">Zoom</a>
+                        · ID ZOOM-ID · Code ZOOM-CODE
+                    </div>
+                    <div class="divider"></div>
+                    <div class="tags">
+                        <span class="tag inperson">INPERSONTAG-FR</span>
+                        <span class="tag online">ONLINETAG-FR</span>
+                    </div>
                 </div>
             </div>
         </div>
