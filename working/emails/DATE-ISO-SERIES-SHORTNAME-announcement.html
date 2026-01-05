@@ -86,8 +86,8 @@ C) DATE & TIME
 =====================
 MONTH EN: MONTH-EN
 MONTH FR: MONTH-FR
-DAY(number): DAY
-YEAR(number): YEAR
+DD(number): DAY
+YR(number): YEAR
 STARTTIME EN: STARTTIME-EN
 ENDTIME EN: ENDTIME-EN
 STARTTIME FR: STARTTIME-FR
@@ -118,8 +118,8 @@ ADDRESS FR: ADDRESS-FR
 =====================
 F) FORMAT
 =====================
-NOHYBRID EN: NOHYBRID-EN
-NOHYBRID FR: NOHYBRID-FR
+FORMAT EN: FORMAT-EN
+FORMAT FR: FORMAT-FR
 ZOOM LINK: ZOOM-LINK
 ZOOM ID: ZOOM-ID
 ZOOM CODE: ZOOM-CODE
@@ -145,9 +145,9 @@ BIO FR: BIO-FR
 H) ARTWORK
 =====================
 ARTIST NAME: ARTIST-NAME
-ART TITLE EN: TITLE-ART-EN
-ART TITLE FR: TITLE-ART-FR
-ART YEAR: YR-ART
+TITLE ART EN: TITLE-ART-EN
+TITLE ART FR: TITLE-ART-FR
+YR ART: YR-ART
 
 ================================
 I) SERIES REFERENCE (READ ONLY)
@@ -185,29 +185,14 @@ Nasr Farooqi, MD          clinical
 ================================
 J) FORMAT REFERENCE (READ ONLY)
 ================================
-IN-PERSON ONLY → replace FORMAT-EN with:
-In person only
+Hybrid
+Hybride
 
-IN-PERSON ONLY → replace FORMAT-FR with:
+In person only
 En personne seulement
 
-
-HYBRID → replace FORMAT-EN with:
-In person + Online:
-<a href="ZOOM-LINK">Zoom</a> · ID ZOOM-ID · Code ZOOM-CODE
-
-HYBRID → replace FORMAT-FR with:
-En personne + en ligne :
-<a href="ZOOM-LINK">Zoom</a> · ID ZOOM-ID · Code ZOOM-CODE
-
-
-ONLINE ONLY → replace FORMAT-EN with:
-Online only:
-<a href="ZOOM-LINK">Zoom</a> · ID ZOOM-ID · Code ZOOM-CODE
-
-ONLINE ONLY → replace FORMAT-FR with:
-En ligne seulement :
-<a href="ZOOM-LINK">Zoom</a> · ID ZOOM-ID · Code ZOOM-CODE
+Online only
+En ligne seulement
 -->
         <!-- Preview text -->
         <div
@@ -428,7 +413,7 @@ En ligne seulement :
                                                 "
                                             >
                                                 ROOM-EN, ADDRESS-EN<br />
-                                                <span style="color: #64748b">NOHYBRID-EN</span>
+                                                <span style="color: #64748b">FORMAT-EN · </span>
                                                 <a style="color: #4333CA; text-decoration: underline;" href="ZOOM-LINK">Zoom</a>
                                                 <span style="color: #64748b">· ID ZOOM-ID · Code ZOOM-CODE</span>
                                             </p>
@@ -869,7 +854,7 @@ En ligne seulement :
                                                 "
                                             >
                                                 ROOM-FR, ADDRESS-FR<br />
-                                                <span style="color: #64748b">NOHYBRID-FR</span>
+                                                <span style="color: #64748b">FORMAT-FR · </span>
                                                 <a style="color: #4333CA; text-decoration: underline;" href="ZOOM-LINK">Zoom</a>
                                                 <span style="color: #64748b">· ID ZOOM-ID · Code ZOOM-CODE</span>
                                             </p>
