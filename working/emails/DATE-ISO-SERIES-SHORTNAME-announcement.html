@@ -72,9 +72,13 @@ DATE ISO: DATE-ISO
 SERIES SHORTNAME: SERIES-SHORTNAME
 SERIES COLOR: SERIES-COLOR
 SERIES EN: SERIES-EN
-SERIES FR: SERIES-FR
+SERIES UPPER EN: SERIES-UPPER-EN
+
 CHAIR NAME: CHAIR-NAME
 
+SERIES FR: SERIES-FR
+SERIES UPPER FR: SERIES-UPPER-FR
+        
 =====================
 B) TITLES
 =====================
@@ -84,15 +88,17 @@ TITLE FR: TITLE-FR
 =====================
 C) DATE & TIME
 =====================
-MONTH EN: MONTH-EN
-MONTH FR: MONTH-FR
 DD(number): DAY
 YR(number): YEAR
+        
+MONTH EN: MONTH-EN
 STARTTIME EN: STARTTIME-EN
 ENDTIME EN: ENDTIME-EN
+TIMEZONE EN: TIMEZONE-EN
+
+MONTH FR: MONTH-FR
 STARTTIME FR: STARTTIME-FR
 ENDTIME FR: ENDTIME-FR
-TIMEZONE EN: TIMEZONE-EN
 TIMEZONE FR: TIMEZONE-FR
 
 =====================
@@ -100,29 +106,33 @@ D) SPEAKER
 =====================
 SPEAKER NAME: SPEAKER-NAME
 SPEAKER2 NAME EN: SPEAKER2-NAME-EN
-SPEAKER2 NAME FR: SPEAKER2-NAME-FR
 APPOINTMENT EN: APPOINTMENT-EN
-APPOINTMENT FR: APPOINTMENT-FR
 POSITION EN: POSITION-EN
+AFFILIATION EN: AFFILIATION-EN
+
+SPEAKER2 NAME FR: SPEAKER2-NAME-FR
+APPOINTMENT FR: APPOINTMENT-FR
 POSITION FR: POSITION-FR
-LAB EN: LAB-EN
-LAB FR: LAB-FR
+AFFILIATION FR: AFFILIATION-FR
 
 =====================
 E) LOCATION
 =====================
 ROOM EN: ROOM-EN
-ROOM FR: ROOM-FR
 ADDRESS EN: ADDRESS-EN
+
+ROOM FR: ROOM-FR        
 ADDRESS FR: ADDRESS-FR
 
 =====================
 F) TAGS
 =====================
 INPERSONTAG EN: INPERSONTAG-EN
-INPERSONTAG FR: INPERSONTAG-FR
 ONLINETAG EN: ONLINETAG-EN
+
+INPERSONTAG FR: INPERSONTAG-FR
 ONLINETAG FR: ONLINETAG-FR
+
 ZOOM LINK: ZOOM-LINK
 ZOOM ID: ZOOM-ID
 ZOOM CODE: ZOOM-CODE
@@ -136,11 +146,15 @@ DESCRIPTION FR: DESC-FR
 FIRST GOAL EN: FIRSTGOAL-EN
 SECOND GOAL EN: SECONDGOAL-EN
 THIRD GOAL EN: THIRDGOAL-EN
+FOURTH GOAL EN: FOURTHGOAL-EN
+FIFTH GOAL EN: FIFTHGOAL-EN
 
 FIRST GOAL FR: FIRSTGOAL-FR
 SECOND GOAL FR: SECONDGOAL-FR
 THIRD GOAL FR: THIRDGOAL-FR
-
+FOURTH GOAL FR: FOURTHGOAL-FR
+FIFTH GOAL FR: FIFTHGOAL-FR
+        
 BIO EN: BIO-EN
 BIO FR: BIO-FR
 
@@ -149,8 +163,9 @@ H) ARTWORK
 =====================
 ARTIST NAME: ARTIST-NAME
 TITLE ART EN: TITLE-ART-EN
-TITLE ART FR: TITLE-ART-FR
 YR ART: YR-ART
+
+TITLE ART FR: TITLE-ART-FR
 
 ================================
 I) SERIES REFERENCE (READ ONLY)
@@ -318,7 +333,7 @@ ONLINETAG FR: En ligne seulement
                                         margin-bottom: 14px;
                                     "
                                 >
-                                    SERIES-EN
+                                    SERIES-UPPER-EN
                                 </p>
 
                                 <!-- Hero title -->
@@ -348,10 +363,25 @@ ONLINETAG FR: En ligne seulement
                                         color: #020617;
                                     "
                                 >
-                                    <strong>SPEAKER-NAME</strong><br />
-                                    <strong>and SPEAKER2-NAME-EN</strong><br />
-                                    <span style="color: #475569"> APPOINTMENT-EN<br /> </span>
-                                    <span style="color: #475569"> POSITION-EN, <i>LAB-EN</i><br /> </span>
+                                    <strong>SPEAKER1-NAME</strong><br />
+                                    <span style="color: #475569">APPOINTMENT1-EN<br /> </span>
+                                    <span style="color: #475569">POSITION1-EN, <i>AFFILIATION1-EN</i><br /></span>
+                                    
+                                    <br /><strong>SPEAKER2-NAME</strong><br />
+                                    <span style="color: #475569">APPOINTMENT2-EN<br /> </span>
+                                    <span style="color: #475569">POSITION2-EN, <i>AFFILIATION2-EN</i><br /></span>
+
+                                    <br /><strong>SPEAKER3-NAME</strong><br />
+                                    <span style="color: #475569">APPOINTMENT3-EN<br /> </span>
+                                    <span style="color: #475569">POSITION3-EN, <i>AFFILIATION3-EN</i><br /></span>
+
+                                    <br />strong>GROUP1-NAME-EN</strong><br />
+                                    <span style="color: #475569">APPOINTMENT4-EN<br /> </span>
+                                    <span style="color: #475569">POSITION4-EN, <i>AFFILIATION4-EN</i><br /></span>
+                                    
+                                    <br /><strong>GROUP2-NAME-EN</strong><br />
+                                    <span style="color: #475569">APPOINTMENT5-EN<br /> </span>
+                                    <span style="color: #475569">POSITION5-EN, <i>AFFILIATION5-EN</i><br /></span>
                                 </p>
 
                                 <p
@@ -735,7 +765,7 @@ ONLINETAG FR: En ligne seulement
                                         margin-bottom: 14px;
                                     "
                                 >
-                                    SERIES-FR
+                                    SERIES-UPPER-FR
                                 </p>
 
                                 <!-- Hero title -->
@@ -768,7 +798,7 @@ ONLINETAG FR: En ligne seulement
                                     <strong>SPEAKER-NAME</strong><br />
                                     <strong>et SPEAKER2-NAME-FR</strong><br />
                                     <span style="color: #475569"> APPOINTMENT-FR<br /> </span>
-                                    <span style="color: #475569"> POSITION-FR, <i>LAB-FR</i><br /> </span>
+                                    <span style="color: #475569"> POSITION-FR, <i>AFFILIATION-FR</i><br /> </span>
                                 </p>
 
                                 <p
