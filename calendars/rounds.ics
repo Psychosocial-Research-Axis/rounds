@@ -44,10 +44,10 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260122-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260102T143000Z
+DTSTAMP:20260106T120000Z
 DTSTART;TZID=America/Toronto:20260122T133000
 DTEND;TZID=America/Toronto:20260122T150000
-SUMMARY:Psychosocial Research Rounds - Eliminating Cervical Cancer: What Drives Women's HPV Screening
+SUMMARY:Psychosocial Research Rounds - Challenges in Global Cervical Cancer Prevention: What Influences Women’s Participation?
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
 DESCRIPTION:Speaker: Zeev Rosberger, PhD.\nSession chaired by David Dunkley, PhD.\nHybrid.\nZoom ID: 884 8894 7071 | Passcode: 984533.
 URL:https://us06web.zoom.us/j/88488947071
