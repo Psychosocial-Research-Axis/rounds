@@ -1,222 +1,18 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SHORT-TITLE - Poster</title>
-        <style>
-            @page {
-                size: A4;
-                margin: 0;
-            }
-            * {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
-            /*
-            ACCENTS:
-            #1D4ED8 academic
-            #5B21B6 psychosocial
-            #BE185D cultural
-            #065F46 clinical
-            */
-            :root {
-                --accent: SERIES-COLOR;
-                --link: #4338ca;
-                --soft: #e2d9f7;
-                --ink: #020617;
-                --muted: #475569;
-                --bg: #f7f5f2;
-            }
-            body {
-                margin: 0;
-                background: #fff;
-                font-family: Helvetica, Arial, sans-serif;
-                color: var(--ink);
-            }
-            /* LANGUAGE VISIBILITY */
-            .en-only,
-            .fr-only {
-                display: none;
-            }
-            body.en .en-only {
-                display: block;
-            }
-            body.fr .fr-only {
-                display: block;
-            }
-            .poster {
-                width: 210mm;
-                height: 297mm;
-                overflow: hidden;
-                margin: 0 auto;
-                background: var(--bg);
-                display: flex;
-                flex-direction: column;
-                position: relative;
-            }
-            /* LOGO */
-            .logo {
-                position: absolute;
-                top: 24px;
-                right: 32px;
-                z-index: 10;
-            }
-            .logo img {
-                height: 42px;
-                width: auto;
-                filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
-            }
-            /* HERO */
-            .hero {
-                max-height: 145mm;
-                overflow: hidden;
-                position: relative;
-                z-index: 1;
-            }
-            .hero::after {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: rgba(0, 0, 0, 0.06);
-            }
-            .hero img {
-                width: 100%;
-                max-height: 145mm;
-                object-fit: cover;
-                object-position: center 40%;
-                display: block;
-            }
-            .art-credit {
-                font-size: 11px;
-                color: #555;
-                font-style: italic;
-                padding: 6px 36px 0 36px;
-                min-height: 32px;
-                max-width: 75%;
-            }
-            /* CONTENT */
-            .content {
-                padding: 32px 44px 40px 44px;
-            }
-            .series {
-                font-size: 11px;
-                letter-spacing: 0.16em;
-                text-transform: uppercase;
-                color: var(--accent);
-                margin-bottom: 14px;
-            }
-            h1 {
-                font-family: Georgia, "Times New Roman", serif;
-                font-size: 34px;
-                color: var(--ink);
-                line-height: 1.12;
-                max-height: 2.6em;
-                overflow: hidden;
-                margin: 0 0 14px 0;
-            }
-            .speaker {
-                font-size: 20px;
-                margin-bottom: 12px;
-            }
-            .rhythm {
-                min-height: 28px;
-                margin-bottom: 22px;
-            }
-            .disclaimer {
-                display: inline-block;
-                font-size: 12px;
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-                color: #475569;
-                background: #f5f3ff;
-                border: 1px solid #e4defb;
-                padding: 6px 10px;
-                border-radius: 999px;
-                margin: 0;
-            }
-            .details {
-                border-left: 4px solid var(--accent);
-                padding-left: 18px;
-                margin-bottom: 22px;
-            }
-            .details .date {
-                font-family: Georgia, serif;
-                font-size: 20px;
-                font-weight: 700;
-            }
-            .details .time {
-                font-family: Georgia, serif;
-                font-size: 18px;
-                margin-top: 2px;
-            }
-            .details .tz {
-                color: var(--muted);
-                font-size: 15px;
-            }
-            /* LOCATION */
-            .location,
-            .online {
-                font-size: 16px;
-                line-height: 1.55;
-                margin-top: 12px;
-                margin-bottom: 16px;
-            }
-            .online a {
-                color: var(--link);
-                text-decoration: underline;
-            }
-            .divider {
-                height: 1px;
-                background: var(--soft);
-                margin: 28px 0 22px 0;
-            }
-            /* FOOT TAGS */
-            .tags {
-                margin-top: 12px;
-            }
-            .tag {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                height: 28px;
-                padding: 0 14px;
-                font-size: 11px;
-                letter-spacing: 0.12em;
-                text-transform: uppercase;
-                border-radius: 999px;
-                margin-right: 10px;
-                white-space: nowrap;
-            }
-            .tag.inperson {
-                background: var(--accent);
-                color: #fff;
-            }
-            .tag.online {
-                background: #111827;
-                color: #fff;
-            }
-            @media print {
-                body {
-                    background: #fff;
-                }
-            }
-        </style>
-    </head>
-    <body class="en">
-        <div class="poster">
-        <!--
+<!DOCTYPE html>
+<!--
 FIND-AND-REPLACE GUIDE — DO NOT DELETE
 REPLACE EVERY TOKEN BELOW (EXACT MATCH)
 
-================================
+=====================
 A) CORE
-================================
+=====================
 DATE ISO: DATE-ISO
 SERIES SHORTNAME: SERIES-SHORTNAME
 SERIES COLOR: SERIES-COLOR
 SERIES EN: SERIES-EN
+SERIES UPPER EN: SERIES-UPPER-EN
 SERIES FR: SERIES-FR
+SERIES UPPER FR: SERIES-UPPER-FR
 CHAIR NAME: CHAIR-NAME
 
 =====================
@@ -224,49 +20,57 @@ B) TITLES
 =====================
 TITLE EN: TITLE-EN
 TITLE FR: TITLE-FR
+SHORT TITLE: SHORT-TITLE
 
 =====================
 C) DATE & TIME
 =====================
+DAY (number): DAY
+YEAR (number): YEAR
+
 MONTH EN: MONTH-EN
-MONTH FR: MONTH-FR
-DD(number): DAY
-YR(number): YEAR
-STARTTIME EN: STARTTIME-EN
-ENDTIME EN: ENDTIME-EN
-STARTTIME FR: STARTTIME-FR
-ENDTIME FR: ENDTIME-FR
+START TIME EN: STARTTIME-EN
+END TIME EN: ENDTIME-EN
 TIMEZONE EN: TIMEZONE-EN
+
+MONTH FR: MONTH-FR
+START TIME FR: STARTTIME-FR
+END TIME FR: ENDTIME-FR
 TIMEZONE FR: TIMEZONE-FR
 
 =====================
-D) SPEAKER
+D) SPEAKER(S)
 =====================
-SPEAKER NAME: SPEAKER-NAME
-SPEAKER2 NAME EN: SPEAKER2-NAME-EN
-SPEAKER2 NAME FR: SPEAKER2-NAME-FR
-APPOINTMENT EN: APPOINTMENT-EN
-APPOINTMENT FR: APPOINTMENT-FR
-POSITION EN: POSITION-EN
-POSITION FR: POSITION-FR
-LAB EN: LAB-EN
-LAB FR: LAB-FR
+SPEAKER 1 NAME: SPEAKER1-NAME
+APPOINTMENT 1 EN: APPOINTMENT1-EN
+APPOINTMENT 1 FR: APPOINTMENT1-FR
+
+SPEAKER 2 NAME: SPEAKER2-NAME
+APPOINTMENT 2 EN: APPOINTMENT2-EN
+APPOINTMENT 2 FR: APPOINTMENT2-FR
+
+GROUP NAME EN: GROUP1-NAME-EN
+APPOINTMENT 3 EN: APPOINTMENT3-EN
+
+GROUP NAME FR: GROUP1-NAME-FR
+APPOINTMENT 3 FR: APPOINTMENT3-FR
 
 =====================
 E) LOCATION
 =====================
 ROOM EN: ROOM-EN
-ROOM FR: ROOM-FR
 ADDRESS EN: ADDRESS-EN
+ROOM FR: ROOM-FR
 ADDRESS FR: ADDRESS-FR
 
 =====================
 F) TAGS
 =====================
-INPERSONTAG EN: INPERSONTAG-EN
-INPERSONTAG FR: INPERSONTAG-FR
-ONLINETAG EN: ONLINETAG-EN
-ONLINETAG FR: ONLINETAG-FR
+IN-PERSON TAG EN: INPERSONTAG-EN
+ONLINE TAG EN: ONLINETAG-EN
+IN-PERSON TAG FR: INPERSONTAG-FR
+ONLINE TAG FR: ONLINETAG-FR
+
 ZOOM LINK: ZOOM-LINK
 ZOOM ID: ZOOM-ID
 ZOOM CODE: ZOOM-CODE
@@ -274,31 +78,19 @@ ZOOM CODE: ZOOM-CODE
 =====================
 G) CONTENT
 =====================
-DESCRIPTION EN: DESC-EN
-DESCRIPTION FR: DESC-FR
 
-FIRST GOAL EN: FIRSTGOAL-EN
-SECOND GOAL EN: SECONDGOAL-EN
-THIRD GOAL EN: THIRDGOAL-EN
-
-FIRST GOAL FR: FIRSTGOAL-FR
-SECOND GOAL FR: SECONDGOAL-FR
-THIRD GOAL FR: THIRDGOAL-FR
-
-BIO EN: BIO-EN
-BIO FR: BIO-FR
 
 =====================
 H) ARTWORK
 =====================
 ARTIST NAME: ARTIST-NAME
-TITLE ART EN: TITLE-ART-EN
-TITLE ART FR: TITLE-ART-FR
-YR ART: YR-ART
+ART TITLE EN: TITLE-ART-EN
+ART TITLE FR: TITLE-ART-FR
+ART YEAR: YR-ART
 
-================================
+=====================
 I) SERIES REFERENCE (READ ONLY)
-================================
+=====================
 SHORTNAMES
 academic
 psychosocial
@@ -311,137 +103,315 @@ COLORS
 #BE185D cultural
 #065F46 clinical
 
-SERIES NAMES
+SERIES NAMES (EN)
 Academic Grand Rounds
 Psychosocial Research Rounds
 Cultural Psychiatry Rounds
 Clinical Grand Rounds
 
+SERIES NAMES (FR)
 Séminaires académiques
 Séminaires de recherche psychosociale
 Séminaires de psychiatrie culturelle
 Séminaires cliniques
 
-CHAIRS
-Vincent Laliberté, MD academic
-David Dunkley, PhD psychosocial
-Vincent Paquin, MD psychosocial
-Laurence J. Kirmayer, MD cultural
-Nasr Farooqi, MD clinical
-
-================================
+=====================
 J) TAGS REFERENCE (READ ONLY)
-================================
-IF HYBRID, USE BOTH TAGS:
+=====================
+HYBRID EVENT (for emails, leave blank)
 INPERSONTAG EN: In person
 INPERSONTAG FR: En personne
 ONLINETAG EN: Online
 ONLINETAG FR: En ligne
 
-IF IN-PERSON ONLY, USE THIS TAG:
+IN-PERSON ONLY
 INPERSONTAG EN: In person only
 INPERSONTAG FR: En personne seulement
 ONLINETAG EN: (leave blank)
 ONLINETAG FR: (leave blank)
 
-IF ONLINE ONLY, USE THIS TAG:
+ONLINE ONLY
 INPERSONTAG EN: (leave blank)
 INPERSONTAG FR: (leave blank)
 ONLINETAG EN: Online only
 ONLINETAG FR: En ligne seulement
---> 
-<!-- ====== ENGLISH ====== -->
-            <div class="en-only">
-                <!-- LOGO -->
-                <div class="logo">
-                    <img
-                        src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
-                        alt="Jewish General Hospital"
-                    />
-                </div>
-                <!-- HERO IMAGE -->
-                <div class="hero">
-                    <img
-                        src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
-                        alt="Artwork for TITLE-ART-EN"
-                    />
-                </div>
-                <div class="art-credit">
-                    <em>ARTIST-NAME, TITLE-ART-EN, YR-ART</em>
-                </div>
-                <!-- CONTENT -->
-                <div class="content">
-                    <div class="series">SERIES-EN</div>
-                    <h1>TITLE-EN</h1>
-                    <div class="speaker">SPEAKER-NAME
-                    <br>and SPEAKER2-NAME-EN</div>
-                    <div class="rhythm"></div>
-                    <div class="details">
-                        <div class="date">MONTH-EN DAY, YEAR</div>
-                        <div class="time">STARTTIME-EN - ENDTIME-EN <span class="tz">(TIMEZONE-EN)</span></div>
-                    </div>
-                    <div class="location">
-                        ROOM-EN<br />
-                        ADDRESS-EN
-                    </div>
-                    <div class="online">
-                        <a href="ZOOM-LINK">Zoom</a>
-                        <span style="color: #64748b"> · ID ZOOM-ID · Code ZOOM-CODE</span>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="tags">
-                        <span class="tag inperson">INPERSONTAG-EN</span>
-                        <span class="tag online">ONLINETAG-EN</span>
-                    </div>
-                </div>
-            </div>
-            <!-- ====== FRENCH ====== -->
-            <div class="fr-only">
-                <!-- LOGO -->
-                <div class="logo">
-                    <img
-                        src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
-                        alt="Hopital général juif"
-                    />
-                </div>
-                <!-- HERO IMAGE -->
-                <div class="hero">
-                    <img
-                        src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
-                        alt="Illustration pour TITLE-ART-FR"
-                    />
-                </div>
-                <div class="art-credit">
-                    <em>ARTIST-NAME, TITLE-ART-FR, YR-ART</em>
-                </div>
-                <!-- CONTENT -->
-                <div class="content">
-                    <div class="series">SERIES-FR</div>
-                    <h1>TITLE-FR</h1>
-                    <div class="speaker">SPEAKER-NAME
-                    <br>and SPEAKER2-NAME-FR</div>
-                    <div class="rhythm">
-                        <div class="disclaimer">Présentation en anglais</div>
-                    </div>
-                    <div class="details">
-                        <div class="date">MONTH-FR DAY, YEAR</div>
-                        <div class="time">STARTTIME-FR - ENDTIME-FR <span class="tz">(TIMEZONE-FR)</span></div>
-                    </div>
-                    <div class="location">
-                        ROOM-FR<br />
-                        ADDRESS-FR
-                    </div>
-                    <div class="online">
-                        <a href="ZOOM-LINK">Zoom</a>
-                        <span style="color: #64748b"> · ID ZOOM-ID · Code ZOOM-CODE</span>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="tags">
-                        <span class="tag inperson">INPERSONTAG-FR</span>
-                        <span class="tag online">ONLINETAG-FR</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+
+=====================
+NOTES
+=====================
+• Empty values are allowed unless otherwise stated
+• Do not rename tokens
+• Do not add logic to values
+-->
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SHORT-TITLE - Poster</title>
+
+<style>
+   @page {
+   size: A4;
+   margin: 0;
+   }
+   * {
+   -webkit-print-color-adjust: exact;
+   print-color-adjust: exact;
+   }
+   :root {
+   --accent: SERIES-COLOR;
+   --link: #4338ca;
+   --soft: #e2d9f7;
+   --ink: #020617;
+   --muted: #475569;
+   --bg: #f7f5f2;
+   }
+   body {
+   margin: 0;
+   background: #fff;
+   font-family: Helvetica, Arial, sans-serif;
+   color: var(--ink);
+   }
+   .en-only,
+   .fr-only {
+   display: none;
+   }
+   body.en .en-only {
+   display: block;
+   }
+   body.fr .fr-only {
+   display: block;
+   }
+   .poster {
+   width: 210mm;
+   height: 297mm;
+   overflow: hidden;
+   margin: 0 auto;
+   background: var(--bg);
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   }
+   .logo {
+   position: absolute;
+   top: 24px;
+   right: 32px;
+   z-index: 10;
+   }
+   .logo img {
+   height: 42px;
+   width: auto;
+   filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
+   }
+   .hero {
+   max-height: 145mm;
+   overflow: hidden;
+   position: relative;
+   z-index: 1;
+   }
+   .hero::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.06);
+   }
+   .hero img {
+   width: 100%;
+   max-height: 145mm;
+   object-fit: cover;
+   object-position: center 40%;
+   display: block;
+   }
+   .art-credit {
+   font-size: 11px;
+   color: #555;
+   font-style: italic;
+   padding: 6px 36px 0 36px;
+   min-height: 32px;
+   max-width: 75%;
+   }
+   .content {
+   padding: 32px 44px 40px 44px;
+   }
+   .series {
+   font-size: 11px;
+   letter-spacing: 0.16em;
+   text-transform: uppercase;
+   color: var(--accent);
+   margin-bottom: 14px;
+   }
+   h1 {
+   font-family: Georgia, "Times New Roman", serif;
+   font-size: 34px;
+   color: var(--ink);
+   line-height: 1.12;
+   max-height: 2.6em;
+   overflow: hidden;
+   margin: 0 0 14px 0;
+   }
+   .speaker {
+   font-size: 20px;
+   margin-bottom: 12px;
+   }
+   .rhythm {
+   min-height: 28px;
+   margin-bottom: 22px;
+   }
+   .disclaimer {
+   display: inline-block;
+   font-size: 12px;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   color: #475569;
+   background: #f5f3ff;
+   border: 1px solid #e4defb;
+   padding: 6px 10px;
+   border-radius: 999px;
+   margin: 0;
+   }
+   .details {
+   border-left: 4px solid var(--accent);
+   padding-left: 18px;
+   margin-bottom: 22px;
+   }
+   .details .date {
+   font-family: Georgia, serif;
+   font-size: 20px;
+   font-weight: 700;
+   }
+   .details .time {
+   font-family: Georgia, serif;
+   font-size: 18px;
+   margin-top: 2px;
+   }
+   .details .tz {
+   color: var(--muted);
+   font-size: 15px;
+   }
+   .location,
+   .online {
+   font-size: 16px;
+   line-height: 1.55;
+   margin-top: 12px;
+   margin-bottom: 16px;
+   }
+   .online a {
+   color: var(--link);
+   text-decoration: underline;
+   }
+   .divider {
+   height: 1px;
+   background: var(--soft);
+   margin: 28px 0 22px 0;
+   }
+   .tags {
+   margin-top: 12px;
+   }
+   .tag {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 28px;
+   padding: 0 14px;
+   font-size: 11px;
+   letter-spacing: 0.12em;
+   text-transform: uppercase;
+   border-radius: 999px;
+   margin-right: 10px;
+   white-space: nowrap;
+   }
+   .tag.inperson {
+   background: var(--accent);
+   color: #fff;
+   }
+   .tag.online {
+   background: #111827;
+   color: #fff;
+   }
+   @media print {
+   body {
+   background: #fff;
+   }
+   }
+</style>
+</head>
+
+<body class="en">
+<div class="poster">
+
+<!-- EN -->
+<div class="en-only">
+<div class="logo"><img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Jewish General Hospital" /></div>
+<div class="hero"><img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="Artwork for TITLE-ART-EN" /></div>
+<div class="art-credit"><em>ARTIST-NAME, TITLE-ART-EN, YR-ART</em></div>
+
+<div class="content">
+<div class="series">SERIES-EN</div>
+<h1>TITLE-EN</h1>
+
+<div class="speakers">
+<strong>SPEAKER1-NAME</strong><br />APPOINTMENT1-EN<br />
+<br /><strong>SPEAKER2-NAME</strong><br />APPOINTMENT2-EN<br />
+<br /><strong>GROUP1-NAME-EN</strong><br />APPOINTMENT3-EN<br />
+</div>
+
+<div class="rhythm"></div>
+
+<div class="details">
+<div class="date">MONTH-EN DAY, YEAR</div>
+<div class="time">STARTTIME-EN – ENDTIME-EN <span class="tz">(TIMEZONE-EN)</span></div>
+</div>
+
+<div class="location">ROOM-EN<br />
+ADDRESS-EN</div>
+<div class="online"><a href="ZOOM-LINK">Zoom</a> · ID ZOOM-ID · Code ZOOM-CODE</div>
+
+<div class="divider"></div>
+<div class="tags">
+<span class="tag inperson">INPERSONTAG-EN</span>
+<span class="tag online">ONLINETAG-EN</span>
+</div>
+</div>
+</div>
+
+<!-- FR -->
+<div class="fr-only">
+<div class="logo"><img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Hopital général juif" /></div>
+<div class="hero"><img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="Illustration pour TITLE-ART-FR" /></div>
+<div class="art-credit"><em>ARTIST-NAME, TITLE-ART-FR, YR-ART</em></div>
+
+<div class="content">
+<div class="series">SERIES-FR</div>
+<h1>TITLE-FR</h1>
+
+<div class="speakers">
+<strong>SPEAKER1-NAME</strong><br />APPOINTMENT1-FR<br />
+<br /><strong>SPEAKER2-NAME</strong><br />APPOINTMENT2-FR<br />
+<br /><strong>GROUP1-NAME-FR</strong><br />APPOINTMENT3-FR<br />
+</div>
+
+<div class="rhythm">
+<div class="disclaimer">Présentation en anglais</div>
+</div>
+
+<div class="details">
+<div class="date">DAY MONTH-FR YEAR</div>
+<div class="time">STARTTIME-FR – ENDTIME-FR <span class="tz">(TIMEZONE-FR)</span></div>
+</div>
+
+<div class="location">ROOM-FR<br />
+ADDRESS-FR</div>
+<div class="online"><a href="ZOOM-LINK">Zoom</a> · ID ZOOM-ID · Code ZOOM-CODE</div>
+
+<div class="divider"></div>
+<div class="tags">
+<span class="tag inperson">INPERSONTAG-FR</span>
+<span class="tag online">ONLINETAG-FR</span>
+</div>
+</div>
+</div>
+
+</div>
+</body>
 </html>
