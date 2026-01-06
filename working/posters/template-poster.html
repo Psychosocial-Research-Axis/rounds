@@ -151,189 +151,189 @@ NOTES
 <title>SHORT-TITLE - Poster</title>
 
 <style>
-   @page {
-   size: A4;
-   margin: 0;
-   }
-   * {
-   -webkit-print-color-adjust: exact;
-   print-color-adjust: exact;
-   }
-   :root {
-   --accent: SERIES-COLOR;
-   --link: #4338ca;
-   --soft: #e2d9f7;
-   --ink: #020617;
-   --muted: #475569;
-   --bg: #f7f5f2;
-   }
-   body {
-   margin: 0;
-   background: #fff;
-   font-family: Helvetica, Arial, sans-serif;
-   color: var(--ink);
-   }
-   .en-only,
-   .fr-only {
-   display: none;
-   }
-   body.en .en-only {
-   display: block;
-   }
-   body.fr .fr-only {
-   display: block;
-   }
-   .poster {
-   width: 210mm;
-   height: 297mm;
-   overflow: hidden;
-   margin: 0 auto;
-   background: var(--bg);
-   display: flex;
-   flex-direction: column;
-   position: relative;
-   }
-   .logo {
-   position: absolute;
-   top: 24px;
-   right: 32px;
-   z-index: 10;
-   }
-   .logo img {
-   height: 42px;
-   width: auto;
-   filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
-   }
-   .hero {
-   max-height: 145mm;
-   overflow: hidden;
-   position: relative;
-   z-index: 1;
-   }
-   .hero::after {
-   content: "";
-   position: absolute;
-   inset: 0;
-   background: rgba(0, 0, 0, 0.06);
-   }
-   .hero img {
-   width: 100%;
-   max-height: 145mm;
-   object-fit: cover;
-   object-position: center 40%;
-   display: block;
-   }
-   .art-credit {
-   font-size: 11px;
-   color: #555;
-   font-style: italic;
-   padding: 6px 36px 0 36px;
-   min-height: 32px;
-   max-width: 75%;
-   }
-   .content {
-   padding: 32px 44px 40px 44px;
-   }
-   .series {
-   font-size: 11px;
-   letter-spacing: 0.16em;
-   text-transform: uppercase;
-   color: var(--accent);
-   margin-bottom: 14px;
-   }
-   h1 {
-   font-family: Georgia, "Times New Roman", serif;
-   font-size: 34px;
-   color: var(--ink);
-   line-height: 1.12;
-   max-height: 2.6em;
-   overflow: hidden;
-   margin: 0 0 14px 0;
-   }
-   .speaker {
-   font-size: 20px;
-   margin-bottom: 12px;
-   }
-   .rhythm {
-   min-height: 28px;
-   margin-bottom: 22px;
-   }
-   .disclaimer {
-   display: inline-block;
-   font-size: 12px;
-   letter-spacing: 0.08em;
-   text-transform: uppercase;
-   color: #475569;
-   background: #f5f3ff;
-   border: 1px solid #e4defb;
-   padding: 6px 10px;
-   border-radius: 999px;
-   margin: 0;
-   }
-   .details {
-   border-left: 4px solid var(--accent);
-   padding-left: 18px;
-   margin-bottom: 22px;
-   }
-   .details .date {
-   font-family: Georgia, serif;
-   font-size: 20px;
-   font-weight: 700;
-   }
-   .details .time {
-   font-family: Georgia, serif;
-   font-size: 18px;
-   margin-top: 2px;
-   }
-   .details .tz {
-   color: var(--muted);
-   font-size: 15px;
-   }
-   .location,
-   .online {
-   font-size: 16px;
-   line-height: 1.55;
-   margin-top: 12px;
-   margin-bottom: 16px;
-   }
-   .online a {
-   color: var(--link);
-   text-decoration: underline;
-   }
-   .divider {
-   height: 1px;
-   background: var(--soft);
-   margin: 28px 0 22px 0;
-   }
-   .tags {
-   margin-top: 12px;
-   }
-   .tag {
-   display: inline-flex;
-   align-items: center;
-   justify-content: center;
-   height: 28px;
-   padding: 0 14px;
-   font-size: 11px;
-   letter-spacing: 0.12em;
-   text-transform: uppercase;
-   border-radius: 999px;
-   margin-right: 10px;
-   white-space: nowrap;
-   }
-   .tag.inperson {
-   background: var(--accent);
-   color: #fff;
-   }
-   .tag.online {
-   background: #111827;
-   color: #fff;
-   }
-   @media print {
-   body {
-   background: #fff;
-   }
-   }
+@page {
+size: A4;
+margin: 0;
+}
+* {
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+:root {
+--accent: #5B21B6;
+--link: #4338ca;
+--soft: #e2d9f7;
+--ink: #020617;
+--muted: #475569;
+--bg: #f7f5f2;
+}
+body {
+margin: 0;
+background: #fff;
+font-family: Helvetica, Arial, sans-serif;
+color: var(--ink);
+}
+.en-only,
+.fr-only {
+display: none;
+}
+body.en .en-only {
+display: block;
+}
+body.fr .fr-only {
+display: block;
+}
+.poster {
+width: 210mm;
+height: 297mm;
+overflow: hidden;
+margin: 0 auto;
+background: var(--bg);
+display: flex;
+flex-direction: column;
+position: relative;
+}
+.logo {
+position: absolute;
+top: 24px;
+right: 32px;
+z-index: 10;
+}
+.logo img {
+height: 42px;
+width: auto;
+filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
+}
+.hero {
+max-height: 145mm;
+overflow: hidden;
+position: relative;
+z-index: 1;
+}
+.hero::after {
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.06);
+}
+.hero img {
+width: 100%;
+max-height: 145mm;
+object-fit: cover;
+object-position: center 40%;
+display: block;
+}
+.art-credit {
+font-size: 11px;
+color: #555;
+font-style: italic;
+padding: 6px 36px 0 36px;
+min-height: 32px;
+max-width: 75%;
+}
+.content {
+padding: 32px 44px 40px 44px;
+}
+.series {
+font-size: 11px;
+letter-spacing: 0.16em;
+text-transform: uppercase;
+color: var(--accent);
+margin-bottom: 14px;
+}
+h1 {
+font-family: Georgia, "Times New Roman", serif;
+font-size: 34px;
+color: var(--ink);
+line-height: 1.12;
+max-height: 2.6em;
+overflow: hidden;
+margin: 0 0 14px 0;
+}
+.speaker {
+font-size: 20px;
+margin-bottom: 12px;
+}
+.rhythm {
+min-height: 28px;
+margin-bottom: 22px;
+}
+.disclaimer {
+display: inline-block;
+font-size: 12px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: #475569;
+background: #f5f3ff;
+border: 1px solid #e4defb;
+padding: 6px 10px;
+border-radius: 999px;
+margin: 0;
+}
+.details {
+border-left: 4px solid var(--accent);
+padding-left: 18px;
+margin-bottom: 22px;
+}
+.details .date {
+font-family: Georgia, serif;
+font-size: 20px;
+font-weight: 700;
+}
+.details .time {
+font-family: Georgia, serif;
+font-size: 18px;
+margin-top: 2px;
+}
+.details .tz {
+color: var(--muted);
+font-size: 15px;
+}
+.location,
+.online {
+font-size: 16px;
+line-height: 1.55;
+margin-top: 12px;
+margin-bottom: 16px;
+}
+.online a {
+color: var(--link);
+text-decoration: underline;
+}
+.divider {
+height: 1px;
+background: var(--soft);
+margin: 28px 0 22px 0;
+}
+.tags {
+margin-top: 12px;
+}
+.tag {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+height: 28px;
+padding: 0 14px;
+font-size: 11px;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+border-radius: 999px;
+margin-right: 10px;
+white-space: nowrap;
+}
+.tag.inperson {
+background: var(--accent);
+color: #fff;
+}
+.tag.online {
+background: #111827;
+color: #fff;
+}
+@media print {
+body {
+background: #fff;
+}
+}
 </style>
 </head>
 
