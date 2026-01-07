@@ -23,12 +23,12 @@ END:VTIMEZONE
 
 BEGIN:VEVENT
 UID:20260115-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260102T143000Z
+DTSTAMP:20260107T140000Z
 DTSTART;TZID=America/Toronto:20260115T120000
 DTEND;TZID=America/Toronto:20260115T130000
 SUMMARY:Clinical Grand Rounds - Coercion in Outpatient Community Mental Health Services
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal
-DESCRIPTION:Speakers: Arash Nakhost, MD; Adult Psychosis Program Staff.\nSession chaired by Nasr Farooqi, MD.\nIn person only.\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-15-clinical-announcement.html
+DESCRIPTION:Speakers: Arash Nakhost, MD, PhD; Adult Psychosis Program Staff.\nSession chaired by Nasr Farooqi, MD.\nIn person only.\nMore info: https://psychosocial-research-axis.github.io/rounds/emails/2026-01-15-clinical-announcement.html
 END:VEVENT
 
 BEGIN:VEVENT
