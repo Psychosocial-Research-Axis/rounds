@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="format-detection" content="telephone=no,date=no,address=no,email=no" />
-<title>SHORT-TITLE</title>
+<title>TITLE-SHORT-EN</title>
 
 <!--[if mso]>
 <xml>
@@ -15,52 +15,6 @@
 </xml>
 <![endif]-->
 
-<style>
-html,
-body {
-margin: 0 !important;
-padding: 0 !important;
-width: 100% !important;
-}
-table {
-border-collapse: collapse;
-mso-table-lspace: 0;
-mso-table-rspace: 0;
-}
-img {
-border: 0;
-outline: none;
-text-decoration: none;
-display: block;
-}
-a {
-text-decoration: none;
-color: inherit;
-}
-p {
-margin: 0;
-}
-a[x-apple-data-detectors] {
-color: inherit !important;
-text-decoration: none !important;
-}
-
-@media (max-width: 680px) {
-.container {
-width: 100% !important;
-}
-.px {
-padding-left: 18px !important;
-padding-right: 18px !important;
-}
-.hero-title {
-font-size: 28px !important;
-}
-}
-</style>
-</head>
-
-<body style="background: #f4f6f8">
 <!--
 FIND-AND-REPLACE GUIDE — DO NOT DELETE
 REPLACE EVERY TOKEN BELOW (EXACT MATCH)
@@ -71,10 +25,10 @@ A) CORE
 DATE ISO: DATE-ISO
 SERIES SHORTNAME: SERIES-SHORTNAME
 SERIES COLOR: SERIES-COLOR
-SERIES EN: SERIES-EN
-SERIES UPPER EN: SERIES-UPPER-EN
-SERIES FR: SERIES-FR
-SERIES UPPER FR: SERIES-UPPER-FR
+
+SERIES EN: SERIES-EN / SERIES FR: SERIES-FR
+SERIES UPPER EN: SERIES-UPPER-EN / SERIES UPPER FR: SERIES-UPPER-FR
+
 CHAIR NAME: CHAIR-NAME
 
 =====================
@@ -82,67 +36,49 @@ B) TITLES
 =====================
 TITLE EN: TITLE-EN
 TITLE FR: TITLE-FR
-SHORT TITLE: SHORT-TITLE
+TITLE SHORT EN: TITLE-SHORT-EN
+TITLE SHORT FR: TITLE-SHORT-FR
 
 =====================
 C) DATE & TIME
 =====================
+MONTH EN: MONTH-EN / MONTH FR: MONTH-FR
 DAY (number): DAY
 YEAR (number): YEAR
 
-MONTH EN: MONTH-EN
-START TIME EN: STARTTIME-EN
-END TIME EN: ENDTIME-EN
-TIMEZONE EN: TIMEZONE-EN
-
-MONTH FR: MONTH-FR
-START TIME FR: STARTTIME-FR
-END TIME FR: ENDTIME-FR
-TIMEZONE FR: TIMEZONE-FR
+START TIME EN: STARTTIME-EN / START TIME FR: STARTTIME-FR
+END TIME EN: ENDTIME-EN / END TIME FR: ENDTIME-FR
+TIMEZONE EN: TIMEZONE-EN / TIMEZONE FR: TIMEZONE-FR
 
 =====================
 D) SPEAKER(S)
 =====================
 SPEAKER 1 NAME: SPEAKER1-NAME
-APPOINTMENT 1 EN: APPOINTMENT1-EN
-POSITION 1 EN: POSITION1-EN
-AFFILIATION 1 EN: AFFILIATION1-EN
-APPOINTMENT 1 FR: APPOINTMENT1-FR
-POSITION 1 FR: POSITION1-FR
-AFFILIATION 1 FR: AFFILIATION1-FR
+APPOINTMENT 1 EN: APPOINTMENT1-EN / APPOINTMENT 1 FR: APPOINTMENT1-FR
+POSITION 1 EN: POSITION1-EN / POSITION 1 FR: POSITION1-FR
+AFFILIATION 1 EN: AFFILIATION1-EN / AFFILIATION 1 FR: AFFILIATION1-FR
 
 SPEAKER 2 NAME: SPEAKER2-NAME
-APPOINTMENT 2 EN: APPOINTMENT2-EN
-POSITION 2 EN: POSITION2-EN
-AFFILIATION 2 EN: AFFILIATION2-EN
-APPOINTMENT 2 FR: APPOINTMENT2-FR
-POSITION 2 FR: POSITION2-FR
-AFFILIATION 2 FR: AFFILIATION2-FR
+APPOINTMENT 2 EN: APPOINTMENT2-EN / APPOINTMENT 2 FR: APPOINTMENT2-FR
+POSITION 2 EN: POSITION2-EN / POSITION 2 FR: POSITION2-FR
+AFFILIATION 2 EN: AFFILIATION2-EN / AFFILIATION 2 FR: AFFILIATION2-FR
 
-GROUP NAME EN: GROUP1-NAME-EN
-APPOINTMENT 3 EN: APPOINTMENT3-EN
-POSITION 3 EN: POSITION3-EN
-AFFILIATION 3 EN: AFFILIATION3-EN
-GROUP NAME FR: GROUP1-NAME-FR
-APPOINTMENT 3 FR: APPOINTMENT3-FR
-POSITION 3 FR: POSITION3-FR
-AFFILIATION 3 FR: AFFILIATION3-FR
+GROUP NAME EN: GROUP1-NAME-EN / GROUP NAME FR: GROUP1-NAME-FR
+APPOINTMENT 3 EN: APPOINTMENT3-EN / APPOINTMENT 3 FR: APPOINTMENT3-FR
+POSITION 3 EN: POSITION3-EN / POSITION 3 FR: POSITION3-FR
+AFFILIATION 3 EN: AFFILIATION3-EN / AFFILIATION 3 FR: AFFILIATION3-FR
 
 =====================
 E) LOCATION
 =====================
-ROOM EN: ROOM-EN
-ADDRESS EN: ADDRESS-EN
-ROOM FR: ROOM-FR
-ADDRESS FR: ADDRESS-FR
+ROOM EN: ROOM-EN / ROOM FR: ROOM-FR
+ADDRESS EN: ADDRESS-EN / ADDRESS FR: ADDRESS-FR
 
 =====================
 F) TAGS
 =====================
-IN-PERSON TAG EN: INPERSONTAG-EN
-ONLINE TAG EN: ONLINETAG-EN
-IN-PERSON TAG FR: INPERSONTAG-FR
-ONLINE TAG FR: ONLINETAG-FR
+IN-PERSON TAG EN: INPERSONTAG-EN / IN-PERSON TAG FR: INPERSONTAG-FR
+ONLINE TAG EN: ONLINETAG-EN / ONLINE TAG FR: ONLINETAG-FR
 
 ZOOM LINK: ZOOM-LINK
 ZOOM ID: ZOOM-ID
@@ -177,8 +113,7 @@ BIO 3 FR: BIO3-FR
 H) ARTWORK
 =====================
 ARTIST NAME: ARTIST-NAME
-ART TITLE EN: TITLE-ART-EN
-ART TITLE FR: TITLE-ART-FR
+ART TITLE EN: TITLE-ART-EN / ART TITLE FR: TITLE-ART-FR
 ART YEAR: YR-ART
 
 =====================
@@ -244,6 +179,52 @@ NOTES
 • Do not add logic to values
 -->
 
+<style>
+html,
+body {
+margin: 0 !important;
+padding: 0 !important;
+width: 100% !important;
+}
+table {
+border-collapse: collapse;
+mso-table-lspace: 0;
+mso-table-rspace: 0;
+}
+img {
+border: 0;
+outline: none;
+text-decoration: none;
+display: block;
+}
+a {
+text-decoration: none;
+color: inherit;
+}
+p {
+margin: 0;
+}
+a[x-apple-data-detectors] {
+color: inherit !important;
+text-decoration: none !important;
+}
+
+@media (max-width: 680px) {
+.container {
+width: 100% !important;
+}
+.px {
+padding-left: 18px !important;
+padding-right: 18px !important;
+}
+.hero-title {
+font-size: 28px !important;
+}
+}
+</style>
+</head>
+
+<body style="background: #f4f6f8">
 <!-- Preview text -->
 <div
 style="
