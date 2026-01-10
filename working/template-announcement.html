@@ -15,170 +15,6 @@
 </xml>
 <![endif]-->
 
-<!--
-FIND-AND-REPLACE GUIDE — DO NOT DELETE
-REPLACE EVERY TOKEN BELOW (EXACT MATCH)
-
-=====================
-A) CORE
-=====================
-DATE ISO: DATE-ISO
-SERIES SHORTNAME: SERIES-SHORTNAME
-SERIES COLOR: SERIES-COLOR
-
-SERIES EN: SERIES-EN / SERIES FR: SERIES-FR
-SERIES UPPER EN: SERIES-UPPER-EN / SERIES UPPER FR: SERIES-UPPER-FR
-
-CHAIR NAME: CHAIR-NAME
-
-=====================
-B) TITLES
-=====================
-TITLE EN: TITLE-EN
-TITLE FR: TITLE-FR
-TITLE SHORT EN: TITLE-SHORT-EN
-TITLE SHORT FR: TITLE-SHORT-FR
-
-=====================
-C) DATE & TIME
-=====================
-MONTH EN: MONTH-EN / MONTH FR: MONTH-FR
-D-AY (number): DAY
-Y-EAR (number): YEAR
-
-START TIME EN: STARTTIME-EN / START TIME FR: STARTTIME-FR
-END TIME EN: ENDTIME-EN / END TIME FR: ENDTIME-FR
-TIMEZONE EN: TIMEZONE-EN / TIMEZONE FR: TIMEZONE-FR
-
-=====================
-D) SPEAKER(S)
-=====================
-SPEAKER 1 NAME: SPEAKER1-NAME
-APPOINTMENT 1 EN: APPOINTMENT1-EN / APPOINTMENT 1 FR: APPOINTMENT1-FR
-POSITION 1 EN: POSITION1-EN / POSITION 1 FR: POSITION1-FR
-AFFILIATION 1 EN: AFFILIATION1-EN / AFFILIATION 1 FR: AFFILIATION1-FR
-
-SPEAKER 2 NAME: SPEAKER2-NAME
-APPOINTMENT 2 EN: APPOINTMENT2-EN / APPOINTMENT 2 FR: APPOINTMENT2-FR
-POSITION 2 EN: POSITION2-EN / POSITION 2 FR: POSITION2-FR
-AFFILIATION 2 EN: AFFILIATION2-EN / AFFILIATION 2 FR: AFFILIATION2-FR
-
-GROUP NAME EN: GROUP1-NAME-EN / GROUP NAME FR: GROUP1-NAME-FR
-APPOINTMENT 3 EN: APPOINTMENT3-EN / APPOINTMENT 3 FR: APPOINTMENT3-FR
-POSITION 3 EN: POSITION3-EN / POSITION 3 FR: POSITION3-FR
-AFFILIATION 3 EN: AFFILIATION3-EN / AFFILIATION 3 FR: AFFILIATION3-FR
-
-=====================
-E) LOCATION
-=====================
-ROOM EN: ROOM-EN / ROOM FR: ROOM-FR
-ADDRESS EN: ADDRESS-EN / ADDRESS FR: ADDRESS-FR
-
-=====================
-F) TAGS
-=====================
-IN-PERSON TAG EN: INPERSONTAG-EN / IN-PERSON TAG FR: INPERSONTAG-FR
-ONLINE TAG EN: ONLINETAG-EN / ONLINE TAG FR: ONLINETAG-FR
-
-ZOOM LINK: ZOOM-LINK
-ZOOM ID: ZOOM-ID
-ZOOM CODE: ZOOM-CODE
-
-=====================
-G) CONTENT
-=====================
-DESCRIPTION EN: DESC-EN
-DESCRIPTION FR: DESC-FR
-
-FIRST GOAL EN: FIRSTGOAL-EN
-SECOND GOAL EN: SECONDGOAL-EN
-THIRD GOAL EN: THIRDGOAL-EN
-FOURTH GOAL EN: FOURTHGOAL-EN
-
-FIRST GOAL FR: FIRSTGOAL-FR
-SECOND GOAL FR: SECONDGOAL-FR
-THIRD GOAL FR: THIRDGOAL-FR
-FOURTH GOAL FR: FOURTHGOAL-FR
-
-BIO 1 EN: BIO1-EN
-BIO 1 FR: BIO1-FR
-
-BIO 2 EN: BIO2-EN
-BIO 2 FR: BIO2-FR
-
-BIO 3 EN: BIO3-EN
-BIO 3 FR: BIO3-FR
-
-=====================
-H) ARTWORK
-=====================
-ARTIST NAME: ARTIST-NAME
-ART TITLE EN: TITLE-ART-EN / ART TITLE FR: TITLE-ART-FR
-ART Y-EAR: YR-ART
-
-=====================
-I) SERIES REFERENCE (READ ONLY)
-=====================
-SHORTNAMES
-academic
-psychosocial
-cultural
-clinical
-
-COLORS
-#1D4ED8 academic
-#5B21B6 psychosocial
-#BE185D cultural
-#065F46 clinical
-
-SERIES NAMES (EN)
-Academic Grand Rounds
-Psychosocial Research Rounds
-Cultural Psychiatry Rounds
-Clinical Grand Rounds
-
-SERIES NAMES (FR)
-Séminaires académiques
-Séminaires de recherche psychosociale
-Séminaires de psychiatrie culturelle
-Séminaires cliniques
-
-CHAIRS
-Vincent Laliberté, MD academic
-David Dunkley, PhD psychosocial
-Vincent Paquin, MD psychosocial
-Laurence J. Kirmayer, MD cultural
-Nasr Farooqi, MD clinical
-
-=====================
-J) TAGS REFERENCE (READ ONLY)
-=====================
-HYBRID EVENT (for emails, leave blank)
-INPERSONTAG EN: In person
-INPERSONTAG FR: En personne
-ONLINETAG EN: Online
-ONLINETAG FR: En ligne
-
-IN-PERSON ONLY
-INPERSONTAG EN: In person only
-INPERSONTAG FR: En personne seulement
-ONLINETAG EN: (leave blank)
-ONLINETAG FR: (leave blank)
-
-ONLINE ONLY
-INPERSONTAG EN: (leave blank)
-INPERSONTAG FR: (leave blank)
-ONLINETAG EN: Online only
-ONLINETAG FR: En ligne seulement
-
-=====================
-NOTES
-=====================
-• Empty values are allowed unless otherwise stated
-• Do not rename tokens
-• Do not add logic to values
--->
-
 <style>
 html,
 body {
@@ -225,24 +61,9 @@ font-size: 28px !important;
 
 <body style="background: #f4f6f8">
 <!-- Preview text -->
-<div
-style="
-display: none;
-max-height: 0;
-overflow: hidden;
-mso-hide: all;
-font-size: 1px;
-line-height: 1px;
-color: #ffffff;
-"
->
-SHORT-PREVIEW
-</div>
-<div style="display: none; max-height: 0px; overflow: hidden">
-&shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
-</div>
+<div style="display: none; max-height: 0; overflow: hidden; font-size: 1px">SHORT-PREVIEW</div>
 
-<!-- ================= ENGLISH ================= -->
+<!-- ================= EN ================= -->
 <!-- View in browser -->
 <table id="en" role="presentation" width="100%" bgcolor="#F4F6F8">
 <tr>
@@ -330,7 +151,6 @@ style="
 font-family: Helvetica, Arial, sans-serif;
 font-size: 11px;
 letter-spacing: 0.14em;
-color: #ff2f92;
 color: SERIES-COLOR;
 margin-bottom: 14px;
 "
@@ -366,16 +186,10 @@ color: #020617;
 "
 >
 <strong>SPEAKER1-NAME</strong><br />
-<span style="color: #475569">APPOINTMENT1-EN<br /></span>
-<span style="color: #475569">POSITION1-EN, <i>AFFILIATION1-EN</i><br /></span>
+<span style="color: #475569">AFFILIATION1-EN<br /></span>
 
 <br /><strong>SPEAKER2-NAME</strong><br />
-<span style="color: #475569">APPOINTMENT2-EN<br /></span>
-<span style="color: #475569">POSITION2-EN, <i>AFFILIATION2-EN</i><br /></span>
-
-<br /><strong>GROUP1-NAME-EN</strong><br />
-<span style="color: #475569">APPOINTMENT3-EN<br /></span>
-<span style="color: #475569">POSITION3-EN, <i>AFFILIATION3-EN</i><br /></span>
+<span style="color: #475569">AFFILIATION2-EN<br /></span>
 </p>
 
 <p
@@ -394,90 +208,90 @@ Session chaired by CHAIR-NAME
 <!-- Date and Time -->
 <tr>
 <td class="px" style="padding: 0 44px 32px">
-<table width="100%">
+<table width="100%" role="presentation">
 <tr>
-<td
-style="
-padding-left:16px;
-border-left: 4px solid #ff2f92;
-border-left:4px solid SERIES-COLOR;
-"
->
-
+<td style="padding-left: 16px; border-left: 4px solid SERIES-COLOR">
+<!-- Label -->
 <p
 style="
-font-family:Helvetica, Arial, sans-serif;
-font-size:11px;
-letter-spacing:0.14em;
-color: #ff2f92;
-color:SERIES-COLOR;
-margin-bottom:6px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+letter-spacing: 0.14em;
+color: SERIES-COLOR;
+margin-bottom: 6px;
 "
 >
 DATE AND TIME
 </p>
 
+<!-- Date -->
 <p
 style="
-font-family:Georgia, serif;
-font-size:18px;
-font-weight:700;
-color:#020617;
+font-family: Georgia, serif;
+font-size: 18px;
+font-weight: 700;
+color: #020617;
 "
 >
-MONTH-EN DAY, YEAR
+DATE-LONG-EN
 </p>
 
+<!-- Time -->
 <p
 style="
-margin-top:2px;
-font-family:Georgia, serif;
-font-size:17px;
-color:#020617;
+margin-top: 2px;
+font-family: Georgia, serif;
+font-size: 17px;
+color: #020617;
 "
 >
 STARTTIME-EN – ENDTIME-EN
-<span style="color:#64748b">(TIMEZONE-EN)</span>
+<span style="color: #64748b">(TIMEZONE-EN)</span>
 </p>
 
-<div
+<!-- Location -->
+<p
 style="
-margin-top:12px;
-font-family:Helvetica, Arial, sans-serif;
-font-size:14px;
-line-height:1.7;
-color:#334155;
+margin-top: 12px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.7;
+color: #334155;
 "
 >
-ROOM-EN, ADDRESS-EN<br />
+ROOM-EN, ADDRESS-EN
+</p>
 
-<table role="presentation" cellpadding="0" cellspacing="0">
+<!-- Zoom -->
+<table
+role="presentation"
+cellpadding="0"
+cellspacing="0"
+style="margin-top: 6px"
+>
 <tr>
 <td
 style="
-font-family:Helvetica, Arial, sans-serif;
-font-size:14px;
-color:#334155;
-white-space:nowrap;
-"
->
-<a style="color:#4333ca; text-decoration:underline" href="ZOOM-LINK">Zoom</a>
-<span style="color:#64748b"> · ID ZOOM-ID · Code ZOOM-CODE</span>
+font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #334155;
+">
+<a href="ZOOM-LINK" style="color: #4333ca; text-decoration: underline">Zoom</a>
+<span style="color: #64748b; padding-right: 6px"> · ID ZOOM-ID · Code ZOOM-CODE</span>
 </td>
-
-<td style="padding-left:6px;">
+<!-- tag -->
+<td style="vertical-align: top">
 <span
 style="
-display:inline-block;
-padding:2px 8px;
-border-radius:999px;
-font-family:Helvetica, Arial, sans-serif;
-font-size:11px;
-letter-spacing:.06em;
-color:#475569;
-background:#F1F5F9;
-border:1px solid #E2E8F0;
-white-space:nowrap;
+display: inline-block;
+padding: 2px 8px;
+border-radius: 999px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+letter-spacing: 0.06em;
+color: #475569;
+background: #f1f5f9;
+border: 1px solid #e2e8f0;
 "
 >
 FORMAT-EN
@@ -485,8 +299,6 @@ FORMAT-EN
 </td>
 </tr>
 </table>
-</div>
-
 </td>
 </tr>
 </table>
@@ -569,18 +381,44 @@ line-height: 1.75;
 color: #334155;
 "
 >
-<tr><td width="22" valign="top">—</td><td>FIRSTGOAL-EN</td></tr>
-<tr><td valign="top">—</td><td>SECONDGOAL-EN</td></tr>
-<tr><td valign="top">—</td><td>THIRDGOAL-EN</td></tr>
-<tr><td valign="top">—</td><td>FOURTHGOAL-EN</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL1-EN</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL2-EN</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL3-EN</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL4-EN</td></tr>
 </table>
 </td>
 </tr>
 
 <!-- Bio -->
-<tr><td class="px" style="padding: 0 44px 48px"><p style="font-family: Georgia, serif;font-size: 16px;line-height: 1.85;color: #334155;"><strong style="color: #020617">SPEAKER1-NAME </strong>BIO1-EN</p></td></tr>
-<tr><td class="px" style="padding: 0 44px 48px"><p style="font-family: Georgia, serif;font-size: 16px;line-height: 1.85;color: #334155;"><strong style="color: #020617">SPEAKER2-NAME </strong>BIO2-EN</p></td></tr>
-<tr><td class="px" style="padding: 0 44px 48px"><p style="font-family: Georgia, serif;font-size: 16px;line-height: 1.85;color: #334155;"><strong style="color: #020617">GROUP1-NAME-EN </strong>BIO3-EN</p></td></tr>
+<tr>
+<td class="px" style="padding: 0 44px 48px">
+<p
+style="
+font-family: Georgia, serif;
+font-size: 16px;
+line-height: 1.85;
+color: #334155;
+"
+>
+<strong style="color: #020617">SPEAKER1-NAME </strong>BIO1-EN
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="px" style="padding: 0 44px 48px">
+<p
+style="
+font-family: Georgia, serif;
+font-size: 16px;
+line-height: 1.85;
+color: #334155;
+"
+>
+<strong style="color: #020617">SPEAKER2-NAME </strong>BIO2-EN
+</p>
+</td>
+</tr>
 
 <!-- Posters -->
 
@@ -614,12 +452,14 @@ line-height: 1.7;
 color: #334155;
 "
 >
-&#128197; Rounds calendar — 
+&#128197; Rounds calendar —
 <a
 href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#en"
 style="color: #4338ca; text-decoration: underline"
 >
-Subscribe</a> to receive all future events.
+Subscribe</a
+>
+to receive all future events.
 </p>
 </td>
 </tr>
@@ -670,9 +510,9 @@ Unsubscribe
 </table>
 <!-- End English version -->
 
-<!-- ================= FRENCH ================= -->
+<!-- ================= FR ================= -->
 <!-- View in browser -->
-<table role="presentation" width="100%" bgcolor="#F4F6F8">
+<table id="fr" role="presentation" width="100%" bgcolor="#F4F6F8">
 <tr>
 <td align="center" style="padding: 12px 16px">
 <p
@@ -695,7 +535,7 @@ Voir dans le navigateur
 </table>
 
 <!-- Main email wrapper -->
-<table id="fr" role="presentation" width="100%" bgcolor="#F4F6F8">
+<table role="presentation" width="100%" bgcolor="#F4F6F8">
 <tr>
 <td align="center" style="padding: 20px 14px">
 <table
@@ -716,7 +556,7 @@ style="max-width: 660px; background: #ffffff"
 <img
 src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
 height="32"
-alt="Axe de recherche psychosociale"
+alt="Psychosocial Research Axis"
 />
 </td>
 <td
@@ -758,7 +598,6 @@ style="
 font-family: Helvetica, Arial, sans-serif;
 font-size: 11px;
 letter-spacing: 0.14em;
-color: #ff2f92;
 color: SERIES-COLOR;
 margin-bottom: 14px;
 "
@@ -771,7 +610,7 @@ SERIES-UPPER-FR
 class="hero-title"
 style="
 font-family: Georgia, serif;
-font-size: 34px;
+font-size: 36px;
 font-weight: 700;
 line-height: 1.25;
 color: #020617;
@@ -794,16 +633,10 @@ color: #020617;
 "
 >
 <strong>SPEAKER1-NAME</strong><br />
-<span style="color: #475569">APPOINTMENT1-FR<br /></span>
-<span style="color: #475569">POSITION1-FR, <i>AFFILIATION1-FR</i><br /></span>
+<span style="color: #475569">AFFILIATION1-FR<br /></span>
 
 <br /><strong>SPEAKER2-NAME</strong><br />
-<span style="color: #475569">APPOINTMENT2-FR<br /></span>
-<span style="color: #475569">POSITION2-FR, <i>AFFILIATION2-FR</i><br /></span>
-
-<br /><strong>GROUP1-NAME-FR</strong><br />
-<span style="color: #475569">APPOINTMENT3-FR<br /></span>
-<span style="color: #475569">POSITION3-FR, <i>AFFILIATION3-FR</i><br /></span>
+<span style="color: #475569">AFFILIATION2-FR<br /></span>
 </p>
 
 <p
@@ -837,7 +670,6 @@ font-family: Helvetica, Arial, sans-serif;
 font-size: 12px;
 letter-spacing: 0.08em;
 color: #475569;
-white-space: nowrap;
 "
 >
 PRÉSENTATION&nbsp;EN&nbsp;ANGLAIS
@@ -858,7 +690,6 @@ font-family: Helvetica, Arial, sans-serif;
 font-size: 12px;
 letter-spacing: 0.08em;
 color: #475569;
-white-space: nowrap;
 "
 >
 PRÉSENTATION&nbsp;EN&nbsp;ANGLAIS
@@ -870,90 +701,91 @@ PRÉSENTATION&nbsp;EN&nbsp;ANGLAIS
 <!-- Date and Time -->
 <tr>
 <td class="px" style="padding: 0 44px 32px">
-<table width="100%">
+<table width="100%" role="presentation">
 <tr>
-<td
-style="
-padding-left:16px;
-border-left: 4px solid #ff2f92;
-border-left:4px solid SERIES-COLOR;
-"
->
+<td style="padding-left: 16px; border-left: 4px solid SERIES-COLOR">
 
+<!-- Label -->
 <p
 style="
-font-family:Helvetica, Arial, sans-serif;
-font-size:11px;
-letter-spacing:0.14em;
-color: #ff2f92;
-color:SERIES-COLOR;
-margin-bottom:6px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+letter-spacing: 0.14em;
+color: SERIES-COLOR;
+margin-bottom: 6px;
 "
 >
 DATE ET HEURE
 </p>
 
+<!-- Date -->
 <p
 style="
-font-family:Georgia, serif;
-font-size:18px;
-font-weight:700;
-color:#020617;
+font-family: Georgia, serif;
+font-size: 18px;
+font-weight: 700;
+color: #020617;
 "
 >
-DAY MONTH-FR YEAR
+DATE-LONG-FR
 </p>
 
+<!-- Time -->
 <p
 style="
-margin-top:2px;
-font-family:Georgia, serif;
-font-size:17px;
-color:#020617;
+margin-top: 2px;
+font-family: Georgia, serif;
+font-size: 17px;
+color: #020617;
 "
 >
 STARTTIME-FR – ENDTIME-FR
-<span style="color:#64748b">(TIMEZONE-FR)</span>
+<span style="color: #64748b">(TIMEZONE-FR)</span>
 </p>
 
-<div
+<!-- Location -->
+<p
 style="
-margin-top:12px;
-font-family:Helvetica, Arial, sans-serif;
-font-size:14px;
-line-height:1.7;
-color:#334155;
+margin-top: 12px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.7;
+color: #334155;
 "
 >
-ROOM-FR, ADDRESS-FR<br />
+ROOM-FR, ADDRESS-FR
+</p>
 
-<table role="presentation" cellpadding="0" cellspacing="0">
+<!-- Zoom -->
+<table
+role="presentation"
+cellpadding="0"
+cellspacing="0"
+style="margin-top: 6px"
+>
 <tr>
 <td
 style="
-font-family:Helvetica, Arial, sans-serif;
-font-size:14px;
-color:#334155;
-white-space:nowrap;
-"
->
-<a style="color:#4333ca; text-decoration:underline" href="ZOOM-LINK">Zoom</a>
-<span style="color:#64748b"> · ID ZOOM-ID · Code ZOOM-CODE</span>
+font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #334155;
+">
+<a href="ZOOM-LINK" style="color: #4333ca; text-decoration: underline">Zoom</a>
+<span style="color: #64748b; padding-right: 6px"> · ID ZOOM-ID · Code ZOOM-CODE</span>
 </td>
-
-<td style="padding-left:6px;">
+<!-- tag -->
+<td style="vertical-align: top">
 <span
 style="
-display:inline-block;
-padding:2px 8px;
-border-radius:999px;
-font-family:Helvetica, Arial, sans-serif;
-font-size:11px;
-letter-spacing:.06em;
-color:#475569;
-background:#F1F5F9;
-border:1px solid #E2E8F0;
-white-space:nowrap;
+display: inline-block;
+padding: 2px 8px;
+border-radius: 999px;
+font-family: Helvetica, Arial, sans-serif;
+font-size: 11px;
+letter-spacing: 0.06em;
+color: #475569;
+background: #f1f5f9;
+border: 1px solid #e2e8f0;
 "
 >
 FORMAT-FR
@@ -961,14 +793,11 @@ FORMAT-FR
 </td>
 </tr>
 </table>
-</div>
-
 </td>
 </tr>
 </table>
 </td>
 </tr>
-
 
 <!-- Description -->
 <tr>
@@ -1046,20 +875,47 @@ line-height: 1.75;
 color: #334155;
 "
 >
-<tr><td width="22" valign="top">—</td><td>FIRSTGOAL-FR</td></tr>
-<tr><td valign="top">—</td><td>SECONDGOAL-FR</td></tr>
-<tr><td valign="top">—</td><td>THIRDGOAL-FR</td></tr>
-<tr><td valign="top">—</td><td>FOURTHGOAL-FR</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL1-FR</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL2-FR</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL3-FR</td></tr>
+<tr><td width="22" valign="top">—</td><td>GOAL4-FR</td></tr>
 </table>
 </td>
 </tr>
 
 <!-- Bio -->
-<tr><td class="px" style="padding: 0 44px 48px"><p style="font-family: Georgia, serif;font-size: 16px;line-height: 1.85;color: #334155;"><strong style="color: #020617">SPEAKER1-NAME </strong>BIO1-FR</p></td></tr>
-<tr><td class="px" style="padding: 0 44px 48px"><p style="font-family: Georgia, serif;font-size: 16px;line-height: 1.85;color: #334155;"><strong style="color: #020617">SPEAKER2-NAME </strong>BIO2-FR</p></td></tr>
-<tr><td class="px" style="padding: 0 44px 48px"><p style="font-family: Georgia, serif;font-size: 16px;line-height: 1.85;color: #334155;"><strong style="color: #020617">GROUP1-NAME-FR </strong>BIO3-FR</p></td></tr>
+<tr>
+<td class="px" style="padding: 0 44px 48px">
+<p
+style="
+font-family: Georgia, serif;
+font-size: 16px;
+line-height: 1.85;
+color: #334155;
+"
+>
+<strong style="color: #020617">SPEAKER1-NAME </strong>BIO1-FR
+</p>
+</td>
+</tr>
+
+<tr>
+<td class="px" style="padding: 0 44px 48px">
+<p
+style="
+font-family: Georgia, serif;
+font-size: 16px;
+line-height: 1.85;
+color: #334155;
+"
+>
+<strong style="color: #020617">SPEAKER2-NAME </strong>BIO2-FR
+</p>
+</td>
+</tr>
 
 <!-- Posters -->
+
 <tr>
 <td class="px" style="padding: 0 44px 48px">
 <p style="font-size: 13px; color: #4338ca">
@@ -1090,13 +946,14 @@ line-height: 1.7;
 color: #334155;
 "
 >
-&#128197; Calendrier des séminaires — 
-
+&#128197; Calendrier des séminaires —
 <a
-href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#fr"
+href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#en"
 style="color: #4338ca; text-decoration: underline"
 >
-S’abonner</a> pour recevoir tous les événements.
+S’abonner</a
+>
+pour recevoir tous les événements.
 </p>
 </td>
 </tr>
@@ -1145,6 +1002,9 @@ Se désabonner
 </td>
 </tr>
 </table>
-<!-- End French Version-->
+<!-- End French version -->
+
 </body>
 </html>
+
+
