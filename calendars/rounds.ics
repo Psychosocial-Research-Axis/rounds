@@ -23,7 +23,7 @@ END:VTIMEZONE
 
 BEGIN:VEVENT
 UID:20260115-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260115T120000
 DTEND;TZID=America/Toronto:20260115T130000
 SUMMARY:Clinical Grand Rounds - Coercion in Outpatient Community Mental Health Services
@@ -33,7 +33,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260115-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260115T133000
 DTEND;TZID=America/Toronto:20260115T143000
 SUMMARY:Psychosocial Research Rounds - Youth’s Conceptualization of Mental Health
@@ -44,7 +44,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260122-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260122T133000
 DTEND;TZID=America/Toronto:20260122T150000
 SUMMARY:Psychosocial Research Rounds - Challenges in Global Cervical Cancer Prevention: What Influences Women’s Participation?
@@ -55,7 +55,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260129-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260129T133000
 DTEND;TZID=America/Toronto:20260129T150000
 SUMMARY:Cultural Psychiatry Rounds - Cultural Variations in Psychosis
@@ -66,18 +66,18 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260205-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260205T133000
 DTEND;TZID=America/Toronto:20260205T150000
-SUMMARY:Academic Grand Rounds
+SUMMARY:Academic Grand Rounds - Cultural Psychiatry in China: From Minority Mental Health to AI and Regional Factors
 LOCATION:Online
-DESCRIPTION:Speaker(s): Jianzhong Yang, MD\nChair: Vincent Laliberté, MD\n\nFormat: Online only\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Speaker(s): Jianzhong Yang, MD\nChair: Vincent Laliberté, MD\n\nFormat: Online only\n\nZoom ID: 883 8893 7550 | Passcode: 021037\nZoom Link: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260219-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260219T133000
 DTEND;TZID=America/Toronto:20260219T150000
 SUMMARY:Psychosocial Research Rounds - The Role of Ketamine in Palliative Care
@@ -88,7 +88,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260312-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260312T120000
 DTEND;TZID=America/Toronto:20260312T130000
 SUMMARY:Clinical Grand Rounds - Child Psychiatry
@@ -97,30 +97,19 @@ DESCRIPTION:Speaker(s): TBA\nChair: Nasr Farooqi, MD\n\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20260319-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
-DTSTART;TZID=America/Toronto:20260319T133000
-DTEND;TZID=America/Toronto:20260319T150000
-SUMMARY:Psychosocial Research Rounds - Cancer Trajectory
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
-DESCRIPTION:Speaker(s): Carmen G. Loiselle, PhD\nChair: David Dunkley, PhD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-END:VEVENT
-
-BEGIN:VEVENT
 UID:20260409-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260409T133000
 DTEND;TZID=America/Toronto:20260409T150000
 SUMMARY:Academic Grand Rounds - Neurological Development in Patients with Congenital Heart Disease
 LOCATION:Online
-DESCRIPTION:Speaker(s): Kei Kobayashi, MD\nChair: Vincent Laliberté, MD\n\nFormat: Online only\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Speaker(s): Kei Kobayashi, MD\nChair: Vincent Laliberté, MD\n\nFormat: Online only\n\nZoom ID: 883 8893 7550 | Passcode: 021037\nZoom Link: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260416-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260416T133000
 DTEND;TZID=America/Toronto:20260416T143000
 SUMMARY:Psychosocial Research Rounds - Family Resilience and Defrosting Ageism through Shared Creative Moments of Perplexity
@@ -131,7 +120,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260416-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260416T120000
 DTEND;TZID=America/Toronto:20260416T130000
 SUMMARY:Clinical Grand Rounds - Psycho-oncology and Neuropsychology
@@ -141,7 +130,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260423-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260423T133000
 DTEND;TZID=America/Toronto:20260423T150000
 SUMMARY:Psychosocial Research Rounds - Pain in Critically Ill Adults
@@ -152,18 +141,18 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260507-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260507T133000
 DTEND;TZID=America/Toronto:20260507T150000
 SUMMARY:Academic Grand Rounds - Mitochondrial Psychobiology: Linking Mitochondria, Stress, Energy, and Aging
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
-DESCRIPTION:Speaker(s): Martin Picard, PhD\nChair: Vincent Laliberté, MD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Speaker(s): Martin Picard, PhD\nChair: Vincent Laliberté, MD\n\nFormat: Hybrid\n\nZoom ID: 883 8893 7550 | Passcode: 021037\nZoom Link: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260514-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260514T120000
 DTEND;TZID=America/Toronto:20260514T130000
 SUMMARY:Clinical Grand Rounds - Personality Disorders
@@ -173,7 +162,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260514-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260514T133000
 DTEND;TZID=America/Toronto:20260514T143000
 SUMMARY:Psychosocial Research Rounds - Perinatal Family Mental Health and Experiential Avoidance
@@ -184,7 +173,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260521-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260521T133000
 DTEND;TZID=America/Toronto:20260521T150000
 SUMMARY:Psychosocial Research Rounds - Sleep Medicine
@@ -195,7 +184,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260604-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260528T120000
 DTEND;TZID=America/Toronto:20260528T150000
 SUMMARY:Student Research Day
@@ -204,8 +193,19 @@ DESCRIPTION:Chair: Vincent Paquin, MD\n\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
+UID:20260319-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260112T153500Z
+DTSTART;TZID=America/Toronto:20260604T133000
+DTEND;TZID=America/Toronto:20260604T150000
+SUMMARY:Psychosocial Research Rounds - Cancer Trajectory
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker(s): Carmen G. Loiselle, PhD\nChair: David Dunkley, PhD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+END:VEVENT
+
+BEGIN:VEVENT
 UID:20260618-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260618T120000
 DTEND;TZID=America/Toronto:20260618T130000
 SUMMARY:Clinical Grand Rounds - Mood and Anxiety
@@ -215,7 +215,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260618-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260109T141500Z
+DTSTAMP:20260112T153500Z
 DTSTART;TZID=America/Toronto:20260618T133000
 DTEND;TZID=America/Toronto:20260618T143000
 SUMMARY:Psychosocial Research Rounds - AI Agents, Loneliness, and Reddit Analysis
