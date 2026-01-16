@@ -1,0 +1,25 @@
+name: Publish Webcal
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'   # every 5 minutes
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download ICS from shared drive
+        run: |
+          curl -L -o webcal.ics "https://drive.google.com/uc?export=download&id=1EBzKcnxiT9482owWI34MLdtXuczaRj1P"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "Webcal Bot"
+          git config user.email "webcal@yourdept.ca"
+          git add webcal.ics
+          git commit -m "Auto-update webcal" || exit 0
+          git push
