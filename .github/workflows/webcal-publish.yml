@@ -14,7 +14,7 @@ jobs:
 
       - name: Download ICS from shared drive
         run: |
-          curl -L -o webcal.ics "https://drive.google.com/uc?export=download&id=1EBzKcnxiT9482owWI34MLdtXuczaRj1P"
+          curl -L -o webcal.ics "https://www.dropbox.com/scl/fi/aaqsjmarl2i1cy7ebqjzk/webcal.ics?rlkey=1c3bpm3ohi5v269v0gsrje8kq&dl=1"
 
       - name: Commit and push if changed
         run: |
