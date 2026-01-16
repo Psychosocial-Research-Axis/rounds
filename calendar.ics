@@ -14,4 +14,15 @@ SUMMARY:Test Event
 RRULE:FREQ=WEEKLY;INTERVAL=1
 END:VEVENT
 
-END:VCALENDAR
+
+BEGIN:VEVENT
+UID:20260219-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260116T154636
+DTSTART;TZID=America/Toronto:20260219T133000
+DTEND;TZID=America/Toronto:20260219T150000
+SUMMARY: - Treating Trauma Behind the Badge: A Real-World Case of MDMA-Assisted Therapy for PTSD
+LOCATION:Amphitheatre (ICFP)
+DESCRIPTION:Speaker(s): Houman Farzin, MD\nChair: David Dunkley, PhD\n\nFormat: Hybrid\n\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+END:VEVENT
+
+END:VCALENDAR
