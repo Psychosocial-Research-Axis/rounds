@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TITLE- - POSTER</title>
+<title>TITLE-LANG | SERIES-LANG</title>
+<link rel="icon" href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" sizes="32x32">
 
 <style>
 @page {
@@ -96,21 +97,6 @@ text-transform: uppercase;
 color: var(--accent);
 margin-bottom: 14px;
 }
-h1 {
-font-family: Georgia, "Times New Roman", serif;
-font-size: 34px;
-color: var(--ink);
-line-height: 1.12;
-max-height: 2.6em;
-overflow: hidden;
-margin: 0 0 14px 0;
-}
-h1.long {
-font-size: 28px;
-}
-h1.xlong {
-font-size: 26px;
-}
 .speaker {
 font-size: 20px;
 margin-bottom: 12px;
@@ -195,7 +181,42 @@ body {
 background: #fff;
 }
 }
+.poster-header h1{
+margin: 0 0 14px 0;
+font-family: Georgia, "Times New Roman", serif;
+color: var(--ink);
+line-height:1.12;
+max-height:2.6em;
+overflow:hidden;
+}
 </style>
+
+<script>
+(function(){
+function fit(){
+const h = document.getElementById("posterTitle");
+if(!h) return;
+
+const maxHeight = parseFloat(getComputedStyle(h).maxHeight);
+let lo = 14, hi = 40, best = lo;
+
+while(lo <= hi){
+const mid = (lo + hi) >> 1;
+h.style.fontSize = mid + "px";
+
+if(h.scrollHeight <= maxHeight){
+best = mid;
+lo = mid + 1;
+} else {
+hi = mid - 1;
+}
+}
+h.style.fontSize = best + "px";
+}
+window.addEventListener("load", fit);
+window.addEventListener("resize", fit);
+})();
+</script>
 </head>
 
 <body class="LANG">
@@ -209,12 +230,15 @@ background: #fff;
 
 <div class="content">
 <div class="series">SERIES-EN</div>
-<h1 class="TITLE-CLASS">TITLE-EN</h1>
+
+<div class="poster-header">
+<h1 id="posterTitle">TITLE-EN</h1>
+</div>
 
 <div class="speaker">
 SPEAKER1-NAME<br />
-<span style="display:block; margin-top:10px;">and SPEAKER2-NAME<br />
-<span style="display:block; margin-top:10px;">and GROUP1-NAME-EN<br />
+<span style="display:block; margin-top:10px;">and SPEAKER2-NAME<br /></span>
+<span style="display:block; margin-top:10px;">and GROUP1-NAME-EN<br /></span>
 </div>
 
 <div class="rhythm"> </div>
@@ -246,12 +270,14 @@ ADDRESS-EN</div>
 
 <div class="content">
 <div class="series">SERIES-FR</div>
-<h1 class="TITLE-CLASS">TITLE-FR</h1>
+<div class="poster-header">
+<h1 id="posterTitle">TITLE-FR</h1>
+</div>
 
 <div class="speaker">
 SPEAKER1-NAME<br />
-<span style="display:block; margin-top:10px;">et SPEAKER2-NAME<br />
-<span style="display:block; margin-top:10px;">et GROUP1-NAME-FR<br />
+<span style="display:block; margin-top:10px;">et SPEAKER2-NAME<br /></span>
+<span style="display:block; margin-top:10px;">et GROUP1-NAME-FR<br /></span>
 </div>
 
 <div class="rhythm">
