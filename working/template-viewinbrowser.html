@@ -135,18 +135,23 @@ text-align:center;
 font-size:10px;
 letter-spacing:.3em;
 color:var(--accent);
+margin-top:auto;
 margin-bottom:4px;
 }
 
 .tag{
 display:inline-block;
 padding:4px 12px;
-border:1px solid var(--ink);
+border:1px solid var(--accent);
 border-radius:999px;
 font-size:10px;
 letter-spacing:.14em;
 }
 
+.block-1{
+  display:flex;
+  flex-direction:column;
+}
 /* ================= Responsive ================= */
 @media(max-width:720px){
 .px{padding-left:var(--px-mobile);padding-right:var(--px-mobile)}
@@ -168,7 +173,7 @@ a{color:inherit;text-decoration:none}
 function fitTitle(){
 const h=document.getElementById("posterTitle");
 if(!h) return;
-let lo=20, hi=34, best=lo;
+let lo=20, hi=28, best=lo;
 while(lo<=hi){
 let mid=(lo+hi)>>1;
 h.style.fontSize=mid+"px";
@@ -195,14 +200,14 @@ addEventListener("resize",fitTitle);
 
 <!-- Header -->
 <tr>
-<td class="px" style="padding-top:24px;padding-bottom:22px;">
+<td class="px" style="padding-top:20px;padding-bottom:18px;">
 <table width="100%"><tr>
 <td valign="middle">
 <table><tr>
-<td style="padding-right:14px">
-<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" height="26">
+<td style="padding-right:12px">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" height="24">
 </td>
-<td class="font-sans" style="font-size:11px;letter-spacing:.34em;color:var(--ink);">
+<td class="font-sans" style="font-size:11px;letter-spacing:.32em;color:var(--ink);">
 PSYCHOSOCIAL RESEARCH AXIS
 </td>
 </tr></table>
@@ -241,24 +246,24 @@ ARTIST-NAME — <em>TITLE-ART-EN</em>, YR-ART
 
 <!-- Speakers -->
 <tr>
-<td class="px block-2 avoid-break" style="padding-top:22px;padding-bottom:20px;">
+<td class="px block-2 avoid-break" style="padding-top:18px;padding-bottom:16px;">
 
 <p class="font-serif speaker">
 <strong>SPEAKER1-NAME</strong><br>
 <span style="color:var(--muted)">AFFILIATION1-EN</span>
 </p>
 
-<p class="font-serif speaker" style="margin-top:12px;">
+<p class="font-serif speaker" style="margin-top:10px;">
 <strong>SPEAKER2-NAME</strong><br>
 <span style="color:var(--muted)">AFFILIATION2-EN</span>
 </p>
 
-<p class="font-serif speaker" style="margin-top:12px;">
+<p class="font-serif speaker" style="margin-top:10px;">
 <strong>GROUP1-NAME-EN</strong><br>
 <span style="color:var(--muted)">AFFILIATION3-EN</span>
 </p>
 
-<p class="font-sans" style="margin-top:var(--s2);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:center;">
+<p class="font-sans" style="margin-top:10px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:center;">
 Session chaired by CHAIR-NAME
 </p>
 
@@ -267,11 +272,11 @@ Session chaired by CHAIR-NAME
 
 <!-- Date / Time / Location -->
 <tr>
-<td class="px" style="padding-bottom:38px;text-align:center;">
-
+<td class="px" style="padding-bottom:22px;text-align:center;">
+<div class="block-1">
 <p class="font-sans meta-label">DATE AND TIME</p>
 
-<p class="font-serif" style="font-weight:700;">
+<p class="font-serif" style="font-weight:700;font-size:15px;">
 DATE-LONG-EN
 </p>
 
@@ -279,20 +284,20 @@ DATE-LONG-EN
 STARTTIME-EN – ENDTIME-EN <span style="color:var(--muted)">(TIMEZONE-EN)</span>
 </p>
 
-<p class="font-serif" style="margin-top:10px;line-height:1.55;">
+<p class="font-serif" style="margin-top:8px;line-height:1.5;">
 ROOM-EN, ADDRESS-EN
 </p>
 
-<p class="font-sans" style="margin-top:8px;">
+<p class="font-sans" style="margin-top:6px;">
 <a href="ZOOM-LINK" style="color:var(--link);text-decoration:underline;">
 Zoom · ID ZOOM-ID · Passcode ZOOM-CODE
 </a>
 </p>
 
-<div style="margin-top:14px;">
+<div style="margin-top:10px;">
 <span class="font-sans tag">FORMAT-EN</span>
 </div>
-
+</div>
 </td>
 </tr>
 
@@ -386,7 +391,12 @@ Maintenance of Certification Program of the Royal College of Physicians and Surg
 <td class="px font-sans" style="padding-top:14px;padding-bottom:18px;font-size:10px;line-height:1.5;color:#9ca3af;text-align:center;">
 You are receiving this email because you are on our mailing list.
 <a href="https://forms.gle/Tg2VUaKtKxj8dTeJ6" style="text-decoration:underline;color:#9ca3af;">
-Unsubscribe</a><br><br>
+Unsubscribe</a>
+</td>
+</tr>
+
+<tr>
+<td class="px font-sans" style="padding-top:0;padding-bottom:18px;font-size:10px;line-height:1.5;color:#9ca3af;text-align:center;">
 Department of Psychiatry · Jewish General Hospital · psychosocial.ccomtl@ssss.gouv.qc.ca
 </td>
 </tr>
@@ -404,14 +414,14 @@ Department of Psychiatry · Jewish General Hospital · psychosocial.ccomtl@ssss.
 
 <!-- Header -->
 <tr>
-<td class="px" style="padding-top:24px;padding-bottom:22px;">
+<td class="px" style="padding-top:20px;padding-bottom:18px;">
 <table width="100%"><tr>
 <td valign="middle">
 <table><tr>
-<td style="padding-right:14px">
-<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" height="26">
+<td style="padding-right:12px">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" height="24">
 </td>
-<td class="font-sans" style="font-size:11px;letter-spacing:.34em;color:var(--ink);">
+<td class="font-sans" style="font-size:11px;letter-spacing:.32em;color:var(--ink);">
 AXE DE RECHERCHE PSYCHOSOCIALE
 </td>
 </tr></table>
@@ -438,8 +448,8 @@ ARTIST-NAME — <em>TITLE-ART-FR</em>, YR-ART
 </tr>
 
 <!-- Disclaimer -->
-<tr >
-<td align="left" class="px" style="text-align:center;padding-bottom:var(--s3);">
+<tr>
+<td class="px" style="text-align:center;padding-top:2px;padding-bottom:6px;">
 <span class="disclaimer">PRÉSENTATION EN ANGLAIS</span>
 </td>
 </tr>
@@ -457,24 +467,24 @@ ARTIST-NAME — <em>TITLE-ART-FR</em>, YR-ART
 
 <!-- Speakers -->
 <tr>
-<td class="px block-2 avoid-break" style="padding-top:22px;padding-bottom:20px;">
+<td class="px block-2 avoid-break" style="padding-top:18px;padding-bottom:16px;">
 
 <p class="font-serif speaker">
 <strong>SPEAKER1-NAME</strong><br>
 <span style="color:var(--muted)">AFFILIATION1-FR</span>
 </p>
 
-<p class="font-serif speaker" style="margin-top:12px;">
+<p class="font-serif speaker" style="margin-top:10px;">
 <strong>SPEAKER2-NAME</strong><br>
 <span style="color:var(--muted)">AFFILIATION2-FR</span>
 </p>
 
-<p class="font-serif speaker" style="margin-top:12px;">
+<p class="font-serif speaker" style="margin-top:10px;">
 <strong>GROUP1-NAME-FR</strong><br>
 <span style="color:var(--muted)">AFFILIATION3-FR</span>
 </p>
 
-<p class="font-sans" style="margin-top:var(--s2);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:center;">
+<p class="font-sans" style="margin-top:10px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:center;">
 Session présidée par CHAIR-NAME
 </p>
 
@@ -483,11 +493,11 @@ Session présidée par CHAIR-NAME
 
 <!-- Date / Time / Location -->
 <tr>
-<td class="px" style="padding-bottom:38px;text-align:center;">
-
+<td class="px" style="padding-bottom:22px;text-align:center;">
+<div class="block-1">
 <p class="font-sans meta-label">DATE ET HEURE</p>
 
-<p class="font-serif" style="font-weight:700;">
+<p class="font-serif" style="font-weight:700;font-size:15px;">
 DATE-LONG-FR
 </p>
 
@@ -495,20 +505,20 @@ DATE-LONG-FR
 STARTTIME-FR – ENDTIME-FR <span style="color:var(--muted)">(TIMEZONE-FR)</span>
 </p>
 
-<p class="font-serif" style="margin-top:10px;line-height:1.55;">
+<p class="font-serif" style="margin-top:8px;line-height:1.5;">
 ROOM-FR, ADDRESS-FR
 </p>
 
-<p class="font-sans" style="margin-top:8px;">
+<p class="font-sans" style="margin-top:6px;">
 <a href="ZOOM-LINK" style="color:var(--link);text-decoration:underline;">
-Zoom · ID ZOOM-ID · Code ZOOM-CODE
+Zoom · ID ZOOM-ID · Passcode ZOOM-CODE
 </a>
 </p>
 
-<div style="margin-top:14px;">
+<div style="margin-top:10px;">
 <span class="font-sans tag">FORMAT-FR</span>
 </div>
-
+</div>
 </td>
 </tr>
 
@@ -602,11 +612,15 @@ par le Programme de maintien du certificat du Collège royal des médecins et ch
 <td class="px font-sans" style="padding-top:14px;padding-bottom:18px;font-size:10px;line-height:1.5;color:#9ca3af;text-align:center;">
 Vous recevez ce courriel parce que vous figurez sur notre liste d’envoi.
 <a href="https://forms.gle/Tg2VUaKtKxj8dTeJ6" style="text-decoration:underline;color:#9ca3af;">
-Se désabonner</a><br><br>
-Département de psychiatrie · Hôpital général juif · psychosocial.ccomtl@ssss.gouv.qc.ca
+Se désabonner</a>
 </td>
 </tr>
 
+<tr>
+<td class="px font-sans" style="padding-top:0;padding-bottom:18px;font-size:10px;line-height:1.5;color:#9ca3af;text-align:center;">
+Département de psychiatrie · Hôpital général juif · psychosocial.ccomtl@ssss.gouv.qc.ca
+</td>
+</tr>
 
 </table>
 </td></tr></table>

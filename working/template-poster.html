@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="LANG">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>TITLE-LANG | SERIES-LANG</title>
-<link rel="icon" href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" sizes="32x32">
+<link
+rel="icon"
+href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
+sizes="32x32"
+/>
 
 <style>
 @page {
@@ -33,9 +37,16 @@ font-family: Helvetica, Arial, sans-serif;
 color: var(--ink);
 }
 
-.en-only, .fr-only { display: none; }
-body.en .en-only { display: block; }
-body.fr .fr-only { display: block; }
+.en-only,
+.fr-only {
+display: none;
+}
+body.en .en-only {
+display: block;
+}
+body.fr .fr-only {
+display: block;
+}
 
 .poster {
 width: 210mm;
@@ -56,8 +67,7 @@ z-index: 5;
 }
 .logo img {
 height: 42px;
-filter: drop-shadow(0 0 1px rgba(0,0,0,.5))
-drop-shadow(0 2px 3px rgba(0,0,0,.55));
+filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
 }
 
 .hero {
@@ -74,10 +84,10 @@ object-position: center 40%;
 display: block;
 }
 .hero::after {
-content:"";
-position:absolute;
-inset:0;
-background: rgba(0,0,0,0.06);
+content: "";
+position: absolute;
+inset: 0;
+background: rgba(0, 0, 0, 0.06);
 }
 
 .art-credit {
@@ -96,10 +106,9 @@ display: flex;
 flex-direction: column;
 }
 
-
 .series {
 font-size: 11px;
-letter-spacing: .16em;
+letter-spacing: 0.16em;
 text-transform: uppercase;
 color: var(--accent);
 margin-bottom: 14px;
@@ -126,7 +135,7 @@ margin-bottom: 20px;
 .disclaimer {
 display: inline-block;
 font-size: 12px;
-letter-spacing: .08em;
+letter-spacing: 0.08em;
 text-transform: uppercase;
 color: #475569;
 background: #f5f3ff;
@@ -174,24 +183,24 @@ background: var(--soft);
 margin: 26px 0 20px 0;
 }
 
-.tags { 
+.tags {
 position: absolute;
 bottom: 32px;
 left: var(--gutter);
 right: var(--gutter);
 padding-bottom: 12px;
- }
+}
 
 .tag {
 min-width: 88px;
-text-align:center;
+text-align: center;
 display: inline-flex;
 align-items: center;
 justify-content: center;
 height: 28px;
 padding: 0 14px;
 font-size: 11px;
-letter-spacing: .12em;
+letter-spacing: 0.12em;
 text-transform: uppercase;
 border-radius: 999px;
 margin-right: 10px;
@@ -207,48 +216,56 @@ color: #fff;
 }
 
 @media print {
-body { background:#fff; }
+body {
+background: #fff;
+}
 }
 </style>
 
 <script>
-(function(){
-function fit(){
+(function () {
+function fit() {
 const h = document.getElementById("posterTitle");
-if(!h) return;
+if (!h) return;
 const maxHeight = parseFloat(getComputedStyle(h).maxHeight);
-let lo=16, hi=34, best=lo;
-while(lo<=hi){
-const mid=(lo+hi)>>1;
-h.style.fontSize=mid+"px";
-if(h.scrollHeight<=maxHeight){best=mid;lo=mid+1;}
-else hi=mid-1;
+let lo = 16,
+hi = 34,
+best = lo;
+while (lo <= hi) {
+const mid = (lo + hi) >> 1;
+h.style.fontSize = mid + "px";
+if (h.scrollHeight <= maxHeight) {
+    best = mid;
+    lo = mid + 1;
+} else hi = mid - 1;
 }
-h.style.fontSize=best+"px";
+h.style.fontSize = best + "px";
 }
-addEventListener("load",fit);
-addEventListener("resize",fit);
+addEventListener("load", fit);
+addEventListener("resize", fit);
 })();
 </script>
 </head>
 
 <body class="LANG">
 <div class="poster">
-
 <!-- EN -->
 <div class="en-only">
-
 <div class="logo">
-<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="">
+<img
+src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
+alt=""
+/>
 </div>
 
 <div class="hero">
-<img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="">
+<img
+src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
+alt=""
+/>
 </div>
 
-<div class="art-credit">
-ARTIST-NAME, TITLE-ART-EN, YR-ART
-</div>
+<div class="art-credit">ARTIST-NAME, TITLE-ART-EN, YR-ART</div>
 
 <div class="content">
 <div class="series">SERIES-EN</div>
@@ -258,9 +275,9 @@ ARTIST-NAME, TITLE-ART-EN, YR-ART
 </div>
 
 <div class="speaker">
-SPEAKER1-NAME<br>
-<span style="display:block;margin-top:10px;">and SPEAKER2-NAME</span>
-<span style="display:block;margin-top:10px;">and GROUP1-NAME-EN</span>
+SPEAKER1-NAME<br />
+<span style="display: block; margin-top: 10px">SPEAKER2-NAME</span>
+<span style="display: block; margin-top: 10px">GROUP1-NAME-EN</span>
 </div>
 
 <div class="rhythm"></div>
@@ -271,13 +288,13 @@ SPEAKER1-NAME<br>
 </div>
 
 <div class="location">
-<strong>FORMAT-INPERSON-EN</strong><br>
-ROOM-EN<br>
+<strong>FORMAT-INPERSON-EN</strong><br />
+ROOM-EN<br />
 ADDRESS-EN
 </div>
 
 <div class="online">
-<strong>FORMAT-ONLINE-EN</strong><br>
+<strong>FORMAT-ONLINE-EN</strong><br />
 <a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a>
 </div>
 
@@ -292,18 +309,21 @@ ADDRESS-EN
 
 <!-- FR -->
 <div class="fr-only">
-
 <div class="logo">
-<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="">
+<img
+src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
+alt=""
+/>
 </div>
 
 <div class="hero">
-<img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="">
+<img
+src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
+alt=""
+/>
 </div>
 
-<div class="art-credit">
-ARTIST-NAME, TITLE-ART-FR, YR-ART
-</div>
+<div class="art-credit">ARTIST-NAME, TITLE-ART-FR, YR-ART</div>
 
 <div class="content">
 <div class="series">SERIES-FR</div>
@@ -313,9 +333,9 @@ ARTIST-NAME, TITLE-ART-FR, YR-ART
 </div>
 
 <div class="speaker">
-SPEAKER1-NAME<br>
-<span style="display:block;margin-top:10px;">et SPEAKER2-NAME</span>
-<span style="display:block;margin-top:10px;">et GROUP1-NAME-FR</span>
+SPEAKER1-NAME<br />
+<span style="display: block; margin-top: 10px">SPEAKER2-NAME</span>
+<span style="display: block; margin-top: 10px">GROUP1-NAME-FR</span>
 </div>
 
 <div class="rhythm">
@@ -328,13 +348,13 @@ SPEAKER1-NAME<br>
 </div>
 
 <div class="location">
-<strong>FORMAT-INPERSON-FR</strong><br>
-ROOM-FR<br>
+<strong>FORMAT-INPERSON-FR</strong><br />
+ROOM-FR<br />
 ADDRESS-FR
 </div>
 
 <div class="online">
-<strong>FORMAT-ONLINE-FR</strong><br>
+<strong>FORMAT-ONLINE-FR</strong><br />
 <a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a>
 </div>
 
@@ -346,7 +366,6 @@ ADDRESS-FR
 </div>
 </div>
 </div>
-
 </div>
 </body>
 </html>
