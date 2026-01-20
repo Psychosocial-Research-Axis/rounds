@@ -14,6 +14,7 @@ margin: 0;
 * {
 -webkit-print-color-adjust: exact;
 print-color-adjust: exact;
+box-sizing: border-box;
 }
 :root {
 --accent: SERIES-COLOR;
@@ -22,104 +23,121 @@ print-color-adjust: exact;
 --ink: #020617;
 --muted: #475569;
 --bg: #f7f5f2;
+--gutter: 42px;
 }
+
 body {
 margin: 0;
 background: #fff;
 font-family: Helvetica, Arial, sans-serif;
 color: var(--ink);
 }
-.en-only,
-.fr-only {
-display: none;
-}
-body.en .en-only {
-display: block;
-}
-body.fr .fr-only {
-display: block;
-}
+
+.en-only, .fr-only { display: none; }
+body.en .en-only { display: block; }
+body.fr .fr-only { display: block; }
+
 .poster {
 width: 210mm;
-min-height: 297mm;
-overflow: hidden;
+height: 297mm;
 margin: 0 auto;
 background: var(--bg);
+position: relative;
+overflow: hidden;
 display: flex;
 flex-direction: column;
-position: relative;
 }
+
 .logo {
 position: absolute;
-top: 24px;
-right: 32px;
-z-index: 10;
+top: 22px;
+right: var(--gutter);
+z-index: 5;
 }
 .logo img {
 height: 42px;
-width: auto;
-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
+filter: drop-shadow(0 0 1px rgba(0,0,0,.5))
+drop-shadow(0 2px 3px rgba(0,0,0,.55));
 }
+
 .hero {
+width: 100%;
 max-height: 145mm;
 overflow: hidden;
 position: relative;
-z-index: 1;
-}
-.hero::after {
-content: "";
-position: absolute;
-inset: 0;
-background: rgba(0, 0, 0, 0.06);
 }
 .hero img {
 width: 100%;
-max-height: 145mm;
+height: 145mm;
 object-fit: cover;
 object-position: center 40%;
 display: block;
 }
+.hero::after {
+content:"";
+position:absolute;
+inset:0;
+background: rgba(0,0,0,0.06);
+}
+
 .art-credit {
 font-size: 11px;
 color: #555;
 font-style: italic;
-padding: 6px 36px 0 36px;
-min-height: 32px;
+padding: 6px var(--gutter) 0 var(--gutter);
 max-width: 75%;
+min-height: 28px;
 }
+
 .content {
-padding: 32px 44px 40px 44px;
+padding: 26px var(--gutter) 60px var(--gutter);
+flex: 1;
+display: flex;
+flex-direction: column;
 }
+
+
 .series {
 font-size: 11px;
-letter-spacing: 0.16em;
+letter-spacing: .16em;
 text-transform: uppercase;
 color: var(--accent);
 margin-bottom: 14px;
 }
+
+.poster-header h1 {
+margin: 0 0 16px 0;
+font-family: Georgia, "Times New Roman", serif;
+line-height: 1.12;
+max-height: 2.6em;
+overflow: hidden;
+}
+
 .speaker {
 font-size: 20px;
-margin-bottom: 12px;
+margin-bottom: 14px;
 }
+
 .rhythm {
-min-height: 28px;
-margin-bottom: 22px;
+min-height: 26px;
+margin-bottom: 20px;
 }
+
 .disclaimer {
 display: inline-block;
 font-size: 12px;
-letter-spacing: 0.08em;
+letter-spacing: .08em;
 text-transform: uppercase;
 color: #475569;
 background: #f5f3ff;
 border: 1px solid #e4defb;
 padding: 6px 10px;
 border-radius: 999px;
-margin: 0;
 }
+
 .details {
 border-left: 4px solid var(--accent);
-padding-left: 18px;
+padding-left: 16px;
 margin-bottom: 22px;
 }
 .details .date {
@@ -136,33 +154,44 @@ margin-top: 2px;
 color: var(--muted);
 font-size: 15px;
 }
+
 .location,
 .online {
 font-size: 16px;
 line-height: 1.55;
-margin-top: 12px;
-margin-bottom: 16px;
+margin-top: 10px;
+margin-bottom: 14px;
 }
+
 .online a {
 color: var(--link);
 text-decoration: underline;
 }
+
 .divider {
 height: 1px;
 background: var(--soft);
-margin: 28px 0 22px 0;
+margin: 26px 0 20px 0;
 }
-.tags {
-margin-top: 12px;
-}
+
+.tags { 
+position: absolute;
+bottom: 32px;
+left: var(--gutter);
+right: var(--gutter);
+padding-bottom: 12px;
+ }
+
 .tag {
+min-width: 88px;
+text-align:center;
 display: inline-flex;
 align-items: center;
 justify-content: center;
 height: 28px;
 padding: 0 14px;
 font-size: 11px;
-letter-spacing: 0.12em;
+letter-spacing: .12em;
 text-transform: uppercase;
 border-radius: 999px;
 margin-right: 10px;
@@ -176,18 +205,9 @@ color: #fff;
 background: #111827;
 color: #fff;
 }
+
 @media print {
-body {
-background: #fff;
-}
-}
-.poster-header h1{
-margin: 0 0 14px 0;
-font-family: Georgia, "Times New Roman", serif;
-color: var(--ink);
-line-height:1.12;
-max-height:2.6em;
-overflow:hidden;
+body { background:#fff; }
 }
 </style>
 
@@ -196,25 +216,18 @@ overflow:hidden;
 function fit(){
 const h = document.getElementById("posterTitle");
 if(!h) return;
-
 const maxHeight = parseFloat(getComputedStyle(h).maxHeight);
-let lo = 14, hi = 40, best = lo;
-
-while(lo <= hi){
-const mid = (lo + hi) >> 1;
-h.style.fontSize = mid + "px";
-
-if(h.scrollHeight <= maxHeight){
-best = mid;
-lo = mid + 1;
-} else {
-hi = mid - 1;
+let lo=16, hi=34, best=lo;
+while(lo<=hi){
+const mid=(lo+hi)>>1;
+h.style.fontSize=mid+"px";
+if(h.scrollHeight<=maxHeight){best=mid;lo=mid+1;}
+else hi=mid-1;
 }
+h.style.fontSize=best+"px";
 }
-h.style.fontSize = best + "px";
-}
-window.addEventListener("load", fit);
-window.addEventListener("resize", fit);
+addEventListener("load",fit);
+addEventListener("resize",fit);
 })();
 </script>
 </head>
@@ -224,9 +237,18 @@ window.addEventListener("resize", fit);
 
 <!-- EN -->
 <div class="en-only">
-<div class="logo"><img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Jewish General Hospital" /></div>
-<div class="hero"><img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="Artwork for TITLE-ART-EN" /></div>
-<div class="art-credit"><em>ARTIST-NAME, TITLE-ART-EN, YR-ART</em></div>
+
+<div class="logo">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="">
+</div>
+
+<div class="hero">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="">
+</div>
+
+<div class="art-credit">
+ARTIST-NAME, TITLE-ART-EN, YR-ART
+</div>
 
 <div class="content">
 <div class="series">SERIES-EN</div>
@@ -236,25 +258,31 @@ window.addEventListener("resize", fit);
 </div>
 
 <div class="speaker">
-SPEAKER1-NAME<br />
-<span style="display:block; margin-top:10px;">and SPEAKER2-NAME<br /></span>
-<span style="display:block; margin-top:10px;">and GROUP1-NAME-EN<br /></span>
+SPEAKER1-NAME<br>
+<span style="display:block;margin-top:10px;">and SPEAKER2-NAME</span>
+<span style="display:block;margin-top:10px;">and GROUP1-NAME-EN</span>
 </div>
 
-<div class="rhythm"> </div>
+<div class="rhythm"></div>
 
 <div class="details">
 <div class="date">DATE-LONG-EN</div>
 <div class="time">STARTTIME-EN – ENDTIME-EN <span class="tz">(TIMEZONE-EN)</span></div>
 </div>
 
-<div class="location"><strong>FORMAT-INPERSON-EN</strong><br />
-ROOM-EN<br />
-ADDRESS-EN</div>
-<div class="online"><strong>FORMAT-ONLINE-EN</strong><br />
-<a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a></div>
+<div class="location">
+<strong>FORMAT-INPERSON-EN</strong><br>
+ROOM-EN<br>
+ADDRESS-EN
+</div>
+
+<div class="online">
+<strong>FORMAT-ONLINE-EN</strong><br>
+<a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a>
+</div>
 
 <div class="divider"></div>
+
 <div class="tags">
 <span class="tag inperson">INPERSONTAG-EN</span>
 <span class="tag online">ONLINETAG-EN</span>
@@ -264,20 +292,30 @@ ADDRESS-EN</div>
 
 <!-- FR -->
 <div class="fr-only">
-<div class="logo"><img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Hopital général juif" /></div>
-<div class="hero"><img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="Illustration pour TITLE-ART-FR" /></div>
-<div class="art-credit"><em>ARTIST-NAME, TITLE-ART-FR, YR-ART</em></div>
+
+<div class="logo">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="">
+</div>
+
+<div class="hero">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg" alt="">
+</div>
+
+<div class="art-credit">
+ARTIST-NAME, TITLE-ART-FR, YR-ART
+</div>
 
 <div class="content">
 <div class="series">SERIES-FR</div>
+
 <div class="poster-header">
 <h1 id="posterTitle">TITLE-FR</h1>
 </div>
 
 <div class="speaker">
-SPEAKER1-NAME<br />
-<span style="display:block; margin-top:10px;">et SPEAKER2-NAME<br /></span>
-<span style="display:block; margin-top:10px;">et GROUP1-NAME-FR<br /></span>
+SPEAKER1-NAME<br>
+<span style="display:block;margin-top:10px;">et SPEAKER2-NAME</span>
+<span style="display:block;margin-top:10px;">et GROUP1-NAME-FR</span>
 </div>
 
 <div class="rhythm">
@@ -289,13 +327,19 @@ SPEAKER1-NAME<br />
 <div class="time">STARTTIME-FR – ENDTIME-FR <span class="tz">(TIMEZONE-FR)</span></div>
 </div>
 
-<div class="location"><strong>FORMAT-INPERSON-FR</strong><br />
-ROOM-FR<br />
-ADDRESS-FR</div>
-<div class="online"><strong>FORMAT-ONLINE-FR</strong><br />
-<a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a></div>
+<div class="location">
+<strong>FORMAT-INPERSON-FR</strong><br>
+ROOM-FR<br>
+ADDRESS-FR
+</div>
+
+<div class="online">
+<strong>FORMAT-ONLINE-FR</strong><br>
+<a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a>
+</div>
 
 <div class="divider"></div>
+
 <div class="tags">
 <span class="tag inperson">INPERSONTAG-FR</span>
 <span class="tag online">ONLINETAG-FR</span>

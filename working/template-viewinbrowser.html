@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="LANG">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TITLE-EN | SERIES-EN</title>
+<title>TITLE-LANG | SERIES-LANG</title>
 <link rel="icon" href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" sizes="32x32">
 
 <style>
-@page { size: Letter; margin:0; }
+@page{size:Letter;margin:0}
 
+/* ================= Root ================= */
 :root{
 --ink:#111;
 --muted:#7f7f7f;
 --accent:SERIES-COLOR;
---paper:#ffffff;
+--paper:#fff;
 --link:#1f3a8a;
 --softbg:#f8f8f8;
---px:0.75in;
---px-mobile:26px;
+
+/* editorial margins */
+--px:0.55in;
+--px-mobile:20px;
+
+/* vertical rhythm tuned to fill page */
+--s1:4px;
+--s2:10px;
+--s3:18px;
+--s4:26px;
+--s5:36px;
+--s6:52px;
 }
 
-*{
--webkit-print-color-adjust:exact;
-print-color-adjust:exact;
-}
+/* ================= Resets ================= */
+*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{margin:0;padding:0;background:var(--softbg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+table{border-collapse:collapse}
+img{display:block;border:0;max-width:100%}
+p{margin:0}
+a{text-decoration:none;color:inherit}
 
-html,body{
-margin:0;
-padding:0;
-background:var(--softbg);
--webkit-font-smoothing:antialiased;
-text-rendering:optimizeLegibility;
-}
+/* ================= Language Toggle ================= */
+.en-only,.fr-only{display:none}
+body.en .en-only{display:block}
+body.fr .fr-only{display:block}
 
-table{border-collapse:collapse;}
-img{display:block;border:0;max-width:100%;}
-p{margin:0;}
-a{text-decoration:none;color:inherit;}
-
-.font-sans{font-family:Helvetica,Arial,sans-serif;}
-.font-serif{font-family:Georgia,"Times New Roman",serif;}
-
+/* ================= Layout ================= */
 .container{
 width:100%;
 max-width:8.5in;
@@ -48,84 +52,148 @@ margin:0 auto;
 background:var(--paper);
 }
 
-.px{padding-left:var(--px);padding-right:var(--px);}
+.px{padding-left:var(--px);padding-right:var(--px)}
+
+.block-1{padding-top:var(--s3);padding-bottom:var(--s3)}
+.block-2{padding-top:var(--s4);padding-bottom:var(--s4)}
+.block-3{padding-top:var(--s5);padding-bottom:var(--s5)}
+.block-4{padding-top:var(--s6);padding-bottom:var(--s6)}
+
+.font-sans{font-family:Helvetica,Arial,sans-serif}
+.font-serif{font-family:Georgia,"Times New Roman",serif}
+
+/* ================= Global body baseline ================= */
+body{
+font-size:15px;
+line-height:1.6;
+}
+
+/* ================= Elements ================= */
+.disclaimer{
+display:inline-block;
+font-family:Helvetica,Arial,sans-serif;
+font-size:10px;
+letter-spacing:.14em;
+text-transform:uppercase;
+color:#475569;
+background:#f5f3ff;
+border:1px solid #e4defb;
+padding:4px 10px;
+border-radius:999px;
+margin:0;
+}
 
 .hero-img{
 width:100%;
-height:4.2in;
+max-height:4.2in;
+aspect-ratio: 8.5in / 4.2in;
 object-fit:cover;
 object-position:50% 50%;
 }
 
-section{width:100%;}
-
 .series-label{
-font-size:11px;
-letter-spacing:.46em;
+font-size:10px;
+letter-spacing:.42em;
 color:var(--accent);
-margin-bottom:12px;
+margin-bottom:8px;
 text-align:center;
 }
 
-.title-main{
-font-size:28px;
+/* === TITLE === */
+.title-main h1{
 font-weight:700;
-line-height:1.06;
+line-height:1.05;
 color:var(--ink);
-max-width:560px;
-margin:0 auto 16px;
+max-width:660px;
+margin:0 auto 12px;
 text-align:center;
 }
 
+/* divider */
 .divider{
-width:56px;
+width:48px;
 height:2px;
 background:var(--accent);
 margin:0 auto;
 }
 
 .caption{
-padding-top:8px;
-padding-bottom:28px;
-font-size:8.5px;
+padding-top:6px;
+padding-bottom:18px;
+font-size:8px;
 letter-spacing:.14em;
 color:var(--muted);
 }
 
 .speaker{
-font-size:14px;
-line-height:1.65;
+font-size:15px;
+line-height:1.5;
 text-align:center;
 }
 
 .meta-label{
-font-size:11px;
-letter-spacing:.32em;
+font-size:10px;
+letter-spacing:.3em;
 color:var(--accent);
-margin-bottom:6px;
+margin-bottom:4px;
 }
 
+.tag{
+display:inline-block;
+padding:4px 12px;
+border:1px solid var(--ink);
+border-radius:999px;
+font-size:10px;
+letter-spacing:.14em;
+}
+
+/* ================= Responsive ================= */
 @media(max-width:720px){
-.px{padding-left:var(--px-mobile)!important;padding-right:var(--px-mobile)!important;}
-.hero-img{height:34vh;}
+.px{padding-left:var(--px-mobile);padding-right:var(--px-mobile)}
+.hero-img{height:32vh}
 }
 
+/* ================= Print ================= */
 @media print{
-html,body{background:#fff!important;}
-.container{max-width:none!important;width:100%!important;}
-section:not(:last-of-type){break-after:page;}
-img,.avoid-break{break-inside:avoid;}
+html,body{background:#fff!important}
+.container{max-width:none;width:100%}
+section:not(:last-of-type){break-after:page}
+img,.avoid-break{break-inside:avoid;page-break-inside:avoid}
+a{color:inherit;text-decoration:none}
 }
 </style>
+
+<script>
+(()=> {
+function fitTitle(){
+const h=document.getElementById("posterTitle");
+if(!h) return;
+let lo=20, hi=34, best=lo;
+while(lo<=hi){
+let mid=(lo+hi)>>1;
+h.style.fontSize=mid+"px";
+if(h.scrollHeight<=h.clientHeight){
+best=mid; lo=mid+1;
+} else hi=mid-1;
+}
+h.style.fontSize=best+"px";
+}
+addEventListener("load",fitTitle);
+addEventListener("resize",fitTitle);
+})();
+</script>
 </head>
 
-<body>
+<body class="LANG">
+<div class="view">
 
-<!-- ================= PAGE 1 EN ================= -->
+<div class="en-only">
+<!-- ================= PAGE 1 ================= -->
 <section>
 <table width="100%"><tr><td align="center">
 <table class="container" width="100%">
 
+<!-- Header -->
 <tr>
 <td class="px" style="padding-top:24px;padding-bottom:22px;">
 <table width="100%"><tr>
@@ -148,67 +216,83 @@ Subscribe to calendar
 </td>
 </tr>
 
+<!-- Hero -->
 <tr><td>
 <img class="hero-img" src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg">
 </td></tr>
 
+<!-- Artwork caption -->
 <tr>
 <td class="px font-sans caption">
 ARTIST-NAME — <em>TITLE-ART-EN</em>, YR-ART
 </td>
 </tr>
 
+<!-- Title -->
 <tr>
-<td class="px">
+<td class="px block-1">
 <p class="font-sans series-label">SERIES-UPPER-EN</p>
-<p class="font-serif title-main">TITLE-EN</p>
+<div class="title-main">
+<h1 id="posterTitle">TITLE-EN</h1>
+</div>
 <div class="divider"></div>
 </td>
 </tr>
 
+<!-- Speakers -->
 <tr>
-<td class="px avoid-break" style="padding-top:22px;padding-bottom:22px;">
-<table width="100%"><tr>
-<td width="100%" valign="top">
-<p class="font-serif speaker">
-<strong>SPEAKER1-NAME</strong><br><span style="color:var(--muted);">AFFILIATION1-EN</span>
-</p>
-<p class="font-serif speaker" style="margin-top:12px;">
-<strong>SPEAKER2-NAME</strong><br><span style="color:var(--muted);">AFFILIATION2-EN</span>
-</p>
-</td>
-<td width="100%" valign="top">
-<p class="font-serif speaker">
-<strong>GROUP1-NAME-EN</strong><br><span style="color:var(--muted);">AFFILIATION3-EN</span>
-</p>
-</td>
-</tr></table>
+<td class="px block-2 avoid-break" style="padding-top:22px;padding-bottom:20px;">
 
-<p class="font-sans" style="margin-top:12px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:center;">
-SESSION CHAIRED BY CHAIR-NAME
+<p class="font-serif speaker">
+<strong>SPEAKER1-NAME</strong><br>
+<span style="color:var(--muted)">AFFILIATION1-EN</span>
 </p>
+
+<p class="font-serif speaker" style="margin-top:12px;">
+<strong>SPEAKER2-NAME</strong><br>
+<span style="color:var(--muted)">AFFILIATION2-EN</span>
+</p>
+
+<p class="font-serif speaker" style="margin-top:12px;">
+<strong>GROUP1-NAME-EN</strong><br>
+<span style="color:var(--muted)">AFFILIATION3-EN</span>
+</p>
+
+<p class="font-sans" style="margin-top:var(--s2);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:center;">
+Session chaired by CHAIR-NAME
+</p>
+
 </td>
 </tr>
 
+<!-- Date / Time / Location -->
 <tr>
-<td class="px" style="padding-bottom:40px;text-align: center;">
+<td class="px" style="padding-bottom:38px;text-align:center;">
+
 <p class="font-sans meta-label">DATE AND TIME</p>
-<p class="font-serif" style="font-size:16px;font-weight:700;">DATE-LONG-EN</p>
-<p class="font-serif" style="margin-top:3px;font-size:16px;">
-STARTTIME-EN – ENDTIME-EN <span style="color:var(--muted);">(TIMEZONE-EN)</span>
+
+<p class="font-serif" style="font-weight:700;">
+DATE-LONG-EN
 </p>
-<p class="font-serif" style="margin-top:10px;font-size:14px;line-height:1.55;">
+
+<p class="font-serif" style="margin-top:3px;">
+STARTTIME-EN – ENDTIME-EN <span style="color:var(--muted)">(TIMEZONE-EN)</span>
+</p>
+
+<p class="font-serif" style="margin-top:10px;line-height:1.55;">
 ROOM-EN, ADDRESS-EN
 </p>
-<p class="font-sans" style="margin-top:8px;font-size:14px;">
-<a href="ZOOM-LINK" style="color:var(--link);text-decoration:underline;">Zoom</a>
-<span style="color:var(--muted);"> · ID ZOOM-ID · Passcode ZOOM-CODE</span>
+
+<p class="font-sans" style="margin-top:8px;">
+<a href="ZOOM-LINK" style="color:var(--link);text-decoration:underline;">
+Zoom · ID ZOOM-ID · Passcode ZOOM-CODE
+</a>
 </p>
-<div style="margin-top:12px;">
-<span class="font-sans" style="display:inline-block;padding:5px 14px;border:1px solid var(--ink);border-radius:999px;font-size:11px;letter-spacing:.16em;">
-FORMAT-EN
-</span>
+
+<div style="margin-top:14px;">
+<span class="font-sans tag">FORMAT-EN</span>
 </div>
+
 </td>
 </tr>
 
@@ -216,63 +300,71 @@ FORMAT-EN
 </td></tr></table>
 </section>
 
-<!-- ================= PAGE 2 EN ================= -->
+<!-- ================= PAGE 2 ================= -->
 <section>
 <table width="100%"><tr><td align="center">
 <table class="container" width="100%">
 
+<!-- Description -->
 <tr>
-<td class="px" style="padding-top:46px;padding-bottom:36px;">
-<p class="font-serif" style="font-size:16px;line-height:1.8;max-width:610px;">
+<td class="px" style="padding-top:46px;padding-bottom:34px;">
+<p class="font-serif" style="padding-top:var(--s5);text-align:center;font-style:italic;line-height:1.85;max-width:610px;margin:0 auto;">
 DESC-EN
 </p>
 </td>
 </tr>
 
-<tr>
-<td class="px" style="padding-bottom:50px;">
-<p class="font-serif" style="font-size:23px;font-weight:700;text-align:center;margin-bottom:26px;">
-Learning objectives
-</p>
-<table width="100%" class="font-serif" style="font-size:15px;line-height:1.95;">
-<tr><td width="26">—</td><td>GOAL1-EN</td></tr>
-<tr><td>—</td><td>GOAL2-EN</td></tr>
-<tr><td>—</td><td>GOAL3-EN</td></tr>
-<tr><td>—</td><td>GOAL4-EN</td></tr>
-</table>
-</td>
-</tr>
-
-<tr>
-<td class="px" style="padding-bottom:56px;">
-<p class="font-serif" style="font-size:16px;line-height:1.95;margin-bottom:26px;">
-<strong>SPEAKER1-NAME</strong> BIO1-EN
-</p>
-<p class="font-serif" style="font-size:16px;line-height:1.95;margin-bottom:26px;">
-<strong>SPEAKER2-NAME</strong> BIO2-EN
-</p>
-<p class="font-serif" style="font-size:16px;line-height:1.95;">
-<strong>GROUP1-NAME-EN</strong> BIO3-EN
-</p>
-</td>
-</tr>
-
-<!-- ================= POSTERS ================= -->
+<!-- Objectives -->
 <tr>
 <td class="px" style="padding-bottom:48px;">
-<p style="font-size:13px;color:#4338ca;">
+
+<p class="font-serif" style="padding-top:var(--s3);font-size:23px;font-weight:700;text-align:center;margin-bottom:24px;">
+Learning objectives
+</p>
+
+<table width="100%" class="font-serif" style="line-height:1.9;max-width:640px;margin:0 auto;">
+<tr><td width="20" valign="top">—</td><td>GOAL1-EN</td></tr>
+<tr><td width="20" valign="top">—</td><td>GOAL2-EN</td></tr>
+<tr><td width="20" valign="top">—</td><td>GOAL3-EN</td></tr>
+<tr><td width="20" valign="top">—</td><td>GOAL4-EN</td></tr>
+</table>
+
+</td>
+</tr>
+
+<!-- Bios -->
+<tr>
+<td class="px" style="padding-bottom:54px;max-width:680px;margin:0 auto;">
+
+<p class="font-serif" style="line-height:1.9;margin-bottom:24px;">
+<strong>SPEAKER1-NAME</strong> BIO1-EN
+</p>
+
+<p class="font-serif" style="line-height:1.9;margin-bottom:24px;">
+<strong>SPEAKER2-NAME</strong> BIO2-EN
+</p>
+
+<p class="font-serif" style="line-height:1.9;">
+<strong>GROUP1-NAME-EN</strong> BIO3-EN
+</p>
+
+</td>
+</tr>
+
+<!-- Posters -->
+<tr>
+<td class="px" style="padding-bottom:34px;text-align:center;font-size:13px;color:#4338ca;">
 Download posters:
 <a href="https://psychosocial-research-axis.github.io/rounds/posters/DATE-ISO-SERIES-SHORTNAME-poster-en.pdf" style="text-decoration:underline;">English</a>
 ·
 <a href="https://psychosocial-research-axis.github.io/rounds/posters/DATE-ISO-SERIES-SHORTNAME-poster-fr.pdf" style="text-decoration:underline;">Français</a>
-</p>
 </td>
 </tr>
 
-<!-- ================= SUBSCRIBE ================= -->
+<!-- Subscribe -->
 <tr>
-<td class="px" style="padding-bottom:40px;">
-<p style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:1.7;color:#334155;">
+<td class="px" style="padding-bottom:38px;">
+<p class="font-sans" style="font-size:14px;line-height:1.7;color:#334155;text-align:center;">
 &#128197; Rounds calendar —
 <a href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#en" style="color:#4338ca;text-decoration:underline;">
 Subscribe</a>
@@ -281,34 +373,36 @@ to receive all future events.
 </td>
 </tr>
 
-<!-- ================= FOOTER ================= -->
+<!-- Footer -->
 <tr>
-<td class="px" style="padding-top:32px;padding-bottom:24px;font-family:Helvetica,Arial,sans-serif;font-size:12px;line-height:1.7;color:#475569;border-top:1px solid #e5e7eb;">
+<td class="px" style="padding-top:30px;padding-bottom:22px;font:12px Helvetica,Arial,sans-serif;line-height:1.7;color:#475569;border-top:1px solid #e5e7eb;">
 <strong>Accreditation</strong><br>
-The <i>SERIES-EN</i> is a self-approved group learning activity (Section 1) as defined
-by the Maintenance of Certification Program of the Royal College of Physicians and
-Surgeons of Canada.
+The <i>SERIES-EN</i> is a self-approved group learning activity (Section 1) as defined by the
+Maintenance of Certification Program of the Royal College of Physicians and Surgeons of Canada.
 </td>
 </tr>
 
 <tr>
-<td class="px" style="padding-top:24px;padding-bottom:32px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#9ca3af;">
+<td class="px font-sans" style="padding-top:14px;padding-bottom:18px;font-size:10px;line-height:1.5;color:#9ca3af;text-align:center;">
 You are receiving this email because you are on our mailing list.
 <a href="https://forms.gle/Tg2VUaKtKxj8dTeJ6" style="text-decoration:underline;color:#9ca3af;">
-Unsubscribe
-</a>
+Unsubscribe</a><br><br>
+Department of Psychiatry · Jewish General Hospital · psychosocial.ccomtl@ssss.gouv.qc.ca
 </td>
 </tr>
 
 </table>
 </td></tr></table>
 </section>
+</div>
 
-<!-- ================= PAGE 3 FR ================= -->
+<div class="fr-only">
+<!-- ================= PAGE 1 ================= -->
 <section>
 <table width="100%"><tr><td align="center">
 <table class="container" width="100%">
 
+<!-- Header -->
 <tr>
 <td class="px" style="padding-top:24px;padding-bottom:22px;">
 <table width="100%"><tr>
@@ -331,85 +425,90 @@ S’abonner au calendrier
 </td>
 </tr>
 
+<!-- Hero -->
 <tr><td>
 <img class="hero-img" src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg">
 </td></tr>
 
+<!-- Artwork caption -->
 <tr>
 <td class="px font-sans caption">
 ARTIST-NAME — <em>TITLE-ART-FR</em>, YR-ART
 </td>
 </tr>
 
-<!-- DISCLAIMER -->
-<tr>
-<td class="px" style="padding:0 44px 28px;">
-<span style="
-display:inline-block;
-background:#F5F3FF;
-border:1px solid #E4DEFB;
-border-radius:999px;
-padding:6px 12px;
-font-family:Helvetica,Arial,sans-serif;
-font-size:12px;
-letter-spacing:0.08em;
-color:#475569;">
-PRÉSENTATION EN ANGLAIS
-</span>
+<!-- Disclaimer -->
+<tr >
+<td align="left" class="px" style="text-align:center;padding-bottom:var(--s3);">
+<span class="disclaimer">PRÉSENTATION EN ANGLAIS</span>
 </td>
 </tr>
 
+<!-- Title -->
 <tr>
-<td class="px">
+<td class="px block-1">
 <p class="font-sans series-label">SERIES-UPPER-FR</p>
-<p class="font-serif title-main"style="font-size: 24px;">TITLE-FR</p>
+<div class="title-main">
+<h1 id="posterTitle">TITLE-FR</h1>
+</div>
 <div class="divider"></div>
 </td>
 </tr>
 
+<!-- Speakers -->
 <tr>
-<td class="px avoid-break" style="padding-top:22px;padding-bottom:22px;">
-<table width="100%"><tr>
-<td width="100%" valign="top">
-<p class="font-serif speaker">
-<strong>SPEAKER1-NAME</strong><br><span style="color:var(--muted);">AFFILIATION1-FR</span>
-</p>
-<p class="font-serif speaker" style="margin-top:12px;">
-<strong>SPEAKER2-NAME</strong><br><span style="color:var(--muted);">AFFILIATION2-FR</span>
-</p>
-</td>
-<td width="100%" valign="top">
-<p class="font-serif speaker">
-<strong>GROUP1-NAME-FR</strong><br><span style="color:var(--muted);">AFFILIATION3-FR</span>
-</p>
-</td>
-</tr></table>
+<td class="px block-2 avoid-break" style="padding-top:22px;padding-bottom:20px;">
 
-<p class="font-sans" style="margin-top:12px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align: center;">
-SESSION PRÉSIDÉE PAR CHAIR-NAME
+<p class="font-serif speaker">
+<strong>SPEAKER1-NAME</strong><br>
+<span style="color:var(--muted)">AFFILIATION1-FR</span>
 </p>
+
+<p class="font-serif speaker" style="margin-top:12px;">
+<strong>SPEAKER2-NAME</strong><br>
+<span style="color:var(--muted)">AFFILIATION2-FR</span>
+</p>
+
+<p class="font-serif speaker" style="margin-top:12px;">
+<strong>GROUP1-NAME-FR</strong><br>
+<span style="color:var(--muted)">AFFILIATION3-FR</span>
+</p>
+
+<p class="font-sans" style="margin-top:var(--s2);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:center;">
+Session présidée par CHAIR-NAME
+</p>
+
 </td>
 </tr>
 
+<!-- Date / Time / Location -->
 <tr>
-<td class="px" style="padding-bottom:40px;text-align: center;">
+<td class="px" style="padding-bottom:38px;text-align:center;">
+
 <p class="font-sans meta-label">DATE ET HEURE</p>
-<p class="font-serif" style="font-size:16px;font-weight:700;">DATE-LONG-FR</p>
-<p class="font-serif" style="margin-top:3px;font-size:16px;">
-STARTTIME-FR – ENDTIME-FR <span style="color:var(--muted);">(TIMEZONE-FR)</span>
+
+<p class="font-serif" style="font-weight:700;">
+DATE-LONG-FR
 </p>
-<p class="font-serif" style="margin-top:10px;font-size:14px;line-height:1.55;">
+
+<p class="font-serif" style="margin-top:3px;">
+STARTTIME-FR – ENDTIME-FR <span style="color:var(--muted)">(TIMEZONE-FR)</span>
+</p>
+
+<p class="font-serif" style="margin-top:10px;line-height:1.55;">
 ROOM-FR, ADDRESS-FR
 </p>
-<p class="font-sans" style="margin-top:8px;font-size:14px;">
-<a href="ZOOM-LINK" style="color:var(--link);text-decoration:underline;">Zoom</a>
-<span style="color:var(--muted);"> · ID ZOOM-ID · Code ZOOM-CODE</span>
+
+<p class="font-sans" style="margin-top:8px;">
+<a href="ZOOM-LINK" style="color:var(--link);text-decoration:underline;">
+Zoom · ID ZOOM-ID · Code ZOOM-CODE
+</a>
 </p>
-<div style="margin-top:12px;">
-<span class="font-sans" style="display:inline-block;padding:5px 14px;border:1px solid var(--ink);border-radius:999px;font-size:11px;letter-spacing:.16em;">
-FORMAT-FR
-</span>
+
+<div style="margin-top:14px;">
+<span class="font-sans tag">FORMAT-FR</span>
 </div>
+
 </td>
 </tr>
 
@@ -417,91 +516,103 @@ FORMAT-FR
 </td></tr></table>
 </section>
 
-<!-- ================= PAGE 4 FR ================= -->
+<!-- ================= PAGE 2 ================= -->
 <section>
 <table width="100%"><tr><td align="center">
 <table class="container" width="100%">
 
+<!-- Description -->
 <tr>
-<td class="px" style="padding-top:46px;padding-bottom:36px;">
-<p class="font-serif" style="font-size:16px;line-height:1.8;max-width:610px;">
+<td class="px" style="padding-top:46px;padding-bottom:34px;">
+<p class="font-serif" style="padding-top:var(--s5);text-align:center;font-style:italic;line-height:1.85;max-width:610px;margin:0 auto;">
 DESC-FR
 </p>
 </td>
 </tr>
 
-<tr>
-<td class="px" style="padding-bottom:50px;">
-<p class="font-serif" style="font-size:23px;font-weight:700;text-align:center;margin-bottom:26px;">
-Objectifs d’apprentissage
-</p>
-<table width="100%" class="font-serif" style="font-size:15px;line-height:1.95;">
-<tr><td width="26">—</td><td>GOAL1-FR</td></tr>
-<tr><td>—</td><td>GOAL2-FR</td></tr>
-<tr><td>—</td><td>GOAL3-FR</td></tr>
-<tr><td>—</td><td>GOAL4-FR</td></tr>
-</table>
-</td>
-</tr>
-
-<tr>
-<td class="px" style="padding-bottom:56px;">
-<p class="font-serif" style="font-size:16px;line-height:1.95;margin-bottom:26px;">
-<strong>SPEAKER1-NAME</strong> BIO1-FR
-</p>
-<p class="font-serif" style="font-size:16px;line-height:1.95;margin-bottom:26px;">
-<strong>SPEAKER2-NAME</strong> BIO2-FR
-</p>
-<p class="font-serif" style="font-size:16px;line-height:1.95;">
-<strong>GROUP1-NAME-FR</strong> BIO3-FR
-</p>
-</td>
-</tr>
-
-<!-- ================= POSTERS FR ================= -->
+<!-- Objectives -->
 <tr>
 <td class="px" style="padding-bottom:48px;">
-<p style="font-size:13px;color:#4338ca;">
-Télécharger les affiches:
-<a href="https://psychosocial-research-axis.github.io/rounds/posters/DATE-ISO-SERIES-SHORTNAME-poster-en.pdf" style="text-decoration:underline;">English</a>
-·
-<a href="https://psychosocial-research-axis.github.io/rounds/posters/DATE-ISO-SERIES-SHORTNAME-poster-fr.pdf" style="text-decoration:underline;">Français</a>
+
+<p class="font-serif" style="padding-top:var(--s3);font-size:23px;font-weight:700;text-align:center;margin-bottom:24px;">
+Objectifs d'apprentissage
 </p>
+
+<table width="100%" class="font-serif" style="line-height:1.9;max-width:640px;margin:0 auto;">
+<tr><td width="20" valign="top">—</td><td>GOAL1-FR</td></tr>
+<tr><td width="20" valign="top">—</td><td>GOAL2-FR</td></tr>
+<tr><td width="20" valign="top">—</td><td>GOAL3-FR</td></tr>
+<tr><td width="20" valign="top">—</td><td>GOAL4-FR</td></tr>
+</table>
+
 </td>
 </tr>
 
-<!-- ================= SUBSCRIBE FR ================= -->
+<!-- Bios -->
 <tr>
-<td class="px" style="padding-bottom:40px;">
-<p style="font-family:Helvetica,Arial,sans-serif;font-size:14px;line-height:1.7;color:#334155;">
+<td class="px" style="padding-bottom:54px;max-width:680px;margin:0 auto;">
+
+<p class="font-serif" style="line-height:1.9;margin-bottom:24px;">
+<strong>SPEAKER1-NAME</strong> BIO1-FR
+</p>
+
+<p class="font-serif" style="line-height:1.9;margin-bottom:24px;">
+<strong>SPEAKER2-NAME</strong> BIO2-FR
+</p>
+
+<p class="font-serif" style="line-height:1.9;">
+<strong>GROUP1-NAME-FR</strong> BIO3-FR
+</p>
+
+</td>
+</tr>
+
+<!-- Posters -->
+<tr>
+<td class="px" style="padding-bottom:34px;text-align:center;font-size:13px;color:#4338ca;">
+Télécharger les affiches:
+<a href="https://psychosocial-research-axis.github.io/rounds/posters/DATE-ISO-SERIES-SHORTNAME-poster-fr.pdf" style="text-decoration:underline;">Français</a>
+·
+<a href="https://psychosocial-research-axis.github.io/rounds/posters/DATE-ISO-SERIES-SHORTNAME-poster-en.pdf" style="text-decoration:underline;">English</a>
+</td>
+</tr>
+
+<!-- Subscribe -->
+<tr>
+<td class="px" style="padding-bottom:38px;">
+<p class="font-sans" style="font-size:14px;line-height:1.7;color:#334155;text-align:center;">
 &#128197; Calendrier des séminaires —
 <a href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#fr" style="color:#4338ca;text-decoration:underline;">
-S’abonner</a>
+S'abonner</a>
 pour recevoir tous les événements futurs.
 </p>
 </td>
 </tr>
 
-<!-- ================= FOOTER FR ================= -->
+<!-- Footer -->
 <tr>
-<td class="px" style="padding-top:32px;padding-bottom:24px;font-family:Helvetica,Arial,sans-serif;font-size:12px;line-height:1.7;color:#475569;border-top:1px solid #e5e7eb;">
+<td class="px" style="padding-top:30px;padding-bottom:22px;font:12px Helvetica,Arial,sans-serif;line-height:1.7;color:#475569;border-top:1px solid #e5e7eb;">
 <strong>Agrément</strong><br>
-Les <i>SERIES-FR</i> constituent une activité d’apprentissage en groupe auto-approuvée (Section 1), telle que définie par le Programme de maintien du certificat du Collège royal des médecins et chirurgiens du Canada.
+Les <i>SERIES-FR</i> constituent une activité d’apprentissage en groupe auto-approuvée (Section 1), telle que définie 
+par le Programme de maintien du certificat du Collège royal des médecins et chirurgiens du Canada.
 </td>
 </tr>
 
 <tr>
-<td class="px" style="padding-top:24px;padding-bottom:32px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:1.6;color:#9ca3af;">
+<td class="px font-sans" style="padding-top:14px;padding-bottom:18px;font-size:10px;line-height:1.5;color:#9ca3af;text-align:center;">
 Vous recevez ce courriel parce que vous figurez sur notre liste d’envoi.
 <a href="https://forms.gle/Tg2VUaKtKxj8dTeJ6" style="text-decoration:underline;color:#9ca3af;">
-Se désabonner
-</a>
+Se désabonner</a><br><br>
+Département de psychiatrie · Hôpital général juif · psychosocial.ccomtl@ssss.gouv.qc.ca
 </td>
 </tr>
+
 
 </table>
 </td></tr></table>
 </section>
+</div>
 
+</div>
 </body>
 </html>
