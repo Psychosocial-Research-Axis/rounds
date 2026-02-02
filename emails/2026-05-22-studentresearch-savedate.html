@@ -5,16 +5,17 @@
 <title>Redirecting…</title>
 <meta http-equiv="refresh" content="0; url=/rounds/researchday/2026-05-22-studentresearch-call.html">
 <script>
-(function () {
-  var target = "/rounds/researchday/2026-05-22-studentresearch-call.html";
-  if (window.location.hash) {
-    target += window.location.hash;
-  }
-  window.location.replace(target);
-})();
+window.onload = function() {
+const scrollPosition = window.scrollY;
+setTimeout(function() {
+window.location.href = "/rounds/researchday/2026-05-22-studentresearch-call.html#fr" + scrollPosition;
+}, 1000);
+};
 </script>
+  
 </head>
 <body>
 <p>Redirecting…</p>
 </body>
 </html>
+
