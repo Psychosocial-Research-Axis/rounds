@@ -1,1 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Student Research Day 2026</title>
 
+<style>
+:root{
+  --ink:#0f172a;
+  --muted:#475569;
+  --paper:#ffffff;
+  --accent:#0D9488;
+  --soft:#ecfdf5;
+  --line:#e5e7eb;
+
+  --page-w:816px;
+  --page-h:1056px;
+  --pad:56px;
+  --radius:22px;
+  --shadow:0 18px 55px rgba(0,0,0,.12);
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+}
+
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:#f1f5f9;
+  font-family:var(--font);
+  color:var(--ink);
+  display:flex;
+  justify-content:center;
+  padding:32px;
+}
+
+body.en .fr-only{display:none;}
+body.fr .en-only{display:none;}
+
+.poster{
+  width:var(--page-w);
+  height:var(--page-h);
+  background:var(--paper);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  position:relative;
+}
+
+/* Header */
+.header{
+  padding:32px var(--pad) 22px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+.logo{
+  width:54px;
+  height:54px;
+  border-radius:16px;
+  background:var(--accent);
+  color:#fff;
+  font-weight:900;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.org{
+  font-size:14px;
+  font-weight:700;
+  color:var(--muted);
+}
+.series{
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-top:2px;
+}
+
+.rule{
+  height:1px;
+  background:linear-gradient(90deg,var(--accent),transparent);
+  margin:26px 0;
+}
+
+/* Hero */
+.hero{
+  padding:0 var(--pad);
+}
+
+.kicker{
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+
+.title{
+  font-size:64px;
+  line-height:1;
+  margin:12px 0;
+  font-weight:900;
+}
+
+.subtitle{
+  font-size:18px;
+  max-width:560px;
+  color:var(--muted);
+}
+
+.meta{
+  margin-top:22px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.meta span{
+  font-weight:800;
+  font-size:14.5px;
+}
+
+/* Main body */
+.body{
+  padding:36px var(--pad);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:34px;
+}
+
+.block h3{
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0 0 14px;
+  font-weight:900;
+}
+
+.schedule .row{
+  display:flex;
+  justify-content:space-between;
+  padding:9px 0;
+  border-bottom:1px solid var(--line);
+}
+.schedule .row:last-child{border-bottom:0;}
+.time{font-weight:900;}
+.what{font-weight:800;text-align:right;}
+
+/* CTAs */
+.cta-wrap{
+  display:grid;
+  gap:16px;
+}
+
+.cta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:18px;
+  padding:20px;
+  border-radius:20px;
+  background:var(--soft);
+  border:1px solid rgba(13,148,136,.25);
+  text-decoration:none;
+  color:inherit;
+}
+
+.cta.primary{
+  background:var(--accent);
+  color:#fff;
+}
+
+.cta .label{
+  font-size:21px;
+  font-weight:900;
+}
+.cta .sub{
+  font-size:13px;
+  font-weight:700;
+  margin-top:4px;
+  opacity:.95;
+}
+
+.qr{
+  width:86px;
+  height:86px;
+  border-radius:16px;
+  background:rgba(255,255,255,.25);
+  border:1px solid rgba(255,255,255,.4);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  font-weight:900;
+  text-align:center;
+  line-height:1.1;
+}
+
+/* Footer */
+.footer{
+  position:absolute;
+  left:var(--pad);
+  right:var(--pad);
+  bottom:22px;
+  display:flex;
+  justify-content:space-between;
+  font-size:12.5px;
+  color:var(--muted);
+}
+
+.toggle{
+  position:absolute;
+  top:24px;
+  right:var(--pad);
+}
+.toggle button{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:999px;
+  padding:8px 14px;
+  font-weight:800;
+  cursor:pointer;
+}
+.toggle button[aria-pressed="true"]{
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(13,148,136,.2);
+}
+
+@page{size:Letter;margin:0;}
+@media print{
+  body{background:#fff;padding:0;}
+  .poster{width:8.5in;height:11in;box-shadow:none;}
+}
+</style>
+</head>
+
+<body class="en">
+<div class="poster">
+
+  <div class="toggle">
+    <button id="btnEN" aria-pressed="true">EN</button>
+    <button id="btnFR" aria-pressed="false">FR</button>
+  </div>
+
+  <header class="header">
+    <div class="brand">
+      <div class="logo">SRD</div>
+      <div>
+        <div class="org en-only">Department of Psychiatry • Jewish General Hospital</div>
+        <div class="org fr-only">Département de psychiatrie • Hôpital général juif</div>
+        <div class="series en-only">Student Research Day</div>
+        <div class="series fr-only">Journée de la recherche étudiante</div>
+      </div>
+    </div>
+    <div class="rule"></div>
+  </header>
+
+  <section class="hero">
+    <div class="kicker en-only">Posters • Talks • Awards</div>
+    <div class="kicker fr-only">Affiches • Présentations • Prix</div>
+
+    <h1 class="title en-only">Student Research Day 2026</h1>
+    <h1 class="title fr-only">Journée de la recherche étudiante 2026</h1>
+
+    <p class="subtitle en-only">
+      A morning celebrating student research in psychiatry at the Jewish General Hospital.
+    </p>
+    <p class="subtitle fr-only">
+      Une matinée consacrée à la recherche étudiante en psychiatrie à l’Hôpital général juif.
+    </p>
+
+    <div class="meta">
+      <span class="en-only">May 22, 2026</span>
+      <span class="fr-only">22 mai 2026</span>
+      <span class="en-only">9:00–12:00</span>
+      <span class="fr-only">9 h – 12 h</span>
+      <span class="en-only">4333 Côte-Ste-Catherine Rd.</span>
+      <span class="fr-only">4333, ch. de la Côte-Sainte-Catherine</span>
+    </div>
+  </section>
+
+  <section class="body">
+    <div class="block schedule">
+      <h3 class="en-only">Schedule</h3>
+      <h3 class="fr-only">Horaire</h3>
+
+      <div class="row"><div class="time">09:00</div><div class="what en-only">Registration</div><div class="what fr-only">Accueil</div></div>
+      <div class="row"><div class="time">09:15</div><div class="what en-only">Poster breakfast</div><div class="what fr-only">Affiches & déjeuner</div></div>
+      <div class="row"><div class="time">10:15</div><div class="what en-only">Oral presentations</div><div class="what fr-only">Présentations orales</div></div>
+      <div class="row"><div class="time">11:30</div><div class="what en-only">Awards & closing</div><div class="what fr-only">Prix & clôture</div></div>
+    </div>
+
+    <div class="block">
+      <h3 class="en-only">Participate</h3>
+      <h3 class="fr-only">Participer</h3>
+
+      <div class="cta-wrap">
+        <a class="cta primary" href="https://forms.gle/fBrFEqn5p5R9Wed6A" target="_blank">
+          <div>
+            <div class="label en-only">Submit an abstract</div>
+            <div class="label fr-only">Soumettre un résumé</div>
+            <div class="sub en-only">Deadline: April 13, 2026</div>
+            <div class="sub fr-only">Date limite : 13 avril 2026</div>
+          </div>
+          <div class="qr">ABSTRACT<br>FORM</div>
+        </a>
+
+        <a class="cta" href="https://forms.gle/LyvYBKnTM49cjXqJ7" target="_blank">
+          <div>
+            <div class="label en-only">Register to attend</div>
+            <div class="label fr-only">S’inscrire</div>
+            <div class="sub en-only">Free • open to all</div>
+            <div class="sub fr-only">Gratuit • ouvert à tous</div>
+            <div class="sub en-only">Certificate of attendance provided</div>
+            <div class="sub fr-only">Attestation de participation fournie</div>
+          </div>
+          <div class="qr">REGISTER<br>FORM</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div>Hosted by Psychosocial Research Axis</div>
+    <div>Breakfast provided</div>
+  </div>
+
+</div>
+
+<script>
+const btnEN=document.getElementById("btnEN");
+const btnFR=document.getElementById("btnFR");
+btnEN.onclick=()=>{document.body.className="en";btnEN.setAttribute("aria-pressed","true");btnFR.setAttribute("aria-pressed","false");};
+btnFR.onclick=()=>{document.body.className="fr";btnFR.setAttribute("aria-pressed","true");btnEN.setAttribute("aria-pressed","false");};
+</script>
+</body>
+</html>
