@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting…</title>
-  <link rel="canonical" href="/rounds/researchday/2026-05-22-studentresearch-call.html">
   <script>
-    window.location.replace(
-      "/rounds/researchday/2026-05-22-studentresearch-call.html" + window.location.hash
-    );
+    (function () {
+      var target = "/rounds/researchday/2026-05-22-studentresearch-call.html";
+      var qs = window.location.search || "";
+      var hash = window.location.hash || "";
+      window.location.replace(target + qs + hash);
+    })();
   </script>
 </head>
 <body>
   <p>
     Redirecting to
-    <a href="/rounds/researchday/2026-05-22-studentresearch-call.html">
+    <a id="go" href="/rounds/researchday/2026-05-22-studentresearch-call.html">
       Student Research Day Call for Abstracts
     </a>.
   </p>
+  <script>
+    // Make the fallback link keep the hash too
+    var a = document.getElementById("go");
+    if (a) a.href = a.getAttribute("href") + (window.location.search || "") + (window.location.hash || "");
+  </script>
 </body>
 </html>
