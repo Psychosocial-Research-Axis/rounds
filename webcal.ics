@@ -22,8 +22,6 @@ TZOFFSETTO:-0500
 TZNAME:EST
 END:STANDARD
 END:VTIMEZONE
-END:VCALENDAR
-
 
 BEGIN:VEVENT
 UID:test-20260115-clinical-rounds@psychosocial-research-axis
@@ -229,5 +227,6 @@ URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 END:VCALENDAR
+
 
 
