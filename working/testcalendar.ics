@@ -1,9 +1,9 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Psychosocial Research Axis//Test Rounds Calendar//EN
+PRODID:-//Psychosocial Research Axis//Bubblegum Test Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Test Rounds
+X-WR-CALNAME:Bubblegum Test
 X-WR-CALDESC:Psychosocial Research Axis - Psychosocial, Academic, Cultural, and Clinical Rounds
 BEGIN:VTIMEZONE
 TZID:America/Toronto
@@ -227,6 +227,7 @@ URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 END:VCALENDAR
+
 
 
 
