@@ -35,12 +35,12 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:test-20260115-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260126T151000Z
+DTSTAMP:20260204T144545Z
 DTSTART;TZID=America/Toronto:20260115T133000
-DTEND;TZID=America/Toronto:20260115T143000
-SUMMARY:Psychosocial Research Rounds - Youth’s Conceptualization of Mental Health
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
-DESCRIPTION:Speaker(s): Yifan Wang, MSc\nChair: Vincent Paquin, MD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DTEND;TZID=America/Toronto:20260115T140000
+SUMMARY:Psychosocial Research Rounds - Youth’s Conceptualization of Mental Health: A Focus Group Study
+LOCATION:Amphitheatre\, 4333 Côte-St-Catherine Rd.\, Montreal QC H3T 1E4
+DESCRIPTION:Speaker(s): Yifan Wang\, MSc\\nChair: Vincent Paquin\, MD\\n\\nFormat: hybrid\\n\\nZoom ID: 884 8894 7071 | Passcode: 984533\\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
@@ -227,6 +227,7 @@ URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 END:VCALENDAR
+
 
 
 
