@@ -89,6 +89,17 @@ URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
+UID:20260226-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260205T202100Z
+DTSTART;TZID=America/Toronto:20260226T133000
+DTEND;TZID=America/Toronto:20260226T150000
+SUMMARY:Cultural Psychiatry Rounds - In-Between Worlds: Reflections from Nunavik Child Psychiatry
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal
+DESCRIPTION:Speaker(s): Ana Gómez-Carrillo, MD\nChair: Laurence J. Kirmayer, MD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+END:VEVENT
+
+BEGIN:VEVENT
 UID:20260312-clinical-rounds@psychosocial-research-axis
 DTSTAMP:20260126T151000Z
 DTSTART;TZID=America/Toronto:20260312T120000
