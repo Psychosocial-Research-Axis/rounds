@@ -101,12 +101,12 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260312-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260126T151000Z
+DTSTAMP:20260220T125444Z
 DTSTART;TZID=America/Toronto:20260312T120000
 DTEND;TZID=America/Toronto:20260312T130000
-SUMMARY:Clinical Grand Rounds - Child Psychiatry
-LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal
-DESCRIPTION:Speaker(s): TBA\nChair: Nasr Farooqi, MD\n\nFormat: In person only
+SUMMARY:Clinical Grand Rounds - Addiction Crash Course (focus on opioids)
+LOCATION:G-23 (ICFP), 4333 Côte-St-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Speaker(s): Vanessa Pasztor, MD, CCFP\nChair: Nasr Farooqi, MD\n\nFormat: In person only\n\nFlyers:\nEN: https://psychosocial-research-axis.github.io/rounds/posters/2026-03-12-clinical-poster-en.pdf\nFR: https://psychosocial-research-axis.github.io/rounds/posters/2026-03-12-clinical-poster-fr.pdf
 END:VEVENT
 
 BEGIN:VEVENT
