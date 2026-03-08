@@ -1,33 +1,42 @@
 <!doctype html>
-<html lang="LANG">
+<html lang="{{LANG}}">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>TITLE-LANG | SERIES-LANG</title>
-<link
-rel="icon"
+<title>{{TITLE-LANG}} | {{SERIES-LANG}}</title>
+<link rel="icon"
 href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
-sizes="32x32"
-/>
+sizes="32x32"/>
 
 <style>
-@page {
-size: A4;
-margin: 0;
-}
+@page { size: letter; margin: 0; }
+
 * {
 -webkit-print-color-adjust: exact;
 print-color-adjust: exact;
 box-sizing: border-box;
 }
+
 :root {
---accent: SERIES-COLOR;
+--accent: {{SERIES-COLOR}};
 --link: #4338ca;
 --soft: #e2d9f7;
 --ink: #020617;
 --muted: #475569;
 --bg: #f7f5f2;
+--dark: #0f172a;
+
 --gutter: 42px;
+--space-xs: 8px;
+--space-sm: 14px;
+--space-md: 22px;
+--space-lg: 34px;
+--space-xl: 44px;
+--space-xxl: 54px;
+}
+
+html, body {
+height: 100%;
 }
 
 body {
@@ -37,50 +46,61 @@ font-family: Helvetica, Arial, sans-serif;
 color: var(--ink);
 }
 
-.en-only,
-.fr-only {
-display: none;
-}
-body.en .en-only {
-display: block;
-}
-body.fr .fr-only {
-display: block;
-}
+.en-only, .fr-only { display: none; }
+body.en .en-only { display: block; }
+body.fr .fr-only { display: block; }
 
-.poster {
-width: 210mm;
-height: 297mm;
-margin: 0 auto;
-background: var(--bg);
-position: relative;
-overflow: hidden;
+.header {
+height: 0.4in;
+background: var(--dark);
 display: flex;
-flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 0 var(--gutter);
+font-size: 11px;
+letter-spacing: .05em;
 }
 
-.logo {
-position: absolute;
-top: 22px;
-right: var(--gutter);
-z-index: 5;
+.header-left,
+.header-right {
+display: flex;
+align-items: center;
+gap: 14px;
 }
+
+.axis {
+color: #e5e7eb;
+letter-spacing: .14em;
+}
+
+.subscribe a {
+color: #cbd5e1;
+text-decoration: underline;
+}
+
+.language a {
+color: #a5b4fc;
+font-weight: 600;
+text-decoration: underline;
+}
+
 .logo img {
-height: 42px;
-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.5)) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
+height: 22px;
+display: block;
+filter: drop-shadow(0 1px 2px rgba(0,0,0,.35));
 }
 
 .hero {
 width: 100%;
-max-height: 145mm;
+max-height: 135mm;
 overflow: hidden;
 position: relative;
 }
 .hero img {
 width: 100%;
-height: 145mm;
+height: 135mm;
 object-fit: cover;
-object-position: center 40%;
+object-position: center;
 display: block;
 }
 .hero::after {
@@ -94,13 +114,13 @@ background: rgba(0, 0, 0, 0.06);
 font-size: 11px;
 color: #555;
 font-style: italic;
-padding: 6px var(--gutter) 0 var(--gutter);
-max-width: 75%;
-min-height: 28px;
+padding: var(--space-xs) var(--gutter) 0;
+max-width: 70%;
+min-height: 26px;
 }
 
 .content {
-padding: 26px var(--gutter) 60px var(--gutter);
+padding: var(--space-lg) var(--gutter);
 flex: 1;
 display: flex;
 flex-direction: column;
@@ -108,46 +128,46 @@ flex-direction: column;
 
 .series {
 font-size: 11px;
-letter-spacing: 0.16em;
+letter-spacing: 0.18em;
 text-transform: uppercase;
 color: var(--accent);
-margin-bottom: 14px;
+margin-bottom: var(--space-sm);
 }
 
 .poster-header h1 {
-margin: 0 0 16px 0;
+margin: 0 0 var(--space-md);
 font-family: Georgia, "Times New Roman", serif;
-line-height: 1.12;
-max-height: 2.6em;
+line-height: 1.1;
+max-height: calc(1.1em * 3);
 overflow: hidden;
 }
 
-.speaker {
+.speaker-block {
+margin-bottom: var(--space-md);
+}
+
+.speaker-name {
 font-size: 20px;
-margin-bottom: 14px;
+margin-bottom: 2px;
 }
 
-.rhythm {
-min-height: 26px;
-margin-bottom: 20px;
+.affiliation {
+font-size: 15px;
+color: var(--muted);
+margin-bottom: var(--space-sm);
 }
 
-.disclaimer {
-display: inline-block;
-font-size: 12px;
-letter-spacing: 0.08em;
-text-transform: uppercase;
-color: #475569;
-background: #f5f3ff;
-border: 1px solid #e4defb;
-padding: 6px 10px;
-border-radius: 999px;
+.chair {
+font-size: 14px;
+color: #64748b;
+margin-top: var(--space-sm);
+display: block;
 }
 
 .details {
 border-left: 4px solid var(--accent);
-padding-left: 16px;
-margin-bottom: 22px;
+padding-left: 18px;
+margin-top: var(--space-md);
 }
 .details .date {
 font-family: Georgia, serif;
@@ -157,19 +177,17 @@ font-weight: 700;
 .details .time {
 font-family: Georgia, serif;
 font-size: 18px;
-margin-top: 2px;
+margin-top: 3px;
 }
 .details .tz {
 color: var(--muted);
-font-size: 15px;
+font-size: 14px;
 }
 
 .location,
 .online {
 font-size: 16px;
-line-height: 1.55;
-margin-top: 10px;
-margin-bottom: 14px;
+margin-top: 4px;
 }
 
 .online a {
@@ -177,48 +195,166 @@ color: var(--link);
 text-decoration: underline;
 }
 
+.footer {
+margin-top: auto;
+padding-top: var(--space-lg);
+}
+
 .divider {
 height: 1px;
-background: var(--soft);
-margin: 26px 0 20px 0;
+background: var(--dark);
+opacity: 0.3;
+margin: var(--space-md) 0;
 }
 
 .tags {
-position: absolute;
-bottom: 32px;
-left: var(--gutter);
-right: var(--gutter);
-padding-bottom: 12px;
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
 }
 
 .tag {
-min-width: 88px;
-text-align: center;
+height: 28px;
+padding: 0 16px;
 display: inline-flex;
 align-items: center;
 justify-content: center;
-height: 28px;
-padding: 0 14px;
 font-size: 11px;
-letter-spacing: 0.12em;
+letter-spacing: .12em;
 text-transform: uppercase;
 border-radius: 999px;
-margin-right: 10px;
 white-space: nowrap;
 }
-.tag.inperson {
+
+.tag.format {
 background: var(--accent);
 color: #fff;
 }
-.tag.online {
+.tag.recording {
 background: #111827;
 color: #fff;
 }
+.tag.disclaimer {
+color: var(--muted);
+background: #f5f3ff;
+border: 1px solid #e4defb;
+}
+
+.poster {
+width: 8.5in;
+height: 11in;
+margin: 0 auto;
+background: var(--bg);
+position: relative;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+page-break-after: always;
+}
+
+.poster:last-child {
+page-break-after: auto;
+}
+
+.page-two {
+padding: var(--space-xxl) var(--gutter) 0;
+flex: 1;
+display: flex;
+flex-direction: column;
+}
+
+.desc {
+font-family: Georgia, serif;
+font-size: 17px;
+font-style: italic;
+text-align: center;
+line-height: 1.6;
+margin-top: var(--space-xl);
+margin-bottom: var(--space-xl);
+color: var(--ink);
+}
+
+.goal-block {
+margin-bottom: var(--space-xl);
+}
+
+.goal-block h2 {
+font-family: Georgia, serif;
+font-size: 20px;
+}
+
+.objective {
+font-size: 15px;
+margin-bottom: 10px;
+padding-left: 18px;
+line-height: 1.5;
+position: relative;
+}
+.objective::before {
+content: "•";
+position: absolute;
+left: 0;
+color: var(--accent);
+font-size: 18px;
+top: -1px;
+}
+
+.calendar {
+font-size: 14px;
+color: var(--ink);
+margin: var(--space-lg) 0 var(--space-xl);
+line-height: 1.5;
+text-align: center;
+}
+
+.calendar a {
+color: var(--link);
+}
+
+.bio-block {
+margin-bottom: var(--space-lg);}
+
+.bio {
+font-size: 15px;
+color: var(--ink);
+line-height: 1.6;
+}
+
+.bio strong {
+color: var(--ink);
+font-weight: 600;
+}
+
+.footer-two {
+background: var(--dark);
+color: #f1f5f9;
+margin-top: auto;
+margin-left: calc(-1 * var(--gutter));
+margin-right: calc(-1 * var(--gutter));
+padding: var(--space-md) var(--gutter);
+font-size: 12px;
+line-height: 1.45;
+}
+
+.footer-two a {
+color: #93c5fd;
+text-decoration: underline;
+}
+
+.accreditation {
+margin-bottom: var(--space-sm);
+line-height: 1.45;
+color: #cbd5e1;
+}
+
+.unsubscribe {
+font-size: 11px;
+color: #94a3b8;
+line-height: 1.45;
+}
 
 @media print {
-body {
-background: #fff;
-}
+body { background: #fff; }
 }
 </style>
 
@@ -228,15 +364,13 @@ function fit() {
 const h = document.getElementById("posterTitle");
 if (!h) return;
 const maxHeight = parseFloat(getComputedStyle(h).maxHeight);
-let lo = 16,
-hi = 34,
-best = lo;
+let lo = 20, hi = 34, best = lo;
 while (lo <= hi) {
 const mid = (lo + hi) >> 1;
 h.style.fontSize = mid + "px";
 if (h.scrollHeight <= maxHeight) {
-    best = mid;
-    lo = mid + 1;
+best = mid;
+lo = mid + 1;
 } else hi = mid - 1;
 }
 h.style.fontSize = best + "px";
@@ -247,125 +381,233 @@ addEventListener("resize", fit);
 </script>
 </head>
 
-<body class="LANG">
-<div class="poster">
+<body class="{{LANG}}">
+
+
 <!-- EN -->
 <div class="en-only">
+
+<!-- EN P1 -->
+<div class="poster">
+<div class="header">
+<div class="header-left">
 <div class="logo">
-<img
-src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
-alt=""
-/>
+<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="">
+</div>
+<span class="axis">PSYCHOSOCIAL RESEARCH AXIS</span>
+</div>
+
+<div class="header-right">
+<span class="subscribe">
+<a href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#en">
+Subscribe to calendar
+</a>
+</span>
+<span class="language">
+<a href="https://psychosocial-research-axis.github.io/rounds/posters/{{DATE-ISO}}-{{SERIES-SHORTNAME}}-poster-fr.pdf">FR</a>
+</span>
+</div>
 </div>
 
 <div class="hero">
-<img
-src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
-alt=""
-/>
+<img src="https://psychosocial-research-axis.github.io/rounds/images/{{DATE-ISO}}-{{SERIES-SHORTNAME}}-hero.jpg" alt="">
 </div>
 
-<div class="art-credit">ARTIST-NAME, TITLE-ART-EN, YR-ART</div>
+<div class="art-credit">{{ARTIST-NAME}}, {{TITLE-ART-EN}}, {{YR-ART}}</div>
 
 <div class="content">
-<div class="series">SERIES-EN</div>
+<div class="series">{{SERIES-EN}}</div>
 
 <div class="poster-header">
-<h1 id="posterTitle">TITLE-EN</h1>
+<h1 id="posterTitle">{{TITLE-EN}}</h1>
 </div>
 
-<div class="speaker">
-SPEAKER1-NAME<br />
-<span style="display: block; margin-top: 10px">SPEAKER2-NAME</span>
-<span style="display: block; margin-top: 10px">GROUP1-NAME-EN</span>
-</div>
+<div class="speaker-block">
+<div class="speaker-name">{{SPEAKER1-NAME}} </div>
+<div class="affiliation">{{AFFILIATION1-EN}}</div>
 
-<div class="rhythm"></div>
+<div class="speaker-name">{{SPEAKER2-NAME}}</div>
+<div class="affiliation">{{AFFILIATION2-EN}}</div>
+
+<div class="speaker-name">{{GROUP1-NAME-EN}}</div>
+<div class="affiliation">{{AFFILIATION3-EN}}</div>
+
+<span class="chair">Session chaired by {{CHAIR-NAME}}</span>
+</div>
 
 <div class="details">
-<div class="date">DATE-LONG-EN</div>
-<div class="time">STARTTIME-EN – ENDTIME-EN <span class="tz">(TIMEZONE-EN)</span></div>
+<div class="date">{{DATE-LONG-EN}}</div>
+<div class="time">{{STARTTIME-EN}} – {{ENDTIME-EN}} <span class="tz">({{TIMEZONE-EN}})</span></div>
+<div class="location">{{ROOM-EN}}, {{ADDRESS-EN}}</div>
+<div class="online"><a href="{{ZOOM-LINK}}">Zoom · ID {{ZOOM-ID}} · Code {{ZOOM-CODE}}</a></div>
 </div>
 
-<div class="location">
-<strong>FORMAT-INPERSON-EN</strong><br />
-ROOM-EN<br />
-ADDRESS-EN
-</div>
-
-<div class="online">
-<strong>FORMAT-ONLINE-EN</strong><br />
-<a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a>
-</div>
-
+<div class="footer">
 <div class="divider"></div>
-
 <div class="tags">
-<span class="tag inperson">INPERSONTAG-EN</span>
-<span class="tag online">ONLINETAG-EN</span>
+<span class="tag format">{{FORMAT-EN}}</span>
+<span class="tag recording">{{REC-EN}}</span>
 </div>
+</div>
+
+</div></div>
+
+<!-- EN P2 -->
+<div class="poster">
+<div class="page-two">
+
+<div class="desc">{{DESC-EN}}</div>
+
+<div class="goal-block">
+<h2>Learning objectives</h2>
+
+<div class="objective">{{GOAL1-EN}}</div>
+<div class="objective">{{GOAL2-EN}}</div>
+<div class="objective">{{GOAL3-EN}}</div>
+<div class="objective">{{GOAL4-EN}}</div>
+</div>
+
+<div class="bio-block">
+<div class="bio"><strong>{{SPEAKER1-NAME}}</strong> {{BIO1-EN}}</div>
+<div class="bio"><strong>{{SPEAKER2-NAME}}</strong> {{BIO2-EN}}</div>
+<div class="bio"><strong>{{GROUP1-NAME-EN}}</strong> {{BIO3-EN}}</div>
+</div>
+
+<div class="calendar">
+&#128197; Rounds calendar —
+<a href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#en">Subscribe</a> to receive all future events.</div>
+
+<div class="footer-two">
+<div class="accreditation">
+<strong>Accreditation</strong><br>
+The <i>{{SERIES-EN}}</i> is a self-approved group learning activity (Section 1) as defined by the Maintenance of Certification Program of the Royal College of Physicians and Surgeons of Canada.
+</div>
+
+<div class="unsubscribe">
+You are receiving this email because you are on our mailing list.
+<a href="https://forms.gle/Tg2VUaKtKxj8dTeJ6" style="color: #9ca3af;">
+Unsubscribe
+</a><br>
+Department of Psychiatry · Jewish General Hospital · 
+psychosocial.ccomtl@ssss.gouv.qc.ca
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
 <!-- FR -->
 <div class="fr-only">
+
+<!-- FR P1 -->
+<div class="poster">
+<div class="header">
+<div class="header-left">
 <div class="logo">
-<img
-src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png"
-alt=""
-/>
+<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="">
+</div>
+
+<span class="axis">AXE DE RECHERCHE PSYCHOSOCIALE</span></div>
+
+<div class="header-right">
+<span class="subscribe">
+<a href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#fr">S’abonner au calendrier</a></span>
+
+<span class="language"><a href="https://psychosocial-research-axis.github.io/rounds/posters/{{DATE-ISO}}-{{SERIES-SHORTNAME}}-poster-en.pdf">EN</a></span>
+</div>
 </div>
 
 <div class="hero">
-<img
-src="https://psychosocial-research-axis.github.io/rounds/images/DATE-ISO-SERIES-SHORTNAME-hero.jpg"
-alt=""
-/>
+<img src="https://psychosocial-research-axis.github.io/rounds/images/{{DATE-ISO}}-{{SERIES-SHORTNAME}}-hero.jpg" alt="">
 </div>
 
-<div class="art-credit">ARTIST-NAME, TITLE-ART-FR, YR-ART</div>
+<div class="art-credit">{{ARTIST-NAME}}, {{TITLE-ART-FR}}, {{YR-ART}}</div>
 
 <div class="content">
-<div class="series">SERIES-FR</div>
+<div class="series">{{SERIES-FR}}</div>
 
 <div class="poster-header">
-<h1 id="posterTitle">TITLE-FR</h1>
+<h1 id="posterTitle">{{TITLE-FR}}</h1>
 </div>
 
-<div class="speaker">
-SPEAKER1-NAME<br />
-<span style="display: block; margin-top: 10px">SPEAKER2-NAME</span>
-<span style="display: block; margin-top: 10px">GROUP1-NAME-FR</span>
-</div>
+<div class="speaker-block">
+<div class="speaker-name">{{SPEAKER1-NAME}}</div>
+<div class="affiliation">{{AFFILIATION1-FR}}</div>
 
-<div class="rhythm">
-<div class="disclaimer">Présentation en anglais</div>
+<div class="speaker-name">{{SPEAKER2-NAME}}</div>
+<div class="affiliation">{{AFFILIATION2-FR}}</div>
+
+<div class="speaker-name">{{GROUP1-NAME-FR}}</div>
+<div class="affiliation">{{AFFILIATION3-FR}}</div>
+
+<span class="chair">Séance présidée par {{CHAIR-NAME}}</span>
 </div>
 
 <div class="details">
-<div class="date">DATE-LONG-FR</div>
-<div class="time">STARTTIME-FR – ENDTIME-FR <span class="tz">(TIMEZONE-FR)</span></div>
+<div class="date">{{DATE-LONG-FR}}</div>
+<div class="time">{{STARTTIME-FR}} – {{ENDTIME-FR}} <span class="tz">({{TIMEZONE-FR}})</span></div>
+<div class="location">{{ROOM-FR}}, {{ADDRESS-FR}}</div>
+<div class="online"><a href="{{ZOOM-LINK}}">Zoom · ID {{ZOOM-ID}} · Code {{ZOOM-CODE}}</a></div>
 </div>
 
-<div class="location">
-<strong>FORMAT-INPERSON-FR</strong><br />
-ROOM-FR<br />
-ADDRESS-FR
-</div>
-
-<div class="online">
-<strong>FORMAT-ONLINE-FR</strong><br />
-<a href="ZOOM-LINK">Zoom · ID ZOOM-ID · Code ZOOM-CODE</a>
-</div>
-
+<div class="footer">
 <div class="divider"></div>
-
 <div class="tags">
-<span class="tag inperson">INPERSONTAG-FR</span>
-<span class="tag online">ONLINETAG-FR</span>
+<span class="tag format">{{FORMAT-FR}}</span>
+<span class="tag recording">{{REC-FR}}</span>
+<span class="tag disclaimer">Présentation en anglais</span>
+</div>
+</div>
+
+</div></div>
+
+<!-- FR P2 -->
+<div class="poster">
+<div class="page-two">
+
+<div class="desc">{{DESC-FR}}</div>
+
+<div class="goal-block">
+<h2>Objectifs d'apprentissage</h2>
+
+<div class="objective">{{GOAL1-FR}}</div>
+<div class="objective">{{GOAL2-FR}}</div>
+<div class="objective">{{GOAL3-FR}}</div>
+<div class="objective">{{GOAL4-FR}}</div>
+</div>
+
+<div class="bio-block">
+<div class="bio"><strong>{{SPEAKER1-NAME}}</strong> {{BIO1-FR}}</div>
+<div class="bio"><strong>{{SPEAKER2-NAME}}</strong> {{BIO2-FR}}</div>
+<div class="bio"><strong>{{GROUP1-NAME-FR}}</strong> {{BIO3-FR}}</div>
+</div>
+
+<div class="calendar">
+&#128197; Calendrier des séminaires —
+<a href="https://psychosocial-research-axis.github.io/rounds/subscribe.html#fr">S’abonner</a> pour recevoir tous les événements futurs.</div>
+
+<div class="footer-two">
+<div class="accreditation">
+<strong>Agrément</strong><br>
+Les <i>{{SERIES-FR}}</i> constituent une activité d’apprentissage en groupe auto-approuvée (Section 1), telle que
+définie par le Programme de maintien du certificat du Collège royal des médecins et chirurgiens du Canada.
+</div>
+
+<div class="unsubscribe">Vous recevez ce courriel parce que vous figurez sur notre liste d’envoi.
+<a href="https://forms.gle/Tg2VUaKtKxj8dTeJ6" style="color: #9ca3af;">
+Se désabonner
+</a><br>
+Département de psychiatrie · Hôpital général juif · 
+psychosocial.ccomtl@ssss.gouv.qc.ca
 </div>
 </div>
 </div>
+
 </div>
+
+</div>
+
 </body>
 </html>
