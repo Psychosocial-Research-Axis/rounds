@@ -101,12 +101,12 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260312-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260308T114652Z
+DTSTAMP:20260308T184906Z
 DTSTART;TZID=America/Toronto:20260312T133000
 DTEND;TZID=America/Toronto:20260312T140000
 SUMMARY:Psychosocial Research Rounds - Standardizing Data Collection in Psychedelic Therapy: International Expert Consensus
 LOCATION:Amphitheatre (ICFP), 4333 Côte-St-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Speaker(s): Elisabeth Irvine, BSc\nChair: Vincent Paquin, MD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Speaker(s): Elisabeth Irvine\nChair: Vincent Paquin, MD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
