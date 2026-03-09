@@ -210,11 +210,12 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260326-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260309T162000Z
+DTSTAMP:20260309T162500Z
 DTSTART;TZID=America/Toronto:20260326T133000
 DTEND;TZID=America/Toronto:20260326T150000
 STATUS:TENTATIVE
 SUMMARY:Cultural Psychiatry Rounds
+LOCATION:Amphitheatre (ICFP), 4333 Côte-St-Catherine Rd., Montreal QC H3T 1E4
 DESCRIPTION:Speaker(s): TBA\nChair: Laurence J. Kirmayer, MD\n\nFormat: Hybrid\n\nZoom ID: 884 8894 7071 | Passcode: 984533\nZoom Link: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
