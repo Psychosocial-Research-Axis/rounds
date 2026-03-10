@@ -252,7 +252,9 @@ opacity:.95;
 .qr{
 width:86px;
 height:86px;
-border-radius:16px;
+border-radius:14px;
+background:#fff;
+padding:6px;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -261,9 +263,14 @@ font-weight:900;
 text-align:center;
 line-height:1.1;
 border:2px dashed rgba(0,0,0,.2);
-background:#fff;
 }
 
+.qr img{
+width:100%;
+height:100%;
+object-fit:contain;
+display:block;
+}
 .cta.primary .qr{
 background:rgba(255,255,255,.2);
 border-color:rgba(255,255,255,.5);
