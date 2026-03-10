@@ -5,14 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Student Research Day 2026</title>
 
-<link rel="icon" href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" sizes="32x32">
-<link href="https://fonts.cdnfonts.com/css/genty-demo" rel="stylesheet">
+<link rel="icon" href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png">
+<link href="https://fonts.cdnfonts.com/css/remora-camilla" rel="stylesheet">
+                
 
 <style>
+.title{
+font-family:'Remora Camilla',sans-serif;
+font-size:72px;
+line-height:1;
+margin:14px 0 10px;
+}
+
+.breakfast-sticker{
+position:absolute;
+left:50%;
+bottom:-20px;
+transform:translateX(-50%) rotate(-2deg);
+
+display:flex;
+align-items:center;
+gap:8px;
+
+background:#fff;
+border-color:#0D9488;
+color:#065f46;
+
+font-weight:900;
+font-size:13px;
+letter-spacing:.02em;
+
+padding:8px 16px;
+border-radius:999px;
+
+box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+z-index:4;
+}
 
 :root{
 --accent:#0D9488;
+--accent2:#14B8A6;
 --accent-soft:#ecfdf5;
+
 --ink:#0f172a;
 --muted:#475569;
 --paper:#ffffff;
@@ -25,29 +60,63 @@
 --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
 }
 
-*{box-sizing:border-box;}
+*{box-sizing:border-box}
 
 body{
 margin:0;
-background:#e2e8f0;
 font-family:var(--font);
-color:var(--ink);
+background:
+radial-gradient(circle at 20% 20%, #ccfbf1 0%, transparent 40%),
+radial-gradient(circle at 80% 70%, #cffafe 0%, transparent 45%),
+#e2e8f0;
+
 display:flex;
 justify-content:center;
-padding:36px;
+padding:40px;
+color:var(--ink);
 }
 
-body.en .fr-only{display:none;}
-body.fr .en-only{display:none;}
+body.en .fr-only{display:none}
+body.fr .en-only{display:none}
 
 .poster{
 width:var(--page-w);
 height:var(--page-h);
 background:var(--paper);
+border-radius:24px;
+overflow:hidden;
 display:flex;
 flex-direction:column;
-overflow:hidden;
 position:relative;
+box-shadow:0 30px 80px rgba(0,0,0,.18);
+}
+
+/* decorative blobs */
+
+.poster:before,
+.poster:after{
+content:"";
+position:absolute;
+border-radius:50%;
+z-index:0;
+}
+
+.poster:before{
+width:220px;
+height:220px;
+background:linear-gradient(135deg,#5eead4,#0d9488);
+top:-80px;
+left:-80px;
+opacity:.35;
+}
+
+.poster:after{
+width:260px;
+height:260px;
+background:linear-gradient(135deg,#22d3ee,#14b8a6);
+bottom:-120px;
+right:-120px;
+opacity:.25;
 }
 
 /* language toggle */
@@ -76,27 +145,17 @@ box-shadow:0 0 0 3px rgba(13,148,136,.2);
 /* header */
 
 .header{
-padding:36px var(--pad) 24px;
+padding:38px var(--pad) 20px;
 display:flex;
 align-items:center;
 gap:16px;
+z-index:2;
 }
 
-.logo{
-width:56px;
+.logo img{
 height:56px;
-border-radius:16px;
-color:#fff;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:900;
-letter-spacing:.04em;
-}
-.logo img {
-height: 56px;
-display: block;
-filter: drop-shadow(0 1px 2px rgba(0,0,0,.35));
+display:block;
+filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));
 }
 
 .org{
@@ -107,45 +166,42 @@ color:var(--muted);
 
 .series{
 font-size:12px;
-letter-spacing:.18em;
+letter-spacing:.2em;
 text-transform:uppercase;
 font-weight:900;
 color:var(--accent);
 margin-top:3px;
 }
 
-/* hero */
+/* hero card */
 
 .hero{
-padding:40px var(--pad) 48px;
-background:linear-gradient(180deg,#ffffff,#f8fafc);
-border-top:1px solid var(--line);
-border-bottom:1px solid var(--line);
+position:relative;
+    margin:0 var(--pad);
+background:linear-gradient(135deg,#f0fdfa,#ecfeff);
+border-radius:20px;
+padding:42px;
+border:1px solid #d1fae5;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+z-index:2;
 }
 
 .kicker{
 font-size:12px;
-letter-spacing:.25em;
+letter-spacing:.28em;
 text-transform:uppercase;
 font-weight:900;
 color:var(--accent);
 }
 
-.title{
-font-family:'Genty Demo',sans-serif;
-font-size:70px;
-line-height:1.02;
-margin:16px 0 10px;
-}
-
 .subtitle{
 font-size:18px;
 color:var(--muted);
-max-width:540px;
+max-width:520px;
 }
 
 .meta{
-margin-top:26px;
+margin-top:24px;
 display:flex;
 gap:26px;
 flex-wrap:wrap;
@@ -160,8 +216,8 @@ position:relative;
 
 .meta span:before{
 content:"";
-width:6px;
-height:6px;
+width:7px;
+height:7px;
 background:var(--accent);
 border-radius:50%;
 position:absolute;
@@ -176,7 +232,8 @@ flex:1;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:44px;
-padding:44px var(--pad);
+padding:46px var(--pad);
+z-index:2;
 }
 
 /* headings */
@@ -186,26 +243,50 @@ font-size:12px;
 letter-spacing:.2em;
 text-transform:uppercase;
 color:var(--muted);
-margin:0 0 18px;
+margin:0 0 20px;
 font-weight:900;
 }
 
-/* schedule timeline */
+/* schedule */
 
 .schedule{
-border-left:4px solid var(--accent);
-padding-left:22px;
+position:relative;
+padding-left:26px;
 }
 
-.schedule .row{
+.schedule:before{
+content:"";
+position:absolute;
+left:6px;
+top:0;
+bottom:0;
+width:4px;
+background:var(--accent);
+border-radius:2px;
+}
+
+.row{
 display:grid;
 grid-template-columns:72px 1fr;
 gap:16px;
 padding:12px 0;
 border-bottom:1px solid var(--line);
+position:relative;
 }
 
-.schedule .row:last-child{border-bottom:0;}
+.row:last-child{border-bottom:0}
+
+.row:before{
+content:"";
+width:12px;
+height:12px;
+background:var(--accent);
+border-radius:50%;
+position:absolute;
+left:-2px;
+top:18px;
+box-shadow:0 0 0 4px #ecfdf5;
+}
 
 .time{
 font-weight:900;
@@ -216,11 +297,11 @@ font-size:15px;
 font-weight:800;
 }
 
-/* CTA panel */
+/* CTA */
 
 .cta-wrap{
 display:grid;
-gap:20px;
+gap:22px;
 }
 
 .cta{
@@ -228,17 +309,24 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 gap:20px;
-padding:24px 26px;
-border-radius:18px;
-border:1px solid rgba(13,148,136,.25);
-background:var(--accent-soft);
+padding:26px;
+border-radius:20px;
+background:#f8fafc;
+border:1px solid var(--line);
 text-decoration:none;
 color:inherit;
+transition:.2s;
+}
+
+.cta:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
 .cta.primary{
-background:var(--accent);
+background:linear-gradient(135deg,#0d9488,#14b8a6);
 color:#fff;
+border:none;
 }
 
 .label{
@@ -250,7 +338,7 @@ font-weight:900;
 font-size:13px;
 font-weight:700;
 margin-top:4px;
-opacity:.95;
+opacity:.9;
 }
 
 .qr{
@@ -262,10 +350,6 @@ padding:6px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:11px;
-font-weight:900;
-text-align:center;
-line-height:1.1;
 border:2px dashed rgba(0,0,0,.2);
 }
 
@@ -275,6 +359,7 @@ height:100%;
 object-fit:contain;
 display:block;
 }
+
 .cta.primary .qr{
 background:rgba(255,255,255,.2);
 border-color:rgba(255,255,255,.5);
@@ -289,15 +374,16 @@ justify-content:space-between;
 font-size:12.5px;
 color:var(--muted);
 border-top:1px solid var(--line);
+z-index:2;
 }
 
 /* print */
 
-@page{size:Letter;margin:0;}
+@page{size:Letter;margin:0}
 
 @media print{
-body{background:#fff;padding:0;}
-.poster{width:8.5in;height:11in;}
+body{background:#fff;padding:0}
+.poster{width:8.5in;height:11in;border-radius:0;box-shadow:none}
 }
 
 </style>
@@ -309,12 +395,13 @@ body{background:#fff;padding:0;}
 
 <div class="toggle">
 <button id="btnEN" aria-pressed="true">EN</button>
-<button id="btnFR" aria-pressed="false">FR</button>
+<button id="btnFR">FR</button>
 </div>
 
 <header class="header">
+
 <div class="logo">
-<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png">
 </div>
 
 <div>
@@ -324,6 +411,7 @@ body{background:#fff;padding:0;}
 <div class="series en-only">Student Research Day</div>
 <div class="series fr-only">Journée de la recherche étudiante</div>
 </div>
+
 </header>
 
 <section class="hero">
@@ -331,8 +419,8 @@ body{background:#fff;padding:0;}
 <div class="kicker en-only">Posters • Talks • Awards</div>
 <div class="kicker fr-only">Affiches • Présentations • Prix</div>
 
-<h1 class="title en-only">Student Research Day 2026</h1>
-<h1 class="title fr-only">Journée de la recherche étudiante 2026</h1>
+<h1 class="title en-only">Student Research Day</h1>
+<h1 class="title fr-only">Journée de la recherche étudiante</h1>
 
 <p class="subtitle en-only">
 A morning celebrating student research in psychiatry at the Jewish General Hospital.
@@ -353,6 +441,13 @@ Une matinée consacrée à la recherche étudiante en psychiatrie à l’Hôpita
 <span class="fr-only">4333, ch. de la Côte-Sainte-Catherine</span>
 </div>
 
+<div class="breakfast-sticker en-only">
+🍳 Breakfast served
+</div>
+
+<div class="breakfast-sticker fr-only">
+🍳 Déjeuner offert
+</div>
 </section>
 
 <section class="main">
@@ -363,17 +458,11 @@ Une matinée consacrée à la recherche étudiante en psychiatrie à l’Hôpita
 <h3 class="fr-only">Horaire</h3>
 
 <div class="row"><div class="time">08:30</div><div class="what en-only">Registration</div><div class="what fr-only">Accueil</div></div>
-
 <div class="row"><div class="time">09:00</div><div class="what en-only">Poster Session & Breakfast</div><div class="what fr-only">Affiches & déjeuner</div></div>
-
 <div class="row"><div class="time">10:00</div><div class="what en-only">Welcome</div><div class="what fr-only">Bienvenue</div></div>
-
 <div class="row"><div class="time">10:10</div><div class="what en-only">Oral Presentations</div><div class="what fr-only">Présentations orales</div></div>
-
 <div class="row"><div class="time">11:20</div><div class="what en-only">Break</div><div class="what fr-only">Pause</div></div>
-
 <div class="row"><div class="time">11:30</div><div class="what en-only">Utting Fellow Talk</div><div class="what fr-only">Présentation Utting</div></div>
-
 <div class="row"><div class="time">11:55</div><div class="what en-only">Awards & Closing</div><div class="what fr-only">Prix & clôture</div></div>
 
 </div>
@@ -395,8 +484,9 @@ Une matinée consacrée à la recherche étudiante en psychiatrie à l’Hôpita
 <div class="sub fr-only">Date limite : 13 avril 2026</div>
 </div>
 
-<div class="qr en-only"><img src="https://psychosocial-research-axis.github.io/rounds/images/2026-05-22-studentresearch-qr-abstract.png" alt="Abstract submission QR"></div>
-<div class="qr fr-only"><img src="https://psychosocial-research-axis.github.io/rounds/images/2026-05-22-studentresearch-qr-abstract.png" alt="Soumission résumé QR"></div>
+<div class="qr">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/2026-05-22-studentresearch-qr-abstract.png">
+</div>
 
 </a>
 
@@ -406,15 +496,13 @@ Une matinée consacrée à la recherche étudiante en psychiatrie à l’Hôpita
 <div class="label en-only">Register to attend</div>
 <div class="label fr-only">S’inscrire</div>
 
-<div class="sub en-only">Free • open to all</div>
-<div class="sub fr-only">Gratuit • ouvert à tous</div>
-
-<div class="sub en-only">Certificate of attendance provided</div>
-<div class="sub fr-only">Attestation fournie</div>
+<div class="sub en-only">Free • Certificate provided</div>
+<div class="sub fr-only">Gratuit • Attestation fournie</div>
 </div>
 
-<div class="qr en-only"><img src="https://psychosocial-research-axis.github.io/rounds/images/2026-05-22-studentresearch-qr-register.png" alt="Register QR"></div>
-<div class="qr fr-only"><img src="https://psychosocial-research-axis.github.io/rounds/images/2026-05-22-studentresearch-qr-register.png" alt="Inscription QR"></div>
+<div class="qr">
+<img src="https://psychosocial-research-axis.github.io/rounds/images/2026-05-22-studentresearch-qr-register.png">
+</div>
 
 </a>
 
@@ -424,13 +512,11 @@ Une matinée consacrée à la recherche étudiante en psychiatrie à l’Hôpita
 </section>
 
 <footer class="footer en-only">
-<div>Hosted by Psychosocial Research Axis</div>
-<div>Breakfast provided</div>
+<div>Hosted by the Psychosocial Research Axis • psychosocial.ccomtl@ssss.gouv.qc.ca</div>
 </footer>
 
 <footer class="footer fr-only">
-<div>Organisé par l’Axe de recherche psychosociale</div>
-<div>Déjeuner offert</div>
+<div>Organisé par l’Axe de recherche psychosociale • psychosocial.ccomtl@ssss.gouv.qc.ca</div>
 </footer>
 
 </div>
