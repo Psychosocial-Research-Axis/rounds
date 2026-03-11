@@ -26,7 +26,7 @@ END:VTIMEZONE
 
 BEGIN:VEVENT
 UID:20260618-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260618T133000
 DTEND;TZID=America/Toronto:20260618T143000
 STATUS:CONFIRMED
@@ -38,7 +38,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260618-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260618T120000
 DTEND;TZID=America/Toronto:20260618T130000
 STATUS:TENTATIVE
@@ -49,7 +49,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260611-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260611T120000
 DTEND;TZID=America/Toronto:20260611T130000
 STATUS:TENTATIVE
@@ -61,7 +61,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260604-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260604T133000
 DTEND;TZID=America/Toronto:20260604T150000
 STATUS:CONFIRMED
@@ -73,7 +73,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260528-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260528T133000
 DTEND;TZID=America/Toronto:20260528T150000
 STATUS:CANCELLED
@@ -86,7 +86,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260522-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260522T090000
 DTEND;TZID=America/Toronto:20260522T120000
 STATUS:CONFIRMED
@@ -97,7 +97,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260521-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260521T133000
 DTEND;TZID=America/Toronto:20260521T150000
 STATUS:CONFIRMED
@@ -109,7 +109,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260514-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260514T133000
 DTEND;TZID=America/Toronto:20260514T143000
 STATUS:CONFIRMED
@@ -121,7 +121,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260514-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260514T120000
 DTEND;TZID=America/Toronto:20260514T130000
 STATUS:TENTATIVE
@@ -132,7 +132,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260507-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260507T133000
 DTEND;TZID=America/Toronto:20260507T150000
 STATUS:CONFIRMED
@@ -144,7 +144,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260430-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260430T133000
 DTEND;TZID=America/Toronto:20260430T150000
 STATUS:TENTATIVE
@@ -156,7 +156,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260423-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260423T133000
 DTEND;TZID=America/Toronto:20260423T150000
 STATUS:CONFIRMED
@@ -168,7 +168,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260416-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260416T120000
 DTEND;TZID=America/Toronto:20260416T130000
 STATUS:TENTATIVE
@@ -179,7 +179,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260416-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260416T133000
 DTEND;TZID=America/Toronto:20260416T143000
 STATUS:CONFIRMED
@@ -191,7 +191,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260409-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260409T133000
 DTEND;TZID=America/Toronto:20260409T150000
 STATUS:CONFIRMED
@@ -203,7 +203,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260327-conference@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260327T080000
 DTEND;TZID=America/Toronto:20260327T130000
 STATUS:CONFIRMED
@@ -213,7 +213,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260326-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260326T133000
 DTEND;TZID=America/Toronto:20260326T150000
 STATUS:TENTATIVE
@@ -225,7 +225,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260319-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260319T133000
 DTEND;TZID=America/Toronto:20260319T150000
 STATUS:CANCELLED
@@ -238,7 +238,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260312-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260312T133000
 DTEND;TZID=America/Toronto:20260312T143000
 STATUS:CANCELLED
@@ -251,96 +251,96 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260312-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260312T120000
 DTEND;TZID=America/Toronto:20260312T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd, Montreal QC H3T 1E4
-DESCRIPTION:Talk - Addiction Crash Course (focus on opioids)\nSpeaker: Vanessa Pasztor, MD, CCFP\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Talk - Addiction Crash Course (focus on opioids)\nSpeaker: Vanessa Pasztor, MD, CCFP\n\nChair: Nasr Farooqi, MD\nFormat: In person only\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-03-12-clinical-poster-en.pdf
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260226-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260226T133000
 DTEND;TZID=America/Toronto:20260226T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd, Montreal QC H3T 1E4
-DESCRIPTION:Talk - In-Between Worlds, Languages, and Traumas - Reflections on Wayfinding and Becoming from Child & Adolescent Psychiatry in Nunavik\nSpeaker: Ana Gómez-Carrillo, MD\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Talk - In-Between Worlds, Languages, and Traumas - Reflections on Wayfinding and Becoming from Child & Adolescent Psychiatry in Nunavik\nSpeaker: Ana Gómez-Carrillo, MD\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-02-26-cultural-poster-en.pdf
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260219-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260219T133000
 DTEND;TZID=America/Toronto:20260219T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd, Montreal QC H3T 1E4
-DESCRIPTION:Talk - Treating Trauma Behind the Badge: A Real-World Case of MDMA-Assisted Therapy for PTSD\nSpeaker: Houman Farzin, MD\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Talk - Treating Trauma Behind the Badge: A Real-World Case of MDMA-Assisted Therapy for PTSD\nSpeaker: Houman Farzin, MD\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-02-19-psychosocial-poster-en.pdf
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260205-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260205T133000
 DTEND;TZID=America/Toronto:20260205T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
 LOCATION:Online (Zoom)
-DESCRIPTION:Talk - Cultural Psychiatry and Related Research in China: From Ethnic Minority Mental Health to AI and Regional Determinants\nSpeaker: Jianzhong Yang, MD\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Talk - Cultural Psychiatry and Related Research in China: From Ethnic Minority Mental Health to AI and Regional Determinants\nSpeaker: Jianzhong Yang, MD\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-02-05-academic-poster-en.pdf
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260129-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260129T133000
 DTEND;TZID=America/Toronto:20260129T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd, Montreal QC H3T 1E4
-DESCRIPTION:Talk - Cultural Variations in Psychosis\nSpeaker: G. Eric Jarvis, MD\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Talk - Cultural Variations in Psychosis\nSpeaker: G. Eric Jarvis, MD\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-01-29-cultural-poster-en.pdf
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260122-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260122T133000
 DTEND;TZID=America/Toronto:20260122T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd, Montreal QC H3T 1E4
-DESCRIPTION:Talk - Challenges in Global Cervical Cancer Prevention: What Influences Women’s Participation?\nSpeaker: Zeev Rosberger, PhD\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Talk - Challenges in Global Cervical Cancer Prevention: What Influences Women’s Participation?\nSpeaker: Zeev Rosberger, PhD\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-01-22-psychosocial-poster-en.pdf
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260115-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260115T133000
 DTEND;TZID=America/Toronto:20260115T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd, Montreal QC H3T 1E4
-DESCRIPTION:Talk - Youth’s Conceptualization of Mental Health: A Focus Group Study\nSpeaker: Yifan Wang, MSc\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Talk - Youth’s Conceptualization of Mental Health: A Focus Group Study\nSpeaker: Yifan Wang, MSc\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-01-15-psychosocial-1-poster-en.pdf
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260115-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260311T192000Z
+DTSTAMP:20260311T195000Z
 DTSTART;TZID=America/Toronto:20260115T120000
 DTEND;TZID=America/Toronto:20260115T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd, Montreal QC H3T 1E4
-DESCRIPTION:Talk - Coercion in Outpatient Community Mental Health Services\nSpeaker: Arash Nakhost, MD, PhD; Adult Psychosis Program Staff\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Talk - Coercion in Outpatient Community Mental Health Services\nSpeaker: Arash Nakhost, MD, PhD; Adult Psychosis Program Staff\n\nChair: Nasr Farooqi, MD\nFormat: In person only\n\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-01-15-clinical-poster-en.pdf
 END:VEVENT
 
 END:VCALENDAR
