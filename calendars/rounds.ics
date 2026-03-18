@@ -190,14 +190,13 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20260326-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260318T211000Z
+DTSTAMP:20260318T221000Z
 DTSTART;TZID=America/Toronto:20260326T133000
 DTEND;TZID=America/Toronto:20260326T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-St-Catherine Rd., Montreal QC H3T 1E4
 DESCRIPTION:Talk - Developing a Toolkit for a Cultural Ecosocial Approach to Clinical Assessment and Formulation\nSpeaker: Laurence J. Kirmayer, MD\n\nFormat: In person only\nEvent Flyer: https://psychosocial-research-axis.github.io/rounds/posters/2026-03-26-cultural-poster-en.pdf
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
