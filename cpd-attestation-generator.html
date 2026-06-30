@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPD Attestation Letter Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 30px;
+      color: #111;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    label {
+      display: block;
+      margin-top: 14px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 18px;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: white;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    .letter {
+      line-height: 1.6;
+      white-space: pre-wrap;
+      border: 1px solid #ddd;
+      padding: 28px;
+      border-radius: 8px;
+      min-height: 600px;
+      background: #fff;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .form-card, .actions, h1 {
+        display: none;
+      }
+
+      .container {
+        display: block;
+        max-width: 100%;
+      }
+
+      .card {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      .letter {
+        border: none;
+        padding: 40px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CPD Attestation Letter Generator</h1>
+
+  <div class="container">
+    <div class="card form-card">
+      <h2>Letter Details</h2>
+
+      <label>Recipient Name</label>
+      <input id="recipientName" placeholder="e.g. Registration Committee" />
+
+      <label>Organization / College</label>
+      <input id="organization" placeholder="e.g. College of..." />
+
+      <label>Participant Name</label>
+      <input id="participantName" placeholder="e.g. Alexandra Tracy" />
+
+      <label>CPD Activity / Course Title</label>
+      <input id="activityTitle" placeholder="e.g. Professional Development Workshop" />
+
+      <label>Completion Date</label>
+      <input id="completionDate" type="date" />
+
+      <label>Total CPD Hours</label>
+      <input id="cpdHours" type="number" step="0.5" placeholder="e.g. 6" />
+
+      <label>Learning Objectives / Description</label>
+      <textarea id="description" placeholder="Briefly describe what was covered."></textarea>
+
+      <label>Issuer Name</label>
+      <input id="issuerName" placeholder="e.g. Jane Smith" />
+
+      <label>Issuer Title</label>
+      <input id="issuerTitle" placeholder="e.g. Program Director" />
+
+      <label>Issuer Organization</label>
+      <input id="issuerOrg" placeholder="e.g. ABC Training Institute" />
+
+      <label>Contact Email</label>
+      <input id="contactEmail" type="email" placeholder="e.g. info@example.com" />
+
+      <div class="actions">
+        <button onclick="generateLetter()">Generate Letter</button>
+        <button onclick="window.print()">Print / Save PDF</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Preview</h2>
+      <div id="letterPreview" class="letter"></div>
+    </div>
+  </div>
+
+  <script>
+    function formatDate(dateString) {
+      if (!dateString) return "";
+      const date = new Date(dateString + "T00:00:00");
+      return date.toLocaleDateString("en-CA", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+    }
+
+    function generateLetter() {
+      const recipientName = document.getElementById("recipientName").value.trim();
+      const organization = document.getElementById("organization").value.trim();
+      const participantName = document.getElementById("participantName").value.trim();
+      const activityTitle = document.getElementById("activityTitle").value.trim();
+      const completionDate = formatDate(document.getElementById("completionDate").value);
+      const cpdHours = document.getElementById("cpdHours").value.trim();
+      const description = document.getElementById("description").value.trim();
+      const issuerName = document.getElementById("issuerName").value.trim();
+      const issuerTitle = document.getElementById("issuerTitle").value.trim();
+      const issuerOrg = document.getElementById("issuerOrg").value.trim();
+      const contactEmail = document.getElementById("contactEmail").value.trim();
+
+      const today = new Date().toLocaleDateString("en-CA", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+
+      const letter = `${today}
+
+${recipientName || "To Whom It May Concern"}
+${organization || ""}
+
+Re: Continuing Professional Development Attestation
+
+This letter confirms that ${participantName || "[Participant Name]"} has completed the following Continuing Professional Development activity:
+
+Activity Title: ${activityTitle || "[Activity Title]"}
+Completion Date: ${completionDate || "[Completion Date]"}
+Total CPD Hours: ${cpdHours || "[Number]"} hours
+
+Description:
+${description || "[Brief description of the CPD activity, learning objectives, or topics covered.]"}
+
+Based on the information available to us, this activity was completed as stated above and may be used by the participant as supporting documentation for CPD reporting purposes.
+
+Sincerely,
+
+${issuerName || "[Issuer Name]"}
+${issuerTitle || "[Issuer Title]"}
+${issuerOrg || "[Issuer Organization]"}
+${contactEmail || "[Contact Email]"}`;
+
+      document.getElementById("letterPreview").textContent = letter;
+    }
+
+    generateLetter();
+  </script>
+
+</body>
+</html>
