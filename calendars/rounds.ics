@@ -25,596 +25,549 @@ END:VTIMEZONE
 
 
 BEGIN:VEVENT
-UID:20260604-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
-DTSTART;TZID=America/Toronto:20260604T133000
-DTEND;TZID=America/Toronto:20260604T150000
-STATUS:CONFIRMED
-SUMMARY:Psychosocial Research Rounds
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - Comprehensive Cancer Support: Bridging Person- and System-Centred Evidence\nSpeaker: Carmen G. Loiselle, PhD\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20260618-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
-DTSTART;TZID=America/Toronto:20260618T120000
-DTEND;TZID=America/Toronto:20260618T130000
-STATUS:CONFIRMED
-SUMMARY:Clinical Grand Rounds
-LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - Metabolic Health in Psychiatry: Addressing Risk, Treatment, and Bias\nSpeakers: Gabriel Souza, MDCM, FRCPC; Joshua Benchaya, MD\n\nChair: Nasr Farooqi, MD\nFormat: In person only
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20260618-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
-DTSTART;TZID=America/Toronto:20260618T133000
-DTEND;TZID=America/Toronto:20260618T143000
-STATUS:CONFIRMED
-SUMMARY:Psychosocial Research Rounds
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk 1 - Use of AI agents to cope with loneliness and social isolation: A sentiment and qualitative analysis of experiences and perspectives on Reddit\nSpeaker: Ahmed Al-Asmar, MDCM\n\nTalk 2 - Embodying Change: Defrosting Ageism Through Shared Creative Moments of Perplexity\nSpeaker: Martina Padovani, MSc\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20260903-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
-DTSTART;TZID=America/Toronto:20260903T133000
-DTEND;TZID=America/Toronto:20260903T150000
-STATUS:CONFIRMED
-SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
-URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
-END:VEVENT
-
-
-BEGIN:VEVENT
 UID:20260910-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20260910T120000
 DTEND;TZID=America/Toronto:20260910T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260910-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20260910T133000
 DTEND;TZID=America/Toronto:20260910T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: Adrienne Tan\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260917-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20260917T133000
 DTEND;TZID=America/Toronto:20260917T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20260924-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20260924T133000
 DTEND;TZID=America/Toronto:20260924T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261001-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261001T133000
 DTEND;TZID=America/Toronto:20261001T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261008-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261008T120000
 DTEND;TZID=America/Toronto:20261008T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261008-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261008T133000
 DTEND;TZID=America/Toronto:20261008T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: Édouard Coulombe\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261015-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261015T133000
 DTEND;TZID=America/Toronto:20261015T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261022-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261022T133000
 DTEND;TZID=America/Toronto:20261022T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261105-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261105T133000
 DTEND;TZID=America/Toronto:20261105T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261112-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261112T120000
 DTEND;TZID=America/Toronto:20261112T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261112-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261112T133000
 DTEND;TZID=America/Toronto:20261112T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261119-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261119T133000
 DTEND;TZID=America/Toronto:20261119T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261126-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261126T133000
 DTEND;TZID=America/Toronto:20261126T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261203-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261203T133000
 DTEND;TZID=America/Toronto:20261203T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261210-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261210T120000
 DTEND;TZID=America/Toronto:20261210T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261210-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261210T133000
 DTEND;TZID=America/Toronto:20261210T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261217-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20261217T133000
 DTEND;TZID=America/Toronto:20261217T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 
 BEGIN:VEVENT
 UID:20270107-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270107T133000
 DTEND;TZID=America/Toronto:20270107T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270114-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270114T120000
 DTEND;TZID=America/Toronto:20270114T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270114-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270114T133000
 DTEND;TZID=America/Toronto:20270114T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270121-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270121T133000
 DTEND;TZID=America/Toronto:20270121T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270128-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270128T133000
 DTEND;TZID=America/Toronto:20270128T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270204-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270204T133000
 DTEND;TZID=America/Toronto:20270204T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270211-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270211T120000
 DTEND;TZID=America/Toronto:20270211T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270211-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270211T133000
 DTEND;TZID=America/Toronto:20270211T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: Anya Williamson\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270218-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270218T133000
 DTEND;TZID=America/Toronto:20270218T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270225-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270225T133000
 DTEND;TZID=America/Toronto:20270225T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270304-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270304T133000
 DTEND;TZID=America/Toronto:20270304T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270311-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270311T120000
 DTEND;TZID=America/Toronto:20270311T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270311-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270311T133000
 DTEND;TZID=America/Toronto:20270311T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270318-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270318T133000
 DTEND;TZID=America/Toronto:20270318T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 
 BEGIN:VEVENT
 UID:20270325-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270325T133000
 DTEND;TZID=America/Toronto:20270325T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270401-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270401T133000
 DTEND;TZID=America/Toronto:20270401T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270408-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270408T120000
 DTEND;TZID=America/Toronto:20270408T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270408-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270408T133000
 DTEND;TZID=America/Toronto:20270408T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270415-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270415T133000
 DTEND;TZID=America/Toronto:20270415T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270429-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270429T133000
 DTEND;TZID=America/Toronto:20270429T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270506-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270506T133000
 DTEND;TZID=America/Toronto:20270506T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270513-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270513T120000
 DTEND;TZID=America/Toronto:20270513T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270513-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270513T133000
-DTEND;TZID=America/Toronto:20270513T143000
+DTEND;TZID=America/Toronto:20270513T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270520-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270520T133000
-DTEND;TZID=America/Toronto:20270520T150000
+DTEND;TZID=America/Toronto:20270520T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270527-cultural-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270527T133000
 DTEND;TZID=America/Toronto:20270527T150000
 STATUS:CONFIRMED
 SUMMARY:Cultural Psychiatry Rounds
 LOCATION:Amphitheatre (ICFP), 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Laurence J. Kirmayer, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270603-academic-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270603T133000
 DTEND;TZID=America/Toronto:20270603T150000
 STATUS:CONFIRMED
 SUMMARY:Academic Grand Rounds
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
+DESCRIPTION:Chair: Vincent Laliberté, MD\nFormat: Online only\nZoom: https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 URL:https://us02web.zoom.us/j/88388937550?pwd=Q4jT3D3NYaZKaWvgZ1pASWovqX6hQw.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270610-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270610T120000
 DTEND;TZID=America/Toronto:20270610T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Nasr Farooqi, MD\nFormat: In person only
+DESCRIPTION:Chair: Nasr Farooqi, MD\nFormat: In person only
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270610-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270610T133000
 DTEND;TZID=America/Toronto:20270610T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: Vincent Paquin, MD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20270617-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20260603T170000Z
+DTSTAMP:20260831T150000Z
 DTSTART;TZID=America/Toronto:20270617T133000
 DTEND;TZID=America/Toronto:20270617T150000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Talk - TBA\nSpeaker: TBA\n\nChair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:Chair: David Dunkley, PhD\nFormat: Hybrid\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
