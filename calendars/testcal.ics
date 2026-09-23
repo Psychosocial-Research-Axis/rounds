@@ -1,0 +1,1121 @@
+"BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Psychosocial Research Axis//Rounds Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Rounds-test
+X-WR-CALDESC:Psychosocial Research Axis - Psychosocial, Academic, Cultural, and Clinical Rounds
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+BEGIN:DAYLIGHT
+DTSTART:20070311T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=SU;BYSETPOS=2
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:20071104T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=SU;BYSETPOS=1
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VEVENT
+UID:20261001-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261001T133000
+DTEND;TZID=America/Toronto:20261001T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds - Practice-oriented research: Expanding the scien...
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Practice-oriented research: Expanding the scientific foundations of psychotherapy\n\nSpeaker: Louis Castonguay\nChair: Vincent Laliberté\nFormat: In-person\n\nLearning Objectives:\n•	Being able to identify different types of practice-oriented research and some of their points of convergences\n•	Acquiring knowledge about studies conduct within practice-research network\n•	Understanding some of the guiding principles underlying practice-oriented research
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261008-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261008T133000
+DTEND;TZID=America/Toronto:20261008T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds - Canadian news media coverage of ai chatbots in ...
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Canadian news media coverage of ai chatbots in mental health care: A framing analysis of risks, benefits, and agency distribution\n\nSpeaker: Édouard Coulombe\nChair: Vincent Paquin\nFormat: Hybrid\n\nLearning Objectives:\n•	Explain why news media analysis is relevant to understanding public perceptions and the potential adoption of AI chatbots in mental health care.\n•	Describe how a media framing approach can be used to examine representations of risks, benefits, and the distribution of agency between AI systems, clinicians, and other stakeholders.\n•	Reflect on potential risks and benefits of using AI chatbots in mental health care.\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261008-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261008T120000
+DTEND;TZID=America/Toronto:20261008T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds - Medicolegal confinement: Theory and practice
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Medicolegal confinement: Theory and practice\n\nSpeaker: Sarah Benning\nChair: Nasr Farooqi\nFormat: In-person\n\nLearning Objectives:\n•	To review the medicolegal basis for confinement in hospital in Quebec.\n•	To review current hospital procedures and practices with regard to confinement. \n•	To review relevant recent case law.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261015-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261015T133000
+DTEND;TZID=America/Toronto:20261015T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261022-cultural-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261022T133000
+DTEND;TZID=America/Toronto:20261022T150000
+STATUS:CONFIRMED
+SUMMARY:Cultural Psychiatry Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Laurence Kirmayer\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261029-business-meeting-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261029T120000
+DTEND;TZID=America/Toronto:20261029T130000
+STATUS:CONFIRMED
+SUMMARY:Business Meeting
+DESCRIPTION:Chair: Ashley Wazana\nFormat: Online
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261105-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261105T133000
+DTEND;TZID=America/Toronto:20261105T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261112-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261112T133000
+DTEND;TZID=America/Toronto:20261112T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds - Prevalence of common parasomnias and their asso...
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Prevalence of common parasomnias and their associations with sleep quality, insomnia, anxiety, and depression among post-secondary students and young adults\n\nSpeaker: Samantha Groppini\nChair: Vincent Paquin\nFormat: Hybrid\n\nLearning Objectives:\n•	Describe the prevalence of common parasomnias among post-secondary students and young adults.\n•	Examine the associations between common parasomnias and sleep quality, insomnia, anxiety, and depression in this population.\n•	Discuss how the findings of this systematic review may inform future research, clinical practice, and sleep health initiatives for post-secondary students and young adults.\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261112-psychosocial-2-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261112T140000
+DTEND;TZID=America/Toronto:20261112T143000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds - Improving sleep health in post-secondary studen...
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Improving sleep health in post-secondary students: Evidence-based coping strategies and knowledge translation tools\n\nSpeaker: Noemi Di Pietrantonio\nChair: Vincent Paquin\nFormat: Hybrid\n\nLearning Objectives:\n•	To synthesize the current evidence on interventions for common parasomnias and sleep-related disorders and translate this evidence into accessible, evidence-informed resources for young adults and healthcare professionals.\n•	To bridge the gap between research evidence and practical sleep health resources for post-secondary students.\n•	To identify evidence-based behavioural, psychological, pharmacological, and educational interventions for common parasomnias.\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261112-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261112T120000
+DTEND;TZID=America/Toronto:20261112T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261119-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261119T133000
+DTEND;TZID=America/Toronto:20261119T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261126-cultural-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261126T133000
+DTEND;TZID=America/Toronto:20261126T150000
+STATUS:CONFIRMED
+SUMMARY:Cultural Psychiatry Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Laurence Kirmayer\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261203-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261203T133000
+DTEND;TZID=America/Toronto:20261203T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261210-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261210T133000
+DTEND;TZID=America/Toronto:20261210T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261210-psychosocial-2-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261210T140000
+DTEND;TZID=America/Toronto:20261210T143000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261210-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261210T120000
+DTEND;TZID=America/Toronto:20261210T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261217-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20261217T133000
+DTEND;TZID=America/Toronto:20261217T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270107-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270107T133000
+DTEND;TZID=America/Toronto:20270107T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270114-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270114T133000
+DTEND;TZID=America/Toronto:20270114T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds - Pilot test of the digital culture interview: A ...
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Pilot test of the digital culture interview: A novel method for assessing the digital habits of youth receiving mental health care\n\nSpeaker: Anis Boukhari\nChair: Vincent Paquin\nFormat: Hybrid\n\nLearning Objectives:\n•	Reflect on the importance of addressing digital culture in mental health clinical practice.\n•	Understand the role of the Digital Culture Interview in exploring patients’ digital practices in mental health care.\n•	Describe clinicians’ and patients’ perceptions of the utility, feasibility and acceptability of the Digital Culture Interview.\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270114-psychosocial-2-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270114T140000
+DTEND;TZID=America/Toronto:20270114T143000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Speaker: Adrianne Tan\nChair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270114-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270114T120000
+DTEND;TZID=America/Toronto:20270114T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270121-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270121T133000
+DTEND;TZID=America/Toronto:20270121T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270128-cultural-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270128T133000
+DTEND;TZID=America/Toronto:20270128T150000
+STATUS:CONFIRMED
+SUMMARY:Cultural Psychiatry Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Laurence Kirmayer\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270204-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270204T133000
+DTEND;TZID=America/Toronto:20270204T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270211-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270211T133000
+DTEND;TZID=America/Toronto:20270211T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Speaker: Anya Williamson\nChair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270211-psychosocial-2-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270211T140000
+DTEND;TZID=America/Toronto:20270211T143000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270211-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270211T120000
+DTEND;TZID=America/Toronto:20270211T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270218-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270218T133000
+DTEND;TZID=America/Toronto:20270218T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Speaker: Zoë Thomas, Lydia Ould Brahim\nChair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270225-cultural-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270225T133000
+DTEND;TZID=America/Toronto:20270225T150000
+STATUS:CONFIRMED
+SUMMARY:Cultural Psychiatry Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Laurence Kirmayer\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270304-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270304T133000
+DTEND;TZID=America/Toronto:20270304T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270311-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270311T133000
+DTEND;TZID=America/Toronto:20270311T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270311-psychosocial-2-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270311T140000
+DTEND;TZID=America/Toronto:20270311T143000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270311-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270311T120000
+DTEND;TZID=America/Toronto:20270311T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270318-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270318T133000
+DTEND;TZID=America/Toronto:20270318T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270325-cultural-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270325T133000
+DTEND;TZID=America/Toronto:20270325T150000
+STATUS:CONFIRMED
+SUMMARY:Cultural Psychiatry Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Laurence Kirmayer\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270401-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270401T133000
+DTEND;TZID=America/Toronto:20270401T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270408-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270408T133000
+DTEND;TZID=America/Toronto:20270408T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270408-psychosocial-2-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270408T140000
+DTEND;TZID=America/Toronto:20270408T143000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270408-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270408T120000
+DTEND;TZID=America/Toronto:20270408T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270415-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270415T133000
+DTEND;TZID=America/Toronto:20270415T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270429-cultural-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270429T133000
+DTEND;TZID=America/Toronto:20270429T150000
+STATUS:CONFIRMED
+SUMMARY:Cultural Psychiatry Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Laurence Kirmayer\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270506-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270506T133000
+DTEND;TZID=America/Toronto:20270506T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270513-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270513T133000
+DTEND;TZID=America/Toronto:20270513T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270513-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270513T120000
+DTEND;TZID=America/Toronto:20270513T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270520-research-day-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270520T090000
+DTEND;TZID=America/Toronto:20270520T120000
+STATUS:CONFIRMED
+SUMMARY:Research Day - Student Research Day
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Student Research Day\n\nSpeaker: Department of Psychiatry\nChair: Vincent Paquin\nFormat: In-person\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270527-cultural-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270527T133000
+DTEND;TZID=America/Toronto:20270527T150000
+STATUS:CONFIRMED
+SUMMARY:Cultural Psychiatry Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Laurence Kirmayer\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270603-academic-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270603T133000
+DTEND;TZID=America/Toronto:20270603T150000
+STATUS:CONFIRMED
+SUMMARY:Academic Grand Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270610-psychosocial-1-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270610T133000
+DTEND;TZID=America/Toronto:20270610T140000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270610-psychosocial-2-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270610T140000
+DTEND;TZID=America/Toronto:20270610T143000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270610-clinical-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270610T120000
+DTEND;TZID=America/Toronto:20270610T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: Nasr Farooqi\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20270617-psychosocial-rounds@psychosocial-research-axis-test
+DTSTAMP:20260923T135624Z
+DTSTART;TZID=America/Toronto:20270617T133000
+DTEND;TZID=America/Toronto:20270617T150000
+STATUS:CONFIRMED
+SUMMARY:Psychosocial Research Rounds
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Chair: David Dunkley\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+END:VCALENDAR"
