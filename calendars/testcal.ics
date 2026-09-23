@@ -3,7 +3,7 @@ VERSION:2.0
 PRODID:-//Psychosocial Research Axis//Rounds Calendar//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
-X-WR-CALNAME:Rounds-test
+X-WR-CALNAME:Rounds
 X-WR-CALDESC:Psychosocial Research Axis - Psychosocial, Academic, Cultural, and Clinical Rounds
 BEGIN:VTIMEZONE
 TZID:America/Toronto
@@ -24,8 +24,8 @@ END:STANDARD
 END:VTIMEZONE
 
 BEGIN:VEVENT
-UID:20261001-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261001-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261001T133000
 DTEND;TZID=America/Toronto:20261001T150000
 STATUS:CONFIRMED
@@ -45,8 +45,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261008-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261008-psychosocial-1-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261008T133000
 DTEND;TZID=America/Toronto:20261008T140000
 STATUS:CONFIRMED
@@ -67,8 +67,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261008-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261008-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261008T120000
 DTEND;TZID=America/Toronto:20261008T130000
 STATUS:CONFIRMED
@@ -88,8 +88,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261015-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261015-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261015T133000
 DTEND;TZID=America/Toronto:20261015T150000
 STATUS:CONFIRMED
@@ -110,8 +110,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261022-cultural-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261022-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261022T133000
 DTEND;TZID=America/Toronto:20261022T150000
 STATUS:CONFIRMED
@@ -131,8 +131,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261105-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261105-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261105T133000
 DTEND;TZID=America/Toronto:20261105T150000
 STATUS:CONFIRMED
@@ -152,8 +152,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261112-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261112-psychosocial-1-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261112T133000
 DTEND;TZID=America/Toronto:20261112T140000
 STATUS:CONFIRMED
@@ -174,8 +174,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261112-psychosocial-2-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261112-psychosocial-2-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261112T140000
 DTEND;TZID=America/Toronto:20261112T143000
 STATUS:CONFIRMED
@@ -196,8 +196,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261112-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261112-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261112T120000
 DTEND;TZID=America/Toronto:20261112T130000
 STATUS:CONFIRMED
@@ -217,8 +217,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261119-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261119-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261119T133000
 DTEND;TZID=America/Toronto:20261119T150000
 STATUS:CONFIRMED
@@ -239,8 +239,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261126-cultural-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261126-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261126T133000
 DTEND;TZID=America/Toronto:20261126T150000
 STATUS:CONFIRMED
@@ -260,8 +260,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261203-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261203-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261203T133000
 DTEND;TZID=America/Toronto:20261203T150000
 STATUS:CONFIRMED
@@ -281,31 +281,9 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261210-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261210-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261210T133000
-DTEND;TZID=America/Toronto:20261210T140000
-STATUS:CONFIRMED
-SUMMARY:Psychosocial Research Rounds
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Rounds tomorrow
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Rounds starting in 15 minutes
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20261210-psychosocial-2-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
-DTSTART;TZID=America/Toronto:20261210T140000
 DTEND;TZID=America/Toronto:20261210T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
@@ -325,8 +303,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261210-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261210-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261210T120000
 DTEND;TZID=America/Toronto:20261210T130000
 STATUS:CONFIRMED
@@ -346,8 +324,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20261217-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20261217-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20261217T133000
 DTEND;TZID=America/Toronto:20261217T150000
 STATUS:CONFIRMED
@@ -368,8 +346,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270107-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270107-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270107T133000
 DTEND;TZID=America/Toronto:20270107T150000
 STATUS:CONFIRMED
@@ -389,8 +367,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270114-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270114-psychosocial-1-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270114T133000
 DTEND;TZID=America/Toronto:20270114T140000
 STATUS:CONFIRMED
@@ -411,8 +389,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270114-psychosocial-2-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270114-psychosocial-2-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270114T140000
 DTEND;TZID=America/Toronto:20270114T143000
 STATUS:CONFIRMED
@@ -433,8 +411,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270114-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270114-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270114T120000
 DTEND;TZID=America/Toronto:20270114T130000
 STATUS:CONFIRMED
@@ -454,8 +432,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270121-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270121-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270121T133000
 DTEND;TZID=America/Toronto:20270121T150000
 STATUS:CONFIRMED
@@ -476,8 +454,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270128-cultural-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270128-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270128T133000
 DTEND;TZID=America/Toronto:20270128T150000
 STATUS:CONFIRMED
@@ -497,8 +475,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270204-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270204-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270204T133000
 DTEND;TZID=America/Toronto:20270204T150000
 STATUS:CONFIRMED
@@ -518,8 +496,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270211-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270211-psychosocial-1-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270211T133000
 DTEND;TZID=America/Toronto:20270211T140000
 STATUS:CONFIRMED
@@ -540,30 +518,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270211-psychosocial-2-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
-DTSTART;TZID=America/Toronto:20270211T140000
-DTEND;TZID=America/Toronto:20270211T143000
-STATUS:CONFIRMED
-SUMMARY:Psychosocial Research Rounds
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Rounds tomorrow
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Rounds starting in 15 minutes
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20270211-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270211-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270211T120000
 DTEND;TZID=America/Toronto:20270211T130000
 STATUS:CONFIRMED
@@ -583,8 +539,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270218-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270218-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270218T133000
 DTEND;TZID=America/Toronto:20270218T150000
 STATUS:CONFIRMED
@@ -605,8 +561,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270225-cultural-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270225-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270225T133000
 DTEND;TZID=America/Toronto:20270225T150000
 STATUS:CONFIRMED
@@ -626,8 +582,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270304-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270304-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270304T133000
 DTEND;TZID=America/Toronto:20270304T150000
 STATUS:CONFIRMED
@@ -647,31 +603,9 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270311-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270311-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270311T133000
-DTEND;TZID=America/Toronto:20270311T140000
-STATUS:CONFIRMED
-SUMMARY:Psychosocial Research Rounds
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Rounds tomorrow
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Rounds starting in 15 minutes
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20270311-psychosocial-2-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
-DTSTART;TZID=America/Toronto:20270311T140000
 DTEND;TZID=America/Toronto:20270311T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
@@ -691,8 +625,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270311-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270311-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270311T120000
 DTEND;TZID=America/Toronto:20270311T130000
 STATUS:CONFIRMED
@@ -712,8 +646,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270318-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270318-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270318T133000
 DTEND;TZID=America/Toronto:20270318T150000
 STATUS:CONFIRMED
@@ -734,8 +668,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270325-cultural-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270325-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270325T133000
 DTEND;TZID=America/Toronto:20270325T150000
 STATUS:CONFIRMED
@@ -755,8 +689,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270401-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270401-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270401T133000
 DTEND;TZID=America/Toronto:20270401T150000
 STATUS:CONFIRMED
@@ -776,31 +710,9 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270408-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270408-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270408T133000
-DTEND;TZID=America/Toronto:20270408T140000
-STATUS:CONFIRMED
-SUMMARY:Psychosocial Research Rounds
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Rounds tomorrow
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Rounds starting in 15 minutes
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20270408-psychosocial-2-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
-DTSTART;TZID=America/Toronto:20270408T140000
 DTEND;TZID=America/Toronto:20270408T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
@@ -820,8 +732,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270408-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270408-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270408T120000
 DTEND;TZID=America/Toronto:20270408T130000
 STATUS:CONFIRMED
@@ -841,8 +753,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270415-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270415-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270415T133000
 DTEND;TZID=America/Toronto:20270415T150000
 STATUS:CONFIRMED
@@ -863,8 +775,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270429-cultural-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270429-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270429T133000
 DTEND;TZID=America/Toronto:20270429T150000
 STATUS:CONFIRMED
@@ -884,8 +796,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270506-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270506-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270506T133000
 DTEND;TZID=America/Toronto:20270506T150000
 STATUS:CONFIRMED
@@ -905,8 +817,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270513-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270513-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270513T133000
 DTEND;TZID=America/Toronto:20270513T150000
 STATUS:CONFIRMED
@@ -927,8 +839,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270513-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270513-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270513T120000
 DTEND;TZID=America/Toronto:20270513T130000
 STATUS:CONFIRMED
@@ -948,8 +860,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270520-research-day-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270520-research-day-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270520T090000
 DTEND;TZID=America/Toronto:20270520T120000
 STATUS:CONFIRMED
@@ -970,8 +882,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270527-cultural-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270527-cultural-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270527T133000
 DTEND;TZID=America/Toronto:20270527T150000
 STATUS:CONFIRMED
@@ -991,8 +903,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270603-academic-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270603-academic-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270603T133000
 DTEND;TZID=America/Toronto:20270603T150000
 STATUS:CONFIRMED
@@ -1012,31 +924,9 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270610-psychosocial-1-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270610-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270610T133000
-DTEND;TZID=America/Toronto:20270610T140000
-STATUS:CONFIRMED
-SUMMARY:Psychosocial Research Rounds
-LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Chair: Vincent Paquin\nFormat: Hybrid\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
-BEGIN:VALARM
-TRIGGER:-P1D
-ACTION:DISPLAY
-DESCRIPTION:Rounds tomorrow
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Rounds starting in 15 minutes
-END:VALARM
-END:VEVENT
-
-BEGIN:VEVENT
-UID:20270610-psychosocial-2-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
-DTSTART;TZID=America/Toronto:20270610T140000
 DTEND;TZID=America/Toronto:20270610T143000
 STATUS:CONFIRMED
 SUMMARY:Psychosocial Research Rounds
@@ -1056,8 +946,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270610-clinical-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270610-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270610T120000
 DTEND;TZID=America/Toronto:20270610T130000
 STATUS:CONFIRMED
@@ -1077,8 +967,8 @@ END:VALARM
 END:VEVENT
 
 BEGIN:VEVENT
-UID:20270617-psychosocial-rounds@psychosocial-research-axis-test
-DTSTAMP:20260923T140548Z
+UID:20270617-psychosocial-rounds@psychosocial-research-axis
+DTSTAMP:20260923T141833Z
 DTSTART;TZID=America/Toronto:20270617T133000
 DTEND;TZID=America/Toronto:20270617T150000
 STATUS:CONFIRMED
