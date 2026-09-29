@@ -1,381 +1,339 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCQ6N51ZQH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="View and subscribe to the Psychosocial Research Axis Rounds Calendar.">
+    <title>Rounds Calendar</title>
+    <link rel="icon" href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" sizes="32x32">
 
-  gtag('config', 'G-KCQ6N51ZQH');
-</script>
-  
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Rounds Calendar</title>
-<link rel="icon" href="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" sizes="32x32">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCQ6N51ZQH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-<link rel="alternate" hreflang="en" href="/rounds/en">
-<link rel="alternate" hreflang="fr" href="/rounds/fr">
-<link rel="alternate" hreflang="x-default" href="/rounds/en">
-  
-<style>
-:root{
-  --bg:#F1F5F9;
-  --card:#FFFFFF;
-  --ink:#020617;
-  --muted:#475569;
-  --soft:#CBD5E1;
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-KCQ6N51ZQH');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 
-  --accent:#5B21B6;
-  --accent-soft:#F3E8FF;
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #f1f5f9;
+            --card: #fff;
+            --ink: #020617;
+            --muted: #475569;
+            --border: #cbd5e1;
+            --accent: #5b21b6;
+            --soft: #f8fafc;
+        }
 
-  --code:#F8FAFC;
-}
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #18181b;
+                --card: #232326;
+                --ink: #f5f5f7;
+                --muted: #b4b4ba;
+                --border: #44444b;
+                --accent: #5ac8fa;
+                --soft: #1f1f23;
+            }
+        }
 
-/* DARK MODE */
-@media (prefers-color-scheme: dark){
-  :root{
-    /* surfaces */
-    --bg:#18181B;              /* warmer than pure iOS gray */
-    --card:#232326;            /* subtle lift from bg */
-    --code:#1F1F23;
+        * {
+            box-sizing: border-box;
+        }
 
-    /* text */
-    --ink:#F5F5F7;
-    --muted:#B4B4BA;
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        }
 
-    /* borders */
-    --soft:#2F2F34;
+        [hidden] {
+            display: none !important;
+        }
 
-    /* accent */
-    --accent:#5AC8FA;          /* softer than pure system blue */
-    --accent-soft:rgba(90,200,250,.18);
-  }
-}
+        a {
+            color: var(--accent);
+        }
 
-html,body{
-  margin:0;
-  background:var(--bg);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-  color:var(--ink);
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
-}
+        a:focus-visible,
+        summary:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
 
-/* LAYOUT */
+        main {
+            max-width: 900px;
+            margin: 18px auto;
+            padding: clamp(22px, 4vw, 40px);
+            background: var(--card);
+            border-radius: 16px;
+        }
 
-.wrapper{
-  max-width:940px;
-  margin:0 auto;
-  padding:clamp(36px,6vw,84px) 18px;
-}
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 6px;
+            margin-bottom: 14px;
+        }
 
-.card{
-  position:relative;
-  background:var(--card);
-  padding:clamp(32px,4.5vw,72px);
-  border-radius:18px;
-  box-shadow:
-    0 1px 0 rgba(255,255,255,.04),
-    0 24px 60px rgba(0,0,0,.45);
-}
+        nav a {
+            padding: 5px 10px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            color: var(--muted);
+            font-size: 12px;
+            text-decoration: none;
+        }
 
-/* LANGUAGE */
+        nav a[aria-current] {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
 
-.lang-toggle{
-  position:absolute;
-  top:18px;
-  right:20px;
-  display:flex;
-  gap:6px;
-}
+        h1 {
+            margin: 0 0 8px;
+            font: 400 clamp(30px, 5vw, 40px)/1.2 Georgia, serif;
+        }
 
-.lang-toggle a{
-  font-size:12px;
-  border:1px solid var(--soft);
-  background:transparent;
-  color:var(--muted);
-  padding:5px 10px;
-  border-radius:999px;
-  text-decoration:none;
-  transition:.15s ease;
-}
+        h2 {
+            margin: 0 0 12px;
+            font-size: 17px;
+        }
 
-.lang-toggle a:hover{
-  color:var(--ink);
-  border-color:var(--muted);
-}
+        p {
+            line-height: 1.5;
+        }
 
-.lang-toggle a.active{
-  color:var(--accent);
-  border-color:var(--accent);
-  background:var(--accent-soft);
-}
+        .intro {
+            margin: 0 0 18px;
+            color: var(--muted);
+        }
 
-/* TYPE */
+        .subscribe {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 20px;
+            padding: 18px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: var(--soft);
+        }
 
-h1{
-  font-family:Georgia,Times,serif;
-  font-size:clamp(28px,3.2vw,36px);
-  line-height:1.22;
-  margin:0 0 18px;
-}
+        .subscribe strong {
+            display: block;
+        }
 
-.lede{
-  font-size:17px;
-  line-height:1.75;
-  color:var(--muted);
-  max-width:62ch;
-  margin:0 0 40px;
-}
+        .subscribe p {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
 
-p{
-  font-size:15px;
-  line-height:1.7;
-  margin:0 0 18px;
-}
+        .calendar-button {
+            margin-left: auto;
+        }
 
-small{
-  font-size:12px;
-  color:var(--muted);
-}
+        details {
+            margin: 12px 0 22px;
+            color: var(--muted);
+            font-size: 14px;
+        }
 
-/* CALENDAR */
+        summary {
+            width: fit-content;
+            color: var(--accent);
+            font-weight: 600;
+            cursor: pointer;
+        }
 
-.calendar-wrap{
-  display:flex;
-  justify-content:center;
-  margin:36px 0 18px;
-}
+        details p {
+            margin: 10px 0;
+        }
 
-/* CODE BOX */
+        .url {
+            display: block;
+            overflow-wrap: anywhere;
+            user-select: all;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font: 12px/1.5 ui-monospace, monospace;
+        }
 
-.code{
-  margin-top:16px;
-  background:var(--code);
-  color:var(--ink);
-  padding:16px 18px;
-  border-radius:12px;
-  border:1px solid var(--soft);
+        details ul {
+            margin: 10px 0 0;
+            padding-left: 20px;
+        }
 
-  font-family:ui-monospace,Menlo,monospace;
-  font-size:13px;
-  line-height:1.55;
-  word-break:break-all;
+        details li {
+            margin: 6px 0;
+        }
 
-  user-select:all;
-  cursor:text;
-}
+        iframe {
+            display: block;
+            width: 100%;
+            height: min(65vh, 540px);
+            min-height: 360px;
+            border: 0;
+            border-radius: 10px;
+        }
 
-/* SEPARATORS */
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 11px;
+            text-align: center;
+        }
 
-hr{
-  border:none;
-  border-top:1px solid var(--soft);
-  margin:56px 0;
-}
+        footer img {
+            height: 22px;
+            width: auto;
+        }
 
-/* INSTRUCTIONS */
+        @media (max-width: 640px) {
+            main {
+                margin: 0;
+                min-height: 100vh;
+                border-radius: 0;
+            }
 
-.instructions{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:28px;
-}
+            .calendar-button {
+                width: 100%;
+                margin-left: 0;
+            }
 
-.section{
-  padding-left:16px;
-  border-left:3px solid var(--accent);
-}
-
-.section h2{
-  font-size:11px;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin:0 0 12px;
-}
-
-/* FOOTERS */
-
-.footer-note{
-  margin-top:44px;
-  padding-top:22px;
-  border-top:1px dashed var(--soft);
-}
-
-.site-footer{
-  margin-top:56px;
-  padding-top:20px;
-  border-top:1px solid var(--soft);
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:10px;
-  text-align:center;
-}
-
-.site-footer img{
-  height:22px;
-  width:auto;
-  opacity:.8;
-}
-
-.site-footer small{
-  font-size:11px;
-  color:var(--muted);
-}
-
-/* MOBILE */
-
-@media (max-width:640px){
-  .lang-toggle{
-    position:static;
-    justify-content:center;
-    margin-bottom:18px;
-  }
-  .card{
-    padding-top:32px;
-  }
-}
-
-/* FR TYPOGRAPHY */
-
-html[lang="fr"]{
-  font-feature-settings:"kern","liga","clig";
-}
-</style>
-
-<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+            iframe {
+                height: 55vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div class="wrapper">
-<div class="card">
+    <main>
+        <nav aria-label="Language / Langue">
+            <a id="link-en" href="#en" lang="en">EN</a>
+            <a id="link-fr" href="#fr" lang="fr">FR</a>
+        </nav>
 
-<nav class="lang-toggle" aria-label="Language">
-  <a href="#en" id="link-en">🇨🇦 EN</a>
-  <a href="#fr" id="link-fr">🇨🇦 FR</a>
-</nav>
+        <section data-lang="en">
+            <h1>Rounds Calendar</h1>
+            <p class="intro">View upcoming rounds and subscribe to add them to your calendar.
+                <br>Want email announcements too? <a href="https://forms.gle/PxoPuAyxoXme1Ex47">Join the mailing list</a>.
+            </p>
 
-<!-- EN -->
-<section data-lang="en">
-  <h1>Subscribe to the Rounds Calendar</h1>
-  <p class="lede">
-    Subscribe to receive automatically updated Psychosocial, Academic, Cultural, and Clinical Rounds in your calendar.<br>
-    Add yourself to our <strong>mailing list</strong> <a href="https://forms.gle/PxoPuAyxoXme1Ex47" style="text-decoration: underline;color:#4333ca;">here</a>.
-  </p>
-</section>
+            <div class="subscribe">
+                <div>
+                    <strong>Subscribe to the calendar</strong>
+                    <p>Choose your calendar app. Updates appear when it refreshes.</p>
+                </div>
+                <div class="calendar-button">
+                    <add-to-calendar-button name="Rounds" timeZone="America/Toronto" icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics" subscribe options="'Apple','Google','Yahoo','Microsoft365'" customLabels='{"ms365":"Office 365 / Outlook"}'>
+                    </add-to-calendar-button>
+                </div>
+            </div>
 
-<!-- FR -->
-<section data-lang="fr" hidden>
-  <h1>S’abonner au calendrier des séminaires</h1>
-  <p class="lede">
-    Abonnez-vous pour recevoir les séminaires de recherche psychosociales, académiques, culturelles et cliniques, automatiquement mis à jour dans votre calendrier.<br>
-    Ajoutez-vous à notre <strong>liste d'envoi</strong> <a href="https://forms.gle/PxoPuAyxoXme1Ex47" style="text-decoration: underline;color:#4333ca;">ici</a>.
-  </p>
-</section>
+            <details>
+                <summary>Button not working? Subscribe manually</summary>
+                <p>Copy this address into your calendar app’s <strong>Subscribe by URL</strong> option.</p>
+                <code class="url">webcal://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics</code>
+                <ul>
+                    <li><b>Google:</b> Calendar → Other calendars → + → From URL.</li>
+                    <li><b>Outlook:</b> Calendar → Add calendar → Subscribe from web.</li>
+                    <li><b>Apple:</b> Paste the link into your browser and confirm the subscription.</li>
+                    <li><b>Android/Yahoo/Other:</b> Look for an option to subscribe to a calendar by URL. Paste the copied URL.</li>
+                </ul>
+            </details>
 
-<!-- BUTTONS -->
-<section data-lang="en">
-  <div class="calendar-wrap">
-    <add-to-calendar-button
-      name="Rounds"
-      timeZone="America/Toronto"
-      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
-      subscribe
-      options="'Apple','Google','Yahoo','Microsoft365'"
-      customLabels='{"ms365":"Office 365 / Outlook"}'>
-    </add-to-calendar-button>
-  </div>
-</section>
+            <h2>Upcoming rounds</h2>
+            <iframe title="Upcoming rounds" loading="lazy" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=America%2FToronto&amp;showPrint=0&amp;mode=AGENDA&amp;src=cHN0ZnVlbGthYzVjMWhiMmcyN3Y1ajA3dmE3OTRnMmlAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23d50000">
+            </iframe>
 
-<section data-lang="fr" hidden>
-  <div class="calendar-wrap">
-    <add-to-calendar-button
-      name="Rounds"
-      timeZone="America/Toronto"
-      icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics"
-      subscribe
-      options="'Apple','Google','Yahoo','Microsoft365'"
-      customLabels='{"ms365":"Office 365 / Outlook"}'
-      language="fr">
-    </add-to-calendar-button>
-  </div>
-</section>
+            <footer>
+                <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Psychosocial Research Axis logo">
+                <span>Psychosocial Research Axis · Jewish General Hospital</span>
+            </footer>
+        </section>
 
-<section data-lang="en">
-  <p><small>If the button doesn’t open your calendar, use the link below.</small></p>
-</section>
+        <section data-lang="fr" hidden>
+            <h1>Calendrier des séminaires</h1>
+            <p class="intro">Consultez les prochains séminaires et abonnez-vous pour les ajouter à votre agenda.
+                <br> Vous voulez aussi recevoir les annonces par courriel? <a href="https://forms.gle/PxoPuAyxoXme1Ex47">Inscrivez-vous à la liste d’envoi</a>.
+            </p>
 
-<section data-lang="fr" hidden>
-  <p><small>Si le bouton ne s’ouvre pas, utilisez le lien ci-dessous.</small></p>
-</section>
+            <div class="subscribe">
+                <div>
+                    <strong>S’abonner au calendrier</strong>
+                    <p>Choisissez votre application. Les mises à jour apparaissent lors de son actualisation.</p>
+                </div>
+                <div class="calendar-button">
+                    <add-to-calendar-button name="Séminaires" timeZone="America/Toronto" icsFile="https://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics" subscribe options="'Apple','Google','Yahoo','Microsoft365'" customLabels='{"ms365":"Office 365 / Outlook"}' language="fr">
+                    </add-to-calendar-button>
+                </div>
+            </div>
 
-<div class="code">
-  webcal://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics
-</div>
+            <details>
+                <summary>Le bouton ne fonctionne pas? Abonnez-vous manuellement</summary>
+                <p>Copiez cette adresse dans l’option <strong>S’abonner à partir d’une URL</strong> de votre application.</p>
+                <code class="url">webcal://psychosocial-research-axis.github.io/rounds/calendars/rounds.ics</code>
+                <ul>
+                    <li><b>Google :</b> Calendrier → Autres agendas → + → À partir de l’URL.</li>
+                    <li><b>Outlook :</b> Calendrier → Ajouter un calendrier → S’abonner à partir du Web.</li>
+                    <li><b>Apple :</b> Ouvrez le lien d’abonnement ci-dessus et confirmez l’abonnement.</li>
+                    <li><b>Android/Yahoo/Autres :</b> Cherchez l’option permettant de s’abonner à un calendrier par URL, puis collez l’URL copiée.</li>
 
-<hr>
+                </ul>
+            </details>
 
-<!-- INSTRUCTIONS -->
-<section data-lang="en">
-<div class="instructions">
-  <div class="section"><h2>Apple</h2><p>Paste the link into your browser and confirm the subscription.</p></div>
-  <div class="section"><h2>Outlook</h2><p>Calendar → Add calendar → Subscribe from web.</p></div>
-  <div class="section"><h2>Google</h2><p>Settings → Add calendar → From URL.</p></div>
-  <div class="section"><h2>Android / Yahoo</h2><p>Subscribe by URL or calendar link.</p></div>
-</div>
-</section>
+            <h2>Prochains séminaires</h2>
+            <iframe title="Prochains séminaires" loading="lazy" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;ctz=America%2FToronto&amp;showPrint=0&amp;mode=AGENDA&amp;hl=fr_CA&amp;src=cHN0ZnVlbGthYzVjMWhiMmcyN3Y1ajA3dmE3OTRnMmlAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23d50000">
+            </iframe>
 
-<section data-lang="fr" hidden>
-<div class="instructions">
-  <div class="section"><h2>Apple</h2><p>Collez le lien dans votre navigateur et confirmez l’abonnement.</p></div>
-  <div class="section"><h2>Outlook</h2><p>Calendrier → Ajouter → S’abonner à partir du Web.</p></div>
-  <div class="section"><h2>Google</h2><p>Paramètres → Ajouter → À partir de l’URL.</p></div>
-  <div class="section"><h2>Android / Yahoo</h2><p>S’abonner par URL ou lien de calendrier.</p></div>
-</div>
-</section>
+            <footer>
+                <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Logo de l’Axe de recherche psychosociale">
+                <span>Axe de recherche psychosociale · Hôpital général juif</span>
+            </footer>
+        </section>
+    </main>
 
-<!-- SITE FOOTERS -->
-<section data-lang="en">
-<footer class="site-footer">
-  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Psychosocial Research Axis">
-  <small>Psychosocial Research Axis · Jewish General Hospital</small>
-</footer>
-</section>
+    <script>
+        function syncLanguage() {
+            const lang = location.hash.toLowerCase() === '#fr' ? 'fr' : 'en';
+            document.documentElement.lang = lang;
 
-<section data-lang="fr" hidden>
-<footer class="site-footer">
-  <img src="https://psychosocial-research-axis.github.io/rounds/images/logo-psychosocial-research-axis.png" alt="Axe de recherche psychosociale">
-  <small>Axe de recherche psychosociale · Hôpital général juif</small>
-</footer>
-</section>
+            document.querySelectorAll('[data-lang]').forEach(section => {
+                section.hidden = section.dataset.lang !== lang;
+            });
 
-</div>
-</div>
+            document.querySelectorAll('nav a').forEach(link => {
+                if (link.id === 'link-' + lang) {
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
 
-<script>
-const sections=document.querySelectorAll('[data-lang]');
-const en=document.getElementById('link-en');
-const fr=document.getElementById('link-fr');
+            document.title = lang === 'fr' ? 'Calendrier des séminaires' : 'Rounds Calendar';
+        }
 
-function setLang(lang){
-  sections.forEach(s=>s.hidden=s.dataset.lang!==lang);
-  en.classList.toggle('active',lang==='en');
-  fr.classList.toggle('active',lang==='fr');
-  document.documentElement.lang=lang;
-}
-
-function init(){
-  setLang(location.hash==='#fr'?'fr':'en');
-}
-
-window.addEventListener('hashchange',init);
-init();
-</script>
-
+        window.addEventListener('hashchange', syncLanguage);
+        syncLanguage();
+    </script>
 </body>
+
 </html>
