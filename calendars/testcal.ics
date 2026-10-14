@@ -24,14 +24,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261102-special-joint-medical-psychiatry-nursing-and-family-medicine-grand-rounds-1200@calendar
-DTSTAMP:20261014T182139Z
+DTSTAMP:20261014T200532Z
 DTSTART;TZID=America/Toronto:20261102T120000
 DTEND;TZID=America/Toronto:20261102T130000
 STATUS:CONFIRMED
 SUMMARY:When Care Comes First: The Extraordinary Importance of High-Quality Care for Medicine and Our World Today in an era of Global Aging
 LOCATION:Aberman Family Auditorium (A-102)\, 3755 Côte-Ste-Catherine Rd.\, Montreal QC H3T 1E2
 CATEGORIES:Special Joint Medical\, Psychiatry\, Nursing and Family Medicine Grand Rounds
-DESCRIPTION:Special Joint Medical\, Psychiatry\, Nursing and Family Medicine Grand Rounds\n\nTOPIC: When Care Comes First: The Extraordinary Importance of High-Quality Care for Medicine and Our World Today in an era of Global Aging\n\nSPEAKER: Dr. Arthur Kleinman\n\nLEARNING OBJECTIVES:\nThe Inaugural Bergman / Pilon Lectureship in Aging\nIn person (lunch provided) and online*\n\nORGANIZER: Vincent Laliberté
+DESCRIPTION:Special Joint Medical\, Psychiatry\, Nursing and Family Medicine Grand Rounds\n\nTOPIC: When Care Comes First: The Extraordinary Importance of High-Quality Care for Medicine and Our World Today in an era of Global Aging\n\nSPEAKER: Dr. Arthur Kleinman\n\n\nThe Inaugural Bergman / Pilon Lectureship in Aging\nIn person (lunch provided) and online*\n\nORGANIZER: Vincent Laliberté
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -45,14 +45,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-psychosocial-research-rounds-1330@calendar
-DTSTAMP:20261014T182139Z
+DTSTAMP:20261014T200532Z
 DTSTART;TZID=America/Toronto:20261112T133000
 DTEND;TZID=America/Toronto:20261112T140000
 STATUS:CONFIRMED
 SUMMARY:Prevalence of common parasomnias and their associations with sleep quality\, insomnia\, anxiety\, and depression among post-secondary students and young adults
 LOCATION:Amphitheatre\, 4333 Côte-Ste-Catherine Rd.\, Montreal QC H3T 1E4
 CATEGORIES:Psychosocial Research Rounds
-DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Prevalence of common parasomnias and their associations with sleep quality\, insomnia\, anxiety\, and depression among post-secondary students and young adults\n\nSPEAKER: Samantha Groppini\n\nLEARNING OBJECTIVES:\n• Describe the prevalence of common parasomnias among post-secondary students and young adults.\n• Examine the associations between common parasomnias and sleep quality\, insomnia\, anxiety\, and depression in this population.\n• Discuss how the findings of this systematic review may inform future research\, clinical practice\, and sleep health initiatives for post-secondary students and young adults.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
+DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Prevalence of common parasomnias and their associations with sleep quality\, insomnia\, anxiety\, and depression among post-secondary students and young adults\n\nSPEAKER: Samantha Groppini\n\n\n• Describe the prevalence of common parasomnias among post-secondary students and young adults.\n• Examine the associations between common parasomnias and sleep quality\, insomnia\, anxiety\, and depression in this population.\n• Discuss how the findings of this systematic review may inform future research\, clinical practice\, and sleep health initiatives for post-secondary students and young adults.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -66,14 +66,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20261112-psychosocial-research-rounds-1400@calendar
-DTSTAMP:20261014T182139Z
+DTSTAMP:20261014T200532Z
 DTSTART;TZID=America/Toronto:20261112T140000
 DTEND;TZID=America/Toronto:20261112T143000
 STATUS:CONFIRMED
 SUMMARY:Improving sleep health in post-secondary students: Evidence-based coping strategies and knowledge translation tools
 LOCATION:Amphitheatre\, 4333 Côte-Ste-Catherine Rd.\, Montreal QC H3T 1E4
 CATEGORIES:Psychosocial Research Rounds
-DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Improving sleep health in post-secondary students: Evidence-based coping strategies and knowledge translation tools\n\nSPEAKER: Noemi Di Pietrantonio\n\nLEARNING OBJECTIVES:\n• To synthesize the current evidence on interventions for common parasomnias and sleep-related disorders and translate this evidence into accessible\, evidence-informed resources for young adults and healthcare professionals.\n• To bridge the gap between research evidence and practical sleep health resources for post-secondary students.\n• To identify evidence-based behavioural\, psychological\, pharmacological\, and educational interventions for common parasomnias.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
+DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Improving sleep health in post-secondary students: Evidence-based coping strategies and knowledge translation tools\n\nSPEAKER: Noemi Di Pietrantonio\n\n\n• To synthesize the current evidence on interventions for common parasomnias and sleep-related disorders and translate this evidence into accessible\, evidence-informed resources for young adults and healthcare professionals.\n• To bridge the gap between research evidence and practical sleep health resources for post-secondary students.\n• To identify evidence-based behavioural\, psychological\, pharmacological\, and educational interventions for common parasomnias.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -87,14 +87,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20270114-psychosocial-research-rounds-1330@calendar
-DTSTAMP:20261014T182139Z
+DTSTAMP:20261014T200532Z
 DTSTART;TZID=America/Toronto:20270114T133000
 DTEND;TZID=America/Toronto:20270114T140000
 STATUS:CONFIRMED
 SUMMARY:Pilot test of the digital culture interview: A novel method for assessing the digital habits of youth receiving mental health care
 LOCATION:Amphitheatre\, 4333 Côte-Ste-Catherine Rd.\, Montreal QC H3T 1E4
 CATEGORIES:Psychosocial Research Rounds
-DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Pilot test of the digital culture interview: A novel method for assessing the digital habits of youth receiving mental health care\n\nSPEAKER: Anis Boukhari\n\nLEARNING OBJECTIVES:\n• Reflect on the importance of addressing digital culture in mental health clinical practice.\n• Understand the role of the Digital Culture Interview in exploring patients’ digital practices in mental health care.\n• Describe clinicians’ and patients’ perceptions of the utility\, feasibility and acceptability of the Digital Culture Interview.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
+DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Pilot test of the digital culture interview: A novel method for assessing the digital habits of youth receiving mental health care\n\nSPEAKER: Anis Boukhari\n\n\n• Reflect on the importance of addressing digital culture in mental health clinical practice.\n• Understand the role of the Digital Culture Interview in exploring patients’ digital practices in mental health care.\n• Describe clinicians’ and patients’ perceptions of the utility\, feasibility and acceptability of the Digital Culture Interview.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -108,14 +108,14 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:20270114-psychosocial-research-rounds-1400@calendar
-DTSTAMP:20261014T182139Z
+DTSTAMP:20261014T200532Z
 DTSTART;TZID=America/Toronto:20270114T140000
 DTEND;TZID=America/Toronto:20270114T143000
 STATUS:CONFIRMED
 SUMMARY:Connected beginnings: How adult attachment style shapes perinatal mental health and early parental functioning
 LOCATION:Amphitheatre\, 4333 Côte-Ste-Catherine Rd.\, Montreal QC H3T 1E4
 CATEGORIES:Psychosocial Research Rounds
-DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Connected beginnings: How adult attachment style shapes perinatal mental health and early parental functioning\n\nSPEAKER: Adrianne Tan\n\nLEARNING OBJECTIVES:\n• Describe how adult attachment styles are associated with vulnerability to perinatal mood and anxiety disorders (PMADs) across the perinatal period.\n• Explain how insecure adult attachment and PMAD symptoms may contribute to early parenting outcomes\, including parental functioning\, self-efficacy\, caregiving sensitivity\, and parent-infant bonding.\n• Reflect on the implications of adult attachment and PMAD symptoms for supporting parent-infant relationships and informing attachment-focused prevention and intervention strategies.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
+DESCRIPTION:Psychosocial Research Rounds\n\nTOPIC: Connected beginnings: How adult attachment style shapes perinatal mental health and early parental functioning\n\nSPEAKER: Adrianne Tan\n\n\n• Describe how adult attachment styles are associated with vulnerability to perinatal mood and anxiety disorders (PMADs) across the perinatal period.\n• Explain how insecure adult attachment and PMAD symptoms may contribute to early parenting outcomes\, including parental functioning\, self-efficacy\, caregiving sensitivity\, and parent-infant bonding.\n• Reflect on the implications of adult attachment and PMAD symptoms for supporting parent-infant relationships and informing attachment-focused prevention and intervention strategies.\n\nMEETING LINK: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1\n\nORGANIZER: Vincent Paquin
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
