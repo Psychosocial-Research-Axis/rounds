@@ -25,7 +25,7 @@ END:VTIMEZONE
 
 BEGIN:VEVENT
 UID:20260910-psychosocial-1-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20260910T133000
 DTEND;TZID=America/Toronto:20260910T140000
 STATUS:CANCELLED
@@ -37,7 +37,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20261001-academic-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20261001T133000
 DTEND;TZID=America/Toronto:20261001T150000
 STATUS:CONFIRMED
@@ -58,7 +58,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20261008-psychosocial-1-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20261008T133000
 DTEND;TZID=America/Toronto:20261008T140000
 STATUS:CONFIRMED
@@ -80,13 +80,76 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20261008-clinical-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20261008T120000
 DTEND;TZID=America/Toronto:20261008T130000
 STATUS:CONFIRMED
 SUMMARY:Clinical Grand Rounds - Medicolegal confinement: Theory and practice
 LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:Medicolegal confinement: Theory and practice\n\nSpeaker: Sarah Benning\nChair: Nasr Farooqi\nFormat: In-person\n\nLearning Objectives:\n•	To review the medicolegal basis for confinement in hospital in Quebec.\n•	To review current hospital procedures and practices with regard to confinement. \n•	To review relevant recent case law.
+DESCRIPTION:Medicolegal confinement: Theory and practice\n\nSpeaker: Sarah Benning\nChair: Nasr Farooqi\nFormat: In-person\n\nLearning Objectives:\n• To review the medicolegal basis for confinement in hospital in Quebec.\n• To review current hospital procedures and practices with regard to confinement. \n• To review relevant recent case law.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261102-academic-rounds@psychosocial-research-axis
+DTSTAMP:20261029T203120Z
+DTSTART;TZID=America/Toronto:20261102T120000
+DTEND;TZID=America/Toronto:20261102T130000
+STATUS:CONFIRMED
+SUMMARY:Special Grand Rounds - When Care Comes First: The Extraordinary Import...
+LOCATION:Room A-102, 5750 Côte-Ste-Catherine Rd., Montreal QC H3S 1Y9
+DESCRIPTION:When Care Comes First: The Extraordinary Importance of High-Quality Care for Medicine and Our World Today in an Era of Global Aging\n\nSpeaker: Dr. Arthur Kleinman\nChair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261103-academic-rounds@psychosocial-research-axis
+DTSTAMP:20261029T203120Z
+DTSTART;TZID=America/Toronto:20261103T143000
+DTEND;TZID=America/Toronto:20261103T170000
+STATUS:CONFIRMED
+SUMMARY:A Conversation with Dr. Arthur Kleinman
+LOCATION:3647 Peel St, Montreal QC H3A 1X1
+DESCRIPTION:A Conversation with Dr. Arthur Kleinman\n\nSpeaker: Dr. Arthur Kleinman\nChair: Vincent Laliberté\nFormat: In-person
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
+UID:20261105-academic-rounds@psychosocial-research-axis
+DTSTAMP:20261029T203120Z
+DTSTART;TZID=America/Toronto:20261105T133000
+DTEND;TZID=America/Toronto:20261105T150000
+STATUS:CONFIRMED
+SUMMARY:Utting Lecture - Bipolar Depression: Strategies to Advance Manag...
+LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Bipolar Depression: Strategies to Advance Management\n\nSpeaker: Professor Lakshmi Yatham\nChair: Vincent Laliberté\nFormat: In-person\n\nLearning Objectives:\n• Understand the disease burden posed by depression in bipolar disorder\n• Review new treatment options for managing bipolar depression\n• Understand the importance of early intervention in bipolar disorder
 BEGIN:VALARM
 TRIGGER:-P1D
 ACTION:DISPLAY
@@ -101,19 +164,19 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20261112-psychosocial-1-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20261112T133000
 DTEND;TZID=America/Toronto:20261112T140000
 STATUS:CANCELLED
 SUMMARY:CANCELLED: Psychosocial Research Rounds - Prevalence of common parasomnias and their asso...
 LOCATION:ICFP Amphitheatre, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
-DESCRIPTION:This round has been cancelled.\n\nPrevalence of common parasomnias and their associations with sleep quality, insomnia, anxiety, and depression among post-secondary students and young adults\n\nSpeaker: Samantha Groppini\nChair: Vincent Paquin\nFormat: Hybrid\n\nLearning Objectives:\n•	Describe the prevalence of common parasomnias among post-secondary students and young adults.\n•	Examine the associations between common parasomnias and sleep quality, insomnia, anxiety, and depression in this population.\n•	Discuss how the findings of this systematic review may inform future research, clinical practice, and sleep health initiatives for post-secondary students and young adults.\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
+DESCRIPTION:This round has been cancelled.\n\nPrevalence of common parasomnias and their associations with sleep quality, insomnia, anxiety, and depression among post-secondary students and young adults\n\nSpeaker: Samantha Groppini\nChair: Vincent Paquin\nFormat: Hybrid\n\nLearning Objectives:\n• Describe the prevalence of common parasomnias among post-secondary students and young adults.\n• Examine the associations between common parasomnias and sleep quality, insomnia, anxiety, and depression in this population.\n• Discuss how the findings of this systematic review may inform future research, clinical practice, and sleep health initiatives for post-secondary students and young adults.\n\nZoom: https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
 UID:20261112-psychosocial-2-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20261112T140000
 DTEND;TZID=America/Toronto:20261112T143000
 STATUS:CANCELLED
@@ -124,8 +187,29 @@ URL:https://us06web.zoom.us/j/88488947071?pwd=SfbahYa0VEe7nCL2Hbc1aA6bXzfZeR.1
 END:VEVENT
 
 BEGIN:VEVENT
+UID:20261112-clinical-rounds@psychosocial-research-axis
+DTSTAMP:20261029T203120Z
+DTSTART;TZID=America/Toronto:20261112T120000
+DTEND;TZID=America/Toronto:20261112T130000
+STATUS:CONFIRMED
+SUMMARY:Clinical Grand Rounds - Services en itinérance du CIUSSS Centre-Ouest.
+LOCATION:ICFP G-23, 4333 Côte-Ste-Catherine Rd., Montreal QC H3T 1E4
+DESCRIPTION:Services en itinérance du CIUSSS Centre-Ouest.\n\nSpeaker: Judith Sigouin, M., PhD.\nChair: Nasr Farooqi\nFormat: In-person\n\nLearning Objectives:\n• To refresh participants’ understanding of homelessness as a social phenomenon.\n• To enhance participants’ knowledge of homelessness services offered within our CIUSSS.\n• To encourage reflection on best practices for improving service accessibility, continuity of care, and quality of services.
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Rounds tomorrow
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rounds starting in 15 minutes
+END:VALARM
+END:VEVENT
+
+BEGIN:VEVENT
 UID:20270114-psychosocial-1-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270114T133000
 DTEND;TZID=America/Toronto:20270114T140000
 STATUS:CONFIRMED
@@ -147,7 +231,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270114-psychosocial-2-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270114T140000
 DTEND;TZID=America/Toronto:20270114T143000
 STATUS:CONFIRMED
@@ -169,7 +253,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270121-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270121T133000
 DTEND;TZID=America/Toronto:20270121T150000
 STATUS:CONFIRMED
@@ -191,7 +275,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270211-psychosocial-1-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270211T133000
 DTEND;TZID=America/Toronto:20270211T140000
 STATUS:CONFIRMED
@@ -213,7 +297,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270211-psychosocial-2-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270211T140000
 DTEND;TZID=America/Toronto:20270211T143000
 STATUS:CONFIRMED
@@ -235,7 +319,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270218-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270218T133000
 DTEND;TZID=America/Toronto:20270218T150000
 STATUS:CONFIRMED
@@ -257,7 +341,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270318-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270318T133000
 DTEND;TZID=America/Toronto:20270318T150000
 STATUS:CONFIRMED
@@ -279,7 +363,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270513-psychosocial-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270513T133000
 DTEND;TZID=America/Toronto:20270513T150000
 STATUS:CONFIRMED
@@ -301,7 +385,7 @@ END:VEVENT
 
 BEGIN:VEVENT
 UID:20270520-research-day-rounds@psychosocial-research-axis
-DTSTAMP:20261022T195000Z
+DTSTAMP:20261029T203120Z
 DTSTART;TZID=America/Toronto:20270520T090000
 DTEND;TZID=America/Toronto:20270520T120000
 STATUS:CONFIRMED
